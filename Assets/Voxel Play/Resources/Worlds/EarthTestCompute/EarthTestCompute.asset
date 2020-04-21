@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa02a9c2d5ccc4e208c47ba645563e95, type: 3}
+  m_Name: EarthTestCompute
+  m_EditorClassIdentifier: 
+  seed: 0
+  biomes:
+  - {fileID: 11400000, guid: af8e83698e8ad47bea9b5a7ce4280321, type: 2}
+  defaultBiome: {fileID: 0}
+  infinite: 1
+  extents: {x: 600, y: 1024, z: 300}
+  terrainGenerator: {fileID: 11400000, guid: 9176b9ec3019c476d8fcbf13968eecb8, type: 2}
+  detailGenerators: []
+  skyboxDesktop: 1
+  skyboxMobile: 3
+  skyboxDayCubemap: {fileID: 0}
+  skyboxNightCubemap: {fileID: 0}
+  dayCycleSpeed: 0
+  setTimeAndAzimuth: 1
+  timeOfDay: 12.94
+  azimuth: 168
+  exposure: 1
+  cloudVoxel: {fileID: 11400000, guid: 7b4e0d11699534d52892e331bcfadbb1, type: 2}
+  cloudCoverage: 110
+  cloudAltitude: 150
+  skyTint: {r: 0.52, g: 0.5, b: 1, a: 1}
+  lightScattering: 13.19
+  lightIntensityMultiplier: 1
+  emissionAnimationSpeed: 0.5
+  emissionMinIntensity: 0.5
+  emissionMaxIntensity: 1.2
+  damageDuration: 3
+  voxelDamageTextures:
+  - {fileID: 2800000, guid: ee62f9b2a9fa940e0afb78270b7cd26f, type: 3}
+  - {fileID: 2800000, guid: 1f10116f6945e443f9bd8b39b5f52fd6, type: 3}
+  - {fileID: 2800000, guid: 538d964520c354051bccd038f5a5490f, type: 3}
+  - {fileID: 2800000, guid: b9de07a41d9044d0cb532e6fde3ad83e, type: 3}
+  - {fileID: 2800000, guid: 7b3da904163d44e21a5b4dc8d384cc9b, type: 3}
+  gravity: -9.8
+  collapseOnDestroy: 1
+  collapseAmount: 200
+  consolidateDelay: 5
+  moreVoxels:
+  - {fileID: 11400000, guid: aaa3fa1e37bd3468ebc9dd05dd16f553, type: 2}
+  - {fileID: 11400000, guid: efa7e90d5c32e4da98008497440778d6, type: 2}
+  - {fileID: 11400000, guid: 53bea8a98805248f392ddd8d89787431, type: 2}
+  - {fileID: 11400000, guid: 29552f4f6b8024db1b0382f84d1bb493, type: 2}
+  - {fileID: 11400000, guid: 613cd0fd62328486a88ccb95dd776dc5, type: 2}
+  - {fileID: 11400000, guid: fa72687e4eccd4b53bc44810ab7cccca, type: 2}
+  - {fileID: 11400000, guid: f2e9a490315cc4c3f87f51bf2f7b7405, type: 2}
+  items: []
+  tileRuleSets: []
+  resourceLocation: Worlds/EarthTestCompute

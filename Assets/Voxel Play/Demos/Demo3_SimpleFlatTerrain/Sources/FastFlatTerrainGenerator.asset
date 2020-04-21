@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca8e2a31b0bd42399f66cd6c0718613, type: 3}
+  m_Name: FastFlatTerrainGenerator
+  m_EditorClassIdentifier: 
+  maxHeight: 255
+  minHeight: -32
+  seaLevel: -1
+  waterLevel: 25
+  altitude: 50
+  terrainVoxel: {fileID: 11400000, guid: 764590ab8f7e04785a8ac184f4ff675a, type: 2}
+  voxelColor1:
+    serializedVersion: 2
+    rgba: 4278222848
+  voxelColor2:
+    serializedVersion: 2
+    rgba: 4278190208

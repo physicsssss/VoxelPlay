@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b11f622d92bb46c38fd5a3a2a3198f5, type: 3}
+  m_Name: ForestHQ
+  m_EditorClassIdentifier: 
+  zones:
+  - elevationMin: 0
+    elevationMax: 1
+    moistureMin: 0
+    moistureMax: 1
+  showInBiomeMap: 1
+  biomeMapColor: {r: 1, g: 0, b: 0, a: 1}
+  voxelTop: {fileID: 11400000, guid: 867e58c92c4754d59aa1e14b69346f7b, type: 2}
+  voxelDirt: {fileID: 11400000, guid: 32cd77a57cf194775ac4250f006687a5, type: 2}
+  ores: []
+  treeDensity: 0.01
+  trees:
+  - tree: {fileID: 11400000, guid: 5c113966427044473bcad25043be477d, type: 2}
+    probability: 0.2
+  - tree: {fileID: 11400000, guid: 8b7115f52661e4a3a8e213e7bb83cb2e, type: 2}
+    probability: 0.4
+  - tree: {fileID: 11400000, guid: 5ea2dfe00ee0e40d69574a7ebf1ef084, type: 2}
+    probability: 0.4
+  vegetationDensity: 0.5
+  vegetation:
+  - vegetation: {fileID: 11400000, guid: ae66778913a7144019f88bc6feff6be2, type: 2}
+    probability: 0.15
+  - vegetation: {fileID: 11400000, guid: ead1d97c8db7c4ad78f2f89d905f218e, type: 2}
+    probability: 0.2
+  - vegetation: {fileID: 11400000, guid: ca4f35116233d4be8b2d100bde37ca40, type: 2}
+    probability: 0.15
+  - vegetation: {fileID: 11400000, guid: 51a4a182fb35847608a6337f4625811e, type: 2}
+    probability: 0.1
+  - vegetation: {fileID: 11400000, guid: 45f1705b636e644d0b2a7b60f9a0dc8e, type: 2}
+    probability: 0.3
+  - vegetation: {fileID: 11400000, guid: a0b0319d09f7840ea8261cd082a4f7f3, type: 2}
+    probability: 0.2

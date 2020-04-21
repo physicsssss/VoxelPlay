@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b11f622d92bb46c38fd5a3a2a3198f5, type: 3}
+  m_Name: Rainforest
+  m_EditorClassIdentifier: 
+  voxelTop: {fileID: 11400000, guid: 192103c07c9d84293978d74e575698c4, type: 2}
+  voxelDirt: {fileID: 11400000, guid: e1d70a5652a68408a89736afe490f174, type: 2}
+  treeDensity: 0.02
+  trees: []
+  vegetationDensity: 0.05
+  vegetation: []
+  zones:
+  - elevationMin: 0
+    elevationMax: 0.25
+    moistureMin: 0.65
+    moistureMax: 1
+  - elevationMin: 0.25
+    elevationMax: 0.5
+    moistureMin: 0.85
+    moistureMax: 1
+  ores:
+  - ore: {fileID: 11400000, guid: 0a7701ce598c04d908cab9a8ebf0e708, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.2
+    depthMin: 10
+    depthMax: 500
+    veinMinSize: 4
+    veinMaxSize: 8
+    veinsCountMin: 1
+    veinsCountMax: 2
+  biomeMapColor: {r: 1, g: 0, b: 1, a: 1}
+  showInBiomeMap: 1

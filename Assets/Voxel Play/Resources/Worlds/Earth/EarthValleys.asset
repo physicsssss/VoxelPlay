@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa02a9c2d5ccc4e208c47ba645563e95, type: 3}
+  m_Name: EarthValleys
+  m_EditorClassIdentifier: 
+  seed: 0
+  biomes:
+  - {fileID: 11400000, guid: be0f017e5ddd54c49acb9870befcc906, type: 2}
+  - {fileID: 11400000, guid: 05d8a81088f8143dab9ec3895664af6b, type: 2}
+  - {fileID: 11400000, guid: b32e7a8ff8dad4f7d83c2fb859d4eab7, type: 2}
+  - {fileID: 11400000, guid: 5c5c44b84f4c54c03aab98c34b282eb5, type: 2}
+  - {fileID: 11400000, guid: 6fa76bb64ddf74f36a01e64d68ed4b49, type: 2}
+  - {fileID: 11400000, guid: 63ce008e73a7c4c84920625729e69484, type: 2}
+  - {fileID: 11400000, guid: ac129697253ab427eb442f0b4fd27abb, type: 2}
+  - {fileID: 11400000, guid: 7917ceb79e2334df4b1fe3467f52c8a0, type: 2}
+  - {fileID: 11400000, guid: 6529c4ade1ef7407cb0745350aeb3c3c, type: 2}
+  - {fileID: 11400000, guid: d041a3e3b44a0434190d17225a5dc721, type: 2}
+  defaultBiome: {fileID: 0}
+  infinite: 1
+  extents: {x: 600, y: 1024, z: 300}
+  grassWindSpeed: 1
+  treeWindSpeed: 1
+  terrainGenerator: {fileID: 11400000, guid: 8930e1bdc223d4b5d8a0269434bceedc, type: 2}
+  detailGenerators:
+  - {fileID: 11400000, guid: 396d2f96698424fec80dec86e13b70d0, type: 2}
+  - {fileID: 11400000, guid: 7079cfd4887c141b4b319f4783afe7ff, type: 2}
+  skyboxDesktop: 1
+  skyboxMobile: 3
+  skyboxDayCubemap: {fileID: 0}
+  skyboxNightCubemap: {fileID: 0}
+  dayCycleSpeed: 0
+  setTimeAndAzimuth: 1
+  timeOfDay: 12.94
+  azimuth: 168
+  exposure: 1
+  cloudVoxel: {fileID: 11400000, guid: 7b4e0d11699534d52892e331bcfadbb1, type: 2}
+  cloudCoverage: 110
+  cloudAltitude: 150
+  skyTint: {r: 0.52, g: 0.5, b: 1, a: 1}
+  lightScattering: 0.01
+  lightIntensityMultiplier: 2
+  waterColor: {r: 0.231, g: 0.455, b: 0.82, a: 0.31}
+  underWaterFogColor: {r: 0.118, g: 0.247, b: 0.455, a: 0.235}
+  foamColor: {r: 1, g: 1, b: 1, a: 1}
+  waveScale: 0.1
+  waveSpeed: 0.4
+  waveAmplitude: 1
+  specularIntensity: 2
+  specularPower: 64
+  refractionDistortion: 0.08
+  fresnel: 0.9
+  normalStrength: 2
+  oceanWaveThreshold: 0.512
+  oceanWaveIntensity: 12
+  emissionAnimationSpeed: 0.5
+  emissionMinIntensity: 0.5
+  emissionMaxIntensity: 1.2
+  damageDuration: 3
+  voxelDamageTextures:
+  - {fileID: 2800000, guid: ee62f9b2a9fa940e0afb78270b7cd26f, type: 3}
+  - {fileID: 2800000, guid: 1f10116f6945e443f9bd8b39b5f52fd6, type: 3}
+  - {fileID: 2800000, guid: 538d964520c354051bccd038f5a5490f, type: 3}
+  - {fileID: 2800000, guid: b9de07a41d9044d0cb532e6fde3ad83e, type: 3}
+  - {fileID: 2800000, guid: 7b3da904163d44e21a5b4dc8d384cc9b, type: 3}
+  gravity: -9.8
+  collapseOnDestroy: 1
+  collapseAmount: 200
+  consolidateDelay: 5
+  moreVoxels:
+  - {fileID: 11400000, guid: aaa3fa1e37bd3468ebc9dd05dd16f553, type: 2}
+  - {fileID: 11400000, guid: efa7e90d5c32e4da98008497440778d6, type: 2}
+  - {fileID: 11400000, guid: 53bea8a98805248f392ddd8d89787431, type: 2}
+  - {fileID: 11400000, guid: 29552f4f6b8024db1b0382f84d1bb493, type: 2}
+  - {fileID: 11400000, guid: 613cd0fd62328486a88ccb95dd776dc5, type: 2}
+  - {fileID: 11400000, guid: fa72687e4eccd4b53bc44810ab7cccca, type: 2}
+  - {fileID: 11400000, guid: f2e9a490315cc4c3f87f51bf2f7b7405, type: 2}
+  - {fileID: 11400000, guid: 4c809d5343149417797aeb8935acd105, type: 2}
+  items: []
+  tileRuleSets: []
+  resourceLocation: Worlds/Earth

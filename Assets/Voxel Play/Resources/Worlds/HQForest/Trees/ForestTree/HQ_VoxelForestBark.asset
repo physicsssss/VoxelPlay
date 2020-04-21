@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27712d9aa2d924ef4bfdf3b177b44418, type: 3}
+  m_Name: HQ_VoxelForestBark
+  m_EditorClassIdentifier: 
+  title: 
+  renderType: 0
+  textureTop: {fileID: 2800000, guid: 455f4beaa019945729ee0ec2c79d463c, type: 3}
+  textureTopEmission: {fileID: 0}
+  textureTopNRM: {fileID: 2800000, guid: 1d4d660c30cb2412084529cc1127df15, type: 3}
+  textureTopDISP: {fileID: 2800000, guid: 0597ca8233317497eb648d878a1ba973, type: 3}
+  textureSide: {fileID: 2800000, guid: 455f4beaa019945729ee0ec2c79d463c, type: 3}
+  textureSideEmission: {fileID: 0}
+  textureSideNRM: {fileID: 2800000, guid: 1d4d660c30cb2412084529cc1127df15, type: 3}
+  textureSideDISP: {fileID: 2800000, guid: 0597ca8233317497eb648d878a1ba973, type: 3}
+  textureRight: {fileID: 0}
+  textureRightEmission: {fileID: 0}
+  textureRightNRM: {fileID: 0}
+  textureRightDISP: {fileID: 0}
+  textureForward: {fileID: 0}
+  textureForwardEmission: {fileID: 0}
+  textureForwardNRM: {fileID: 0}
+  textureForwardDISP: {fileID: 0}
+  textureLeft: {fileID: 0}
+  textureLeftEmission: {fileID: 0}
+  textureLeftNRM: {fileID: 0}
+  textureLeftDISP: {fileID: 0}
+  textureBottom: {fileID: 2800000, guid: 455f4beaa019945729ee0ec2c79d463c, type: 3}
+  textureBottomEmission: {fileID: 0}
+  textureBottomNRM: {fileID: 0}
+  textureBottomDISP: {fileID: 0}
+  tintColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  colorVariation: 0.5
+  pickupSound: {fileID: 0}
+  buildSound: {fileID: 8300000, guid: 0a026ef4bec3e461e90fc34c822159dd, type: 3}
+  footfalls:
+  - {fileID: 8300000, guid: db9bfe81def244a80a3bf153fa1ac1a4, type: 3}
+  - {fileID: 8300000, guid: 9806532fbf50948ebbd5afb07002abde, type: 3}
+  jumpSound: {fileID: 8300000, guid: 4ae12959a77e4427b9d8ea45d19a81d8, type: 3}
+  landingSound: {fileID: 8300000, guid: cdd9c5956822c46c485c174712857826, type: 3}
+  impactSound: {fileID: 8300000, guid: 09f7f7d3e630a421c8d71ccc2b7781b1, type: 3}
+  destructionSound: {fileID: 8300000, guid: b237fe58d85f1447ba6d8a675c379d15, type: 3}
+  resistancePoints: 20
+  hidden: 0
+  canBeCollected: 1
+  dropItem: {fileID: 0}
+  navigatable: 0
+  windAnimation: 1
+  model: {fileID: 0}
+  gpuInstancing: 0
+  castShadows: 1
+  receiveShadows: 1
+  createGameObject: 0
+  offset: {x: 0, y: 0, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+  rotation: {x: 0, y: 0, z: 0}
+  promotesTo: {fileID: 0}
+  spreads: 0
+  drains: 1
+  spreadDelay: 0
+  spreadDelayRandom: 0
+  diveColor: {r: 0, g: 0.41, b: 0.63, a: 0.83}
+  height: 13
+  playerDamage: 0
+  playerDamageDelay: 2
+  triggerCollapse: 1
+  willCollapse: 1
+  ignoresRayCast: 0
+  allowsTextureRotation: 1
+  placeFacingPlayer: 1
+  triggerEnterEvent: 0
+  triggerWalkEvent: 0

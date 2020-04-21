@@ -1,0 +1,38 @@
+Sounds licenses
+——————————————-
+
+All sound files are public domain except otherwise stated.
+
+footstep_hard1-4
+Standard audio files provided by Unity technologies
+
+gravel_impact2.wav
+Licensed by CC-Attribution 3.0 Unported
+https://freesound.org/people/Snoman/sounds/9909/
+
+gravel_impact3.wav
+Licensed by CC-Attribution 3.0 Unported
+https://freesound.org/people/Snoman/sounds/9910/
+
+gravel_impact4.wav
+Licensed by CC-Attribution 3.0 Unported
+https://freesound.org/people/Snoman/sounds/9911/
+
+gravel_impact5.wav
+Licensed by CC-Attribution 3.0 Unported
+https://freesound.org/people/Snoman/sounds/9908/
+
+footstep_snow1-3
+Licensed by CC-Attribution 3.0 Unported
+http://freesound.org/people/Corsica_S/sounds/29876/
+
+hit_wood
+Licensed by CC-Attribution 3.0 Unported
+https://freesound.org/people/CosmicEmbers/sounds/387478/
+
+water_splash.wav
+Licensed by CC-Attribution 3.0 Unported
+https://freesound.org/people/YleArkisto/sounds/278223/
+
+
+

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b11f622d92bb46c38fd5a3a2a3198f5, type: 3}
+  m_Name: Bare
+  m_EditorClassIdentifier: 
+  voxelTop: {fileID: 11400000, guid: 986bbc7ebbece4482b97c234a02b9310, type: 2}
+  voxelDirt: {fileID: 11400000, guid: 7480b5c3500584bc0a11b5811c42ff4a, type: 2}
+  treeDensity: 0.02
+  trees: []
+  vegetationDensity: 0.05
+  vegetation: []
+  zones:
+  - elevationMin: 0.75
+    elevationMax: 1
+    moistureMin: 0
+    moistureMax: 0.35
+  - elevationMin: 0.5
+    elevationMax: 1
+    moistureMin: 0
+    moistureMax: 0.15
+  ores:
+  - ore: {fileID: 11400000, guid: 0d398490c4c55439893b1e1c9057d551, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.05
+    depthMin: 0
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 3
+    veinsCountMin: 0
+    veinsCountMax: 0
+  - ore: {fileID: 11400000, guid: bb5aad962142c4568aa59bffed2349fa, type: 2}
+    probabilityMin: 0.05
+    probabilityMax: 0.08
+    depthMin: 15
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 3
+    veinsCountMin: 1
+    veinsCountMax: 1
+  biomeMapColor: {r: 0, g: 1, b: 0, a: 1}
+  showInBiomeMap: 1

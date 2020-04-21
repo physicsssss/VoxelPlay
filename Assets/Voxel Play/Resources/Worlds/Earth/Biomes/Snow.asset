@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b11f622d92bb46c38fd5a3a2a3198f5, type: 3}
+  m_Name: Snow
+  m_EditorClassIdentifier: 
+  voxelTop: {fileID: 11400000, guid: d4bccf3a0224842bf96d9ec0620ac953, type: 2}
+  voxelDirt: {fileID: 11400000, guid: 4b1045e83d52b410b85b19a4ea398259, type: 2}
+  treeDensity: 0.02
+  trees: []
+  vegetationDensity: 0.05
+  vegetation: []
+  zones:
+  - elevationMin: 0.75
+    elevationMax: 1
+    moistureMin: 0.65
+    moistureMax: 1
+  ores: []

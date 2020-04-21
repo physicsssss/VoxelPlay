@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d5d8e3721e240edb1241906352c93a, type: 3}
+  m_Name: WaterDrop
+  m_EditorClassIdentifier: 
+  title: 
+  category: 0
+  voxelType: {fileID: 11400000, guid: 3e75433831b9746818fdcceeae5d227b, type: 2}
+  icon: {fileID: 2800000, guid: 9ee79894b271342b7a5188e2778f8c02, type: 3}
+  prefab: {fileID: 0}
+  resistancePoints: 0
+  hitDamage: 0
+  hitDelay: 0
+  pickupSound: {fileID: 0}

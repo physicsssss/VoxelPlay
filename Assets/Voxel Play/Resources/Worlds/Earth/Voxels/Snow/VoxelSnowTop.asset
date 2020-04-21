@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27712d9aa2d924ef4bfdf3b177b44418, type: 3}
+  m_Name: VoxelSnowTop
+  m_EditorClassIdentifier: 
+  title: 
+  renderType: 0
+  textureTop: {fileID: 2800000, guid: 7962a667c70a24a11bd8474ee1ae712a, type: 3}
+  textureTopEmission: {fileID: 0}
+  textureTopNRM: {fileID: 0}
+  textureTopDISP: {fileID: 0}
+  textureSide: {fileID: 2800000, guid: 68056b9e7584c4824ad79efebfbf4599, type: 3}
+  textureSideEmission: {fileID: 0}
+  textureSideNRM: {fileID: 0}
+  textureSideDISP: {fileID: 0}
+  textureRight: {fileID: 0}
+  textureRightEmission: {fileID: 0}
+  textureRightNRM: {fileID: 0}
+  textureRightDISP: {fileID: 0}
+  textureForward: {fileID: 0}
+  textureForwardEmission: {fileID: 0}
+  textureForwardNRM: {fileID: 0}
+  textureForwardDISP: {fileID: 0}
+  textureLeft: {fileID: 0}
+  textureLeftEmission: {fileID: 0}
+  textureLeftNRM: {fileID: 0}
+  textureLeftDISP: {fileID: 0}
+  textureBottom: {fileID: 2800000, guid: ca75a03c7b5d64e939312e2f7eac141d, type: 3}
+  textureBottomEmission: {fileID: 0}
+  textureBottomNRM: {fileID: 0}
+  textureBottomDISP: {fileID: 0}
+  tintColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  colorVariation: 0.5
+  pickupSound: {fileID: 0}
+  buildSound: {fileID: 8300000, guid: 3a395af208d574a28bcca472e43a8ae0, type: 3}
+  footfalls:
+  - {fileID: 8300000, guid: 1279d6d5711ff4def9dc46b6e6825e09, type: 3}
+  - {fileID: 8300000, guid: 2260ccb4deaa0488ba3666b40b3d9ab6, type: 3}
+  - {fileID: 8300000, guid: 33050cfefb59044a9a05829a5f046362, type: 3}
+  jumpSound: {fileID: 8300000, guid: 4ae12959a77e4427b9d8ea45d19a81d8, type: 3}
+  landingSound: {fileID: 8300000, guid: cdd9c5956822c46c485c174712857826, type: 3}
+  impactSound: {fileID: 8300000, guid: 752e6297b7e3c4ff58a7f8f09a6dd124, type: 3}
+  destructionSound: {fileID: 8300000, guid: 4046885cae94341dfbaf679ce4a92ccc, type: 3}
+  resistancePoints: 10
+  hidden: 0
+  canBeCollected: 1
+  dropItem: {fileID: 0}
+  navigatable: 1
+  windAnimation: 1
+  model: {fileID: 0}
+  gpuInstancing: 0
+  castShadows: 1
+  receiveShadows: 1
+  createGameObject: 0
+  offset: {x: 0, y: 0, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+  rotation: {x: 0, y: 0, z: 0}
+  promotesTo: {fileID: 0}
+  spreads: 0
+  drains: 1
+  spreadDelay: 0
+  spreadDelayRandom: 0
+  diveColor: {r: 0, g: 0.41, b: 0.63, a: 0.83}
+  height: 13
+  playerDamage: 0
+  playerDamageDelay: 2
+  triggerCollapse: 0
+  willCollapse: 0
+  ignoresRayCast: 0
+  allowsTextureRotation: 1
+  placeFacingPlayer: 1
+  triggerEnterEvent: 0
+  triggerWalkEvent: 0

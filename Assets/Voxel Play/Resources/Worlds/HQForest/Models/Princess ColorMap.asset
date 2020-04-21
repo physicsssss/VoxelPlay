@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10626bfb176246efa57ae66cc166204, type: 3}
+  m_Name: Princess ColorMap
+  m_EditorClassIdentifier: 
+  defaultVoxelDefinition: {fileID: 0}
+  colorMap:
+  - color:
+      serializedVersion: 2
+      rgba: 4294967295
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4291931993
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4280427042
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4283453649
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4289255676
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4284900966
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4278409860
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4289374890
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4287137928
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 4283816165
+    voxelDefinition: {fileID: 0}

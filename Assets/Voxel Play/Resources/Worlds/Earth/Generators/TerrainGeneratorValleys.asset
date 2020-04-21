@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ffc129c8af74289a4877ca2b8ea1f5, type: 3}
+  m_Name: TerrainGeneratorValleys
+  m_EditorClassIdentifier: 
+  maxHeight: 255
+  minHeight: -16
+  seaLevel: -1
+  waterLevel: 25
+  steps:
+  - enabled: 1
+    operation: 0
+    noiseTexture: {fileID: 2800000, guid: a098096f8833147feac87b2948d79b92, type: 3}
+    frecuency: 0.1
+    noiseRangeMin: 0
+    noiseRangeMax: 0.8
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 1
+    noiseTexture: {fileID: 2800000, guid: 6dd155b02d17142c79ea0aaf630bf92b, type: 3}
+    frecuency: 0.5
+    noiseRangeMin: 0
+    noiseRangeMax: 1
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 300
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 0
+    inputIndex1: 1
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 1
+    weight1: -0.3
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 104
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0.6
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 202
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 3.8
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 1
+  - enabled: 1
+    operation: 104
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0.065
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 204
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0.11
+    thresholdShift: 0
+    thresholdParam: 0.05
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 0
+    noiseTexture: {fileID: 2800000, guid: 6dd155b02d17142c79ea0aaf630bf92b, type: 3}
+    frecuency: 0.3
+    noiseRangeMin: 0
+    noiseRangeMax: 0.4
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 104
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 7
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0.8
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 301
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 8
+    inputIndex1: 6
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 1
+    weight1: 1
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 204
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 9
+    inputIndex1: 0
+    threshold: 0.12
+    thresholdShift: 0
+    thresholdParam: 7
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 105
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0.14
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  seaDepthMultiplier: 1
+  beachWidth: 0.0009
+  waterVoxel: {fileID: 11400000, guid: f196cfea1816a4cb6b8e24bea23c4d60, type: 2}
+  shoreVoxel: {fileID: 11400000, guid: deeb7144976df446fb6fb98f7bef3729, type: 2}
+  bedrockVoxel: {fileID: 11400000, guid: 62e537e35412d45a799ca5f5da92f457, type: 2}
+  addOre: 1
+  moisture: {fileID: 2800000, guid: 402a6e88e3bf748c38cf643ab4c3fdbb, type: 3}
+  moistureScale: 0.2

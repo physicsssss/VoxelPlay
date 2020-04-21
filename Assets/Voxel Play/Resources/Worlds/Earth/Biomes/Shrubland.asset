@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b11f622d92bb46c38fd5a3a2a3198f5, type: 3}
+  m_Name: Shrubland
+  m_EditorClassIdentifier: 
+  voxelTop: {fileID: 11400000, guid: 58b4f05bfa97242bfa5a614446016e17, type: 2}
+  voxelDirt: {fileID: 11400000, guid: 2e1095f653b644389bd72c3dcd3d9bb3, type: 2}
+  treeDensity: 0.02
+  trees: []
+  vegetationDensity: 0.05
+  vegetation: []
+  zones:
+  - elevationMin: 0.5
+    elevationMax: 0.75
+    moistureMin: 0.35
+    moistureMax: 0.65
+  ores: []

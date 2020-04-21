@@ -1,0 +1,2414 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dac75631074b4c98b0646cbfa8a0137, type: 3}
+  m_Name: Deer
+  m_EditorClassIdentifier: 
+  sizeX: 17
+  sizeY: 26
+  sizeZ: 9
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 0
+  bits:
+  - voxelIndex: 39
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 50
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 107
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 118
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 192
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 203
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 260
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 271
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 345
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 356
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 413
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 424
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 498
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 509
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 566
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 577
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 651
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 652
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 660
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 661
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 662
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 719
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 720
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 728
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 729
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 730
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 805
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 806
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 812
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 813
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 814
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 873
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 874
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 880
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 881
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 882
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 958
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 959
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 960
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 965
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 966
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 967
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 975
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 976
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 977
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 978
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 979
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 980
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 981
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 982
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 983
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 992
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 993
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 994
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 995
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 996
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 997
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 998
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 999
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1000
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1009
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1010
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1011
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1012
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1013
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1014
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1015
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1016
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1017
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1026
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1027
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1028
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1033
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1034
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1035
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1111
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1112
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1113
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1118
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1119
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1120
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1127
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1128
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1129
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1130
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1131
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1132
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1133
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1134
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1135
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1136
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1137
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1144
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1145
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1146
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1147
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1148
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1149
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1150
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1151
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1152
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1153
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1154
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1155
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1161
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1162
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1163
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1164
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1165
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1166
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1167
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1168
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1169
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1170
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1171
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1179
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1180
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1181
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1186
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1187
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1188
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1264
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1265
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1266
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1271
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1272
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1273
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1279
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1280
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1281
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1282
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1283
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1284
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1285
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1286
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1287
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1288
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1289
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1290
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1296
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1297
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1298
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1299
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1300
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1301
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1302
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1303
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1304
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1305
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1306
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1307
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1308
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1313
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1314
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1315
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1316
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1317
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1318
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1319
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1320
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1321
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1322
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1323
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1324
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1332
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1333
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1334
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1339
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1340
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1341
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1417
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1418
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1419
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1424
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1425
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1426
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1431
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1432
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1433
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1434
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1435
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1436
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1437
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1438
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1439
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1440
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1441
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1442
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1443
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1448
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1449
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1450
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1451
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1452
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1453
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1454
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1455
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1456
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1457
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1458
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1459
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1460
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1461
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1465
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1466
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1467
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1468
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1469
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1470
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1471
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1472
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1473
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1474
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1475
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1476
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1477
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1485
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1486
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1487
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1492
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1493
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1494
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1584
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1585
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1586
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1587
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1588
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1589
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1590
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1591
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1592
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1593
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1594
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1595
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1596
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1601
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1602
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1603
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1604
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1605
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1606
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1607
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1608
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1609
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1610
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1611
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1612
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1613
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1618
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1619
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1620
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1621
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1622
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1623
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1624
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1625
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1626
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1627
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1628
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1629
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1630
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1737
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1738
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1739
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1740
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1741
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1742
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1754
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1755
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1756
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1757
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1758
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1759
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1771
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1772
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1773
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1774
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1775
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1776
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1890
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1891
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1892
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1893
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1907
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1908
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1909
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1910
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1924
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 1925
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1926
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 1927
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2043
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2044
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2045
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2060
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2061
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2062
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2077
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2078
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2079
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2196
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2197
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2198
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2213
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2214
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2215
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2230
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2231
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2232
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2348
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2349
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2350
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2351
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2363
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 2364
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2365
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2366
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2367
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2368
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2382
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2383
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2384
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2385
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2501
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2502
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 2503
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2504
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2516
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 2517
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4293125350
+  - voxelIndex: 2518
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2519
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2520
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2521
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2535
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2536
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4281215526
+  - voxelIndex: 2537
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2538
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2639
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2654
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2655
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2656
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2657
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2671
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2672
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2673
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2674
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2688
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2689
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2690
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2691
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2707
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2792
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2809
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 2843
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 2860
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4286678154
+  - voxelIndex: 2962
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 2996
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3099
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3113
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3114
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3115
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3116
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3147
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3148
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3149
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3150
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3167
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3219
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3236
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3237
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3238
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3239
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3252
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3253
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3266
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3300
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3320
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3321
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3338
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3339
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3340
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3341
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3355
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3372
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3392
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3494
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3508
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3543
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3544
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3545
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3645
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3646
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3647
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3696
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3698
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3798
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3800
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3851
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603
+  - voxelIndex: 3953
+    voxelDefinition: {fileID: 0}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4284890603

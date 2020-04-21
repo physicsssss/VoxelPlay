@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b11f622d92bb46c38fd5a3a2a3198f5, type: 3}
+  m_Name: Grassland
+  m_EditorClassIdentifier: 
+  zones:
+  - elevationMin: 0
+    elevationMax: 0.25
+    moistureMin: 0.2
+    moistureMax: 0.35
+  - elevationMin: 0.25
+    elevationMax: 0.5
+    moistureMin: 0.25
+    moistureMax: 0.65
+  showInBiomeMap: 1
+  biomeMapColor: {r: 1, g: 0, b: 0, a: 1}
+  voxelTop: {fileID: 11400000, guid: 2eb131c9498174dae963e73a1c85dd3b, type: 2}
+  voxelDirt: {fileID: 11400000, guid: a3c0aab5688d04654be194830ecd76f3, type: 2}
+  ores:
+  - ore: {fileID: 11400000, guid: bb5aad962142c4568aa59bffed2349fa, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.1
+    depthMin: 0
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 2
+    veinsCountMin: 1
+    veinsCountMax: 2
+  treeDensity: 0.0001
+  trees:
+  - tree: {fileID: 11400000, guid: 364ef7af1f8434a7d9138f52613b29cb, type: 2}
+    probability: 0.5
+  - tree: {fileID: 11400000, guid: ee23712d78d354acb93d86ea99b1c847, type: 2}
+    probability: 0.5
+  vegetationDensity: 0.3
+  vegetation:
+  - vegetation: {fileID: 11400000, guid: 3614d41f021724a6581516352d4315b3, type: 2}
+    probability: 0.9
+  - vegetation: {fileID: 11400000, guid: d2a0fbd11f73c4198808e235747242e2, type: 2}
+    probability: 0.1

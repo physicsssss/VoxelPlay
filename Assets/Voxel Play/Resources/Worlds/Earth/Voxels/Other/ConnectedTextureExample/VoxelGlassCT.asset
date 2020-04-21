@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd13feb34c28444f285bfeeb986b9051, type: 3}
+  m_Name: VoxelGlassCT
+  m_EditorClassIdentifier: 
+  voxelDefinition: {fileID: 11400000, guid: ea135fbddc6b346c1b0fa14404faab76, type: 2}
+  config:
+  - priority: 33
+    tl: 1
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 60d521437e10c4fdfb1bde76a9826f5c, type: 3}
+  - priority: 31
+    tl: 0
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 80ce024a45c7e44aabe6c7edf7ac5d0a, type: 3}
+  - priority: 30
+    tl: 1
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: eb4b1f78afe91443cb6efcccca9762c6, type: 3}
+  - priority: 73
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 87b72b9898727432f9225f3aef4a4037, type: 3}
+  - priority: 70
+    tl: 1
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: ca89a4314c822493b9d9ab11b839ee42, type: 3}
+  - priority: 32
+    tl: 1
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 1715015b368534bd2a1058c03afc934c, type: 3}
+  - priority: 74
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 7e16f61ddcc074f12b17dae061c43aea, type: 3}
+  - priority: 75
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 97b2bec93176c42468f8a637be04ee19, type: 3}
+  - priority: 72
+    tl: 1
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: a64740a28c6a4483a843fb2923c0a24d, type: 3}
+  - priority: 1
+    tl: 1
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: d48f4b2a4945c45d683835add07e7587, type: 3}
+  - priority: 71
+    tl: 0
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: dfd4e67a611b14074acb2d58ef5c5e8a, type: 3}
+  - priority: 51
+    tl: 1
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 6e22c59b0e5db4309af79c5672ab93bf, type: 3}
+  - priority: 50
+    tl: 0
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: d41cd33a60d474c49a33f90d1ce0612d, type: 3}
+  - priority: 53
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: b8ceeb47b37e04cefbc1cca4a8ce0119, type: 3}
+  - priority: 52
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 02feec8195ed545b38b02ad367747124, type: 3}
+  - priority: 41
+    tl: 0
+    t: 1
+    tr: 0
+    l: 0
+    r: 1
+    bl: 0
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 9de1f1299f58845f7b3ea71c9167a179, type: 3}
+  - priority: 40
+    tl: 0
+    t: 1
+    tr: 1
+    l: 0
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 4c4c848ef8dc54efa8da63328c10f7c9, type: 3}
+  - priority: 43
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 0
+    bl: 1
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 80478bf7eec6e4c0d8b4ab223f7c2fb0, type: 3}
+  - priority: 42
+    tl: 1
+    t: 1
+    tr: 0
+    l: 1
+    r: 0
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: b9a0ccf30c5b140b3860fc4889e7f661, type: 3}
+  - priority: 6
+    tl: 1
+    t: 1
+    tr: 1
+    l: 1
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 2a6534d19a01e4941be80b50298d6e8c, type: 3}
+  - priority: 5
+    tl: 0
+    t: 1
+    tr: 1
+    l: 0
+    r: 1
+    bl: 0
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 8fd84e03f2bc6426aaa15838f9c87a35, type: 3}
+  - priority: 8
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 1
+    bl: 1
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 931a72cdb06594da8b36d705b3f3f482, type: 3}
+  - priority: 7
+    tl: 1
+    t: 1
+    tr: 0
+    l: 1
+    r: 0
+    bl: 1
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: e9c71aa653f4640858901ee5e3d00637, type: 3}
+  - priority: 3
+    tl: 0
+    t: 0
+    tr: 0
+    l: 0
+    r: 1
+    bl: 0
+    b: 1
+    br: 1
+    texture: {fileID: 2800000, guid: 78a1e41f97a694e139b7f3658b07e76e, type: 3}
+  - priority: 3
+    tl: 1
+    t: 1
+    tr: 0
+    l: 1
+    r: 0
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 95e058e9def934ceba5963235c06fa24, type: 3}
+  - priority: 3
+    tl: 0
+    t: 1
+    tr: 1
+    l: 0
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 9a989ed50ce0b42c49a3fed5b7b6141d, type: 3}
+  - priority: 3
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 0
+    bl: 1
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: c232f8eab8896460ea53901aced23013, type: 3}
+  - priority: 4
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 0
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: a773267fb832045798983228d310db3b, type: 3}
+  - priority: 20
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 0efeebd009c714ac2bbacf60c5d1e91d, type: 3}
+  - priority: 23
+    tl: 0
+    t: 1
+    tr: 0
+    l: 0
+    r: 0
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: c35fe9ce5edbe4c28b68971990048451, type: 3}
+  - priority: 4
+    tl: 0
+    t: 1
+    tr: 0
+    l: 0
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 194a7e7d1b64d448491ba4e5eaac5ba7, type: 3}
+  - priority: 4
+    tl: 0
+    t: 0
+    tr: 0
+    l: 0
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 51a5897bf2c9943bfa7b693b75d89db9, type: 3}
+  - priority: 4
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 0
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 2e5743e96e7e34090a4c912b56de30ad, type: 3}
+  - priority: 24
+    tl: 0
+    t: 0
+    tr: 0
+    l: 0
+    r: 0
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 4edc66fae3e6448a6b5234f72e921e89, type: 3}
+  - priority: 25
+    tl: 0
+    t: 1
+    tr: 0
+    l: 0
+    r: 0
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 2f3362653fbd145aa90b9a135c0324a6, type: 3}
+  - priority: 21
+    tl: 0
+    t: 0
+    tr: 0
+    l: 0
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 65ccb1567d43648fbb914ac0636803d3, type: 3}
+  - priority: 22
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 0
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: 2b2a5d7c31ab84902b0bc952a6e57f46, type: 3}
+  - priority: 14
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 0
+    br: 0
+    texture: {fileID: 2800000, guid: aacbc7330986649e28e3365028a1a132, type: 3}
+  - priority: 14
+    tl: 0
+    t: 1
+    tr: 0
+    l: 0
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 8790a9fc0e22946428408800d03769f4, type: 3}
+  - priority: 14
+    tl: 0
+    t: 0
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: a3790aeead7e84a629409522d2549f20, type: 3}
+  - priority: 14
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 0
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: d7d8cf9350439452b83a086def56a8b2, type: 3}
+  - priority: 14
+    tl: 0
+    t: 1
+    tr: 0
+    l: 1
+    r: 1
+    bl: 0
+    b: 1
+    br: 0
+    texture: {fileID: 2800000, guid: 4b335c60cd7504a998c7c41ddc34cf32, type: 3}
