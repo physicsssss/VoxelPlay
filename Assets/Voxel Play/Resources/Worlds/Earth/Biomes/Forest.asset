@@ -39,7 +39,7 @@ MonoBehaviour:
   trees:
   - tree: {fileID: 11400000, guid: c3f261faae6be144fbdbf7af014b8ed8, type: 2}
     probability: 0.2
-  - tree: {fileID: 11400000, guid: 60e5b562306847243b35fddd7d350e1f, type: 2}
+  - tree: {fileID: 0}
     probability: 0.8
   vegetationDensity: 0.5
   vegetation:

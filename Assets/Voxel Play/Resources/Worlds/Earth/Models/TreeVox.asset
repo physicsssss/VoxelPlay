@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: TreeVox
   m_EditorClassIdentifier: 
   title: 
-  renderType: 0
+  renderType: 9
   overrideMaterial: 0
   texturesByMaterial: 0
   overrideMaterialNonGeo: {fileID: 0}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: 273dbc4648f5c473ba0677c5187536aa, type: 3}
+  textureTop: {fileID: 2800000, guid: a017c5e2640dbbc4393ef8a73f7aa3c4, type: 3}
   textureTopEmission: {fileID: 0}
   textureTopNRM: {fileID: 0}
   textureTopDISP: {fileID: 0}
-  textureSide: {fileID: 2800000, guid: c5bf1755c70a4498baf2b2fc45497a79, type: 3}
+  textureSide: {fileID: 2800000, guid: a017c5e2640dbbc4393ef8a73f7aa3c4, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -39,7 +39,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: 273dbc4648f5c473ba0677c5187536aa, type: 3}
+  textureBottom: {fileID: 2800000, guid: a017c5e2640dbbc4393ef8a73f7aa3c4, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}

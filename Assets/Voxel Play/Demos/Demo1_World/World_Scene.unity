@@ -404,7 +404,7 @@ MonoBehaviour:
   transparentBling: 1
   useComputeBuffers: 0
   previewTouchUIinEditor: 0
-  prewarmChunksInEditor: 22723
+  prewarmChunksInEditor: 32675
   enableTinting: 0
   enableOutline: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 0.5}
@@ -416,7 +416,7 @@ MonoBehaviour:
   seeThroughAlpha: 0.15
   _seeThroughHeightOffset: 1
   enableBrightPointLights: 1
-  _visibleChunksDistance: 10
+  _visibleChunksDistance: 15
   forceChunkDistance: 4
   unloadFarChunks: 1
   distanceAnchor: {fileID: 1716317430}
