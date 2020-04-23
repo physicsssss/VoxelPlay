@@ -7,7 +7,7 @@ using VoxelPlay;
 public class VoxelPlayReplaceModelDefinitionTool : EditorWindow {
 
 	public ModelDefinition md;
-	public VoxelDefinition vd1, vd2;
+	public VoxelDefinition vd1, vd2,vd3;
 	public bool replaceColor;
 	public Color color = Color.white;
 
@@ -40,6 +40,11 @@ public class VoxelPlayReplaceModelDefinitionTool : EditorWindow {
 		vd2 = (VoxelDefinition)EditorGUILayout.ObjectField (vd2, typeof(VoxelDefinition), false);
 		EditorGUILayout.EndHorizontal ();
 
+		EditorGUILayout.BeginHorizontal();
+		EditorGUILayout.LabelField("With Voxel2 Random", GUILayout.Width(120));
+		vd3 = (VoxelDefinition)EditorGUILayout.ObjectField(vd3, typeof(VoxelDefinition), false);
+		EditorGUILayout.EndHorizontal();
+
 
 		EditorGUILayout.BeginHorizontal ();
 		EditorGUILayout.LabelField ("Replace Color", GUILayout.Width (120));
@@ -56,10 +61,43 @@ public class VoxelPlayReplaceModelDefinitionTool : EditorWindow {
 		if (GUILayout.Button ("Replace!")) {
 			Replace ();
 		}
+		if (GUILayout.Button("RandomizeReplace"))
+		{
+			RandomReplace();
+		}
 
 	}
 
+	void RandomReplace()
+	{
+		if (md == null || vd1 == null || vd2 == null)
+			return;
 
+		int changes = 0;
+		for (int k = 0; k < md.bits.Length; k++)
+		{
+			if (md.bits[k].voxelDefinition == vd1)
+			{
+				changes++;
+				if (Random.Range(0, 10) > 5)
+				{
+					md.bits[k].voxelDefinition = vd2;
+				}
+				else
+				{
+					md.bits[k].voxelDefinition = vd3;
+				}
+				if (replaceColor)
+					md.bits[k].color = color;
+			}
+		}
+
+		Debug.Log("Modified " + changes + " voxels in model...");
+		EditorUtility.SetDirty(md);
+		AssetDatabase.SaveAssets();
+		AssetDatabase.Refresh();
+
+	}
 	void Replace() {
 		if (md == null || vd1 == null || vd2 == null)
 			return;

@@ -25,13 +25,13 @@ namespace VoxelPlay
         [Header ("Attack")]
         [SerializeField] float _hitDelay = 0.2f;
         [SerializeField] int _hitDamage = 3;
-        [SerializeField] float _hitRange = 5f;
+        [SerializeField] float _hitRange = 30f;
         [SerializeField] int _hitDamageRadius = 1;
 
         [Header ("Bare Hands")]
         public float bareHandsHitDelay = 0.2f;
         public int bareHandsHitDamage = 3;
-        public float bareHandsHitRange = 5f;
+        public float bareHandsHitRange = 30f;
         public int bareHandsHitDamageRadius = 1;
 
         int _selectedItemIndex;
@@ -129,7 +129,7 @@ namespace VoxelPlay
                 }
                 hitDamage = items [_selectedItemIndex].item.GetPropertyValue<int> ("hitDamage", bareHandsHitDamage);
                 hitDelay = items [_selectedItemIndex].item.GetPropertyValue<float> ("hitDelay", bareHandsHitDelay);
-                hitRange = items [_selectedItemIndex].item.GetPropertyValue<float> ("hitRange", bareHandsHitRange);
+                hitRange = 30;//TODO: RESET RANGE items [_selectedItemIndex].item.GetPropertyValue<float> ("hitRange", bareHandsHitRange);
                 hitDamageRadius = items [_selectedItemIndex].item.GetPropertyValue<int> ("hitDamageRadius", bareHandsHitDamageRadius);
 
                 ShowSelectedItem ();

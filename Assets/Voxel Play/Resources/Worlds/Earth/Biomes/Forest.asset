@@ -37,15 +37,15 @@ MonoBehaviour:
     veinsCountMax: 4
   treeDensity: 0.001
   trees:
-  - tree: {fileID: 11400000, guid: c3f261faae6be144fbdbf7af014b8ed8, type: 2}
+  - tree: {fileID: 11400000, guid: 81b454ab472adb145b74d3a3ff7b7da7, type: 2}
     probability: 0.2
   - tree: {fileID: 0}
     probability: 0.8
-  vegetationDensity: 0.5
+  vegetationDensity: 0.18
   vegetation:
-  - vegetation: {fileID: 11400000, guid: 9e4ad9f1762b6408c835d38c4f584938, type: 2}
-    probability: 0.2
-  - vegetation: {fileID: 11400000, guid: de348876804064cb6a5af4ff93f201e7, type: 2}
-    probability: 0.6
-  - vegetation: {fileID: 11400000, guid: 61db311d340784e358e58dfac47d1526, type: 2}
-    probability: 0.2
+  - vegetation: {fileID: 11400000, guid: f4b2a15e6b5687c469261fa8a3f83b7d, type: 2}
+    probability: 0.1
+  - vegetation: {fileID: 11400000, guid: 8d1cc38185d9b364fb4fdee1c7831351, type: 2}
+    probability: 0.07
+  - vegetation: {fileID: 11400000, guid: 62fce137c5b67fb47867df290ca34bba, type: 2}
+    probability: 0.84

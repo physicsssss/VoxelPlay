@@ -20,11 +20,11 @@ MonoBehaviour:
     type: 2}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: a017c5e2640dbbc4393ef8a73f7aa3c4, type: 3}
+  textureTop: {fileID: 2800000, guid: 3128f05837f0899459630fa12ba1bf7e, type: 3}
   textureTopEmission: {fileID: 0}
-  textureTopNRM: {fileID: 2800000, guid: 73b1639e2b56b9f49bbf1dc89ae46573, type: 3}
-  textureTopDISP: {fileID: 2800000, guid: 54e113631fb15ce4cb7bfc1e2ace7aea, type: 3}
-  textureSide: {fileID: 2800000, guid: a017c5e2640dbbc4393ef8a73f7aa3c4, type: 3}
+  textureTopNRM: {fileID: 0}
+  textureTopDISP: {fileID: 0}
+  textureSide: {fileID: 2800000, guid: 3128f05837f0899459630fa12ba1bf7e, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: a017c5e2640dbbc4393ef8a73f7aa3c4, type: 3}
+  textureBottom: {fileID: 2800000, guid: 3128f05837f0899459630fa12ba1bf7e, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}
@@ -55,8 +55,8 @@ MonoBehaviour:
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: 3a395af208d574a28bcca472e43a8ae0, type: 3}
   footfalls:
-  - {fileID: 8300000, guid: 601d127bc206b4f31b800044802281ac, type: 3}
   - {fileID: 8300000, guid: 4e1e2f5b5230941699c66f6261469eec, type: 3}
+  - {fileID: 8300000, guid: 601d127bc206b4f31b800044802281ac, type: 3}
   jumpSound: {fileID: 8300000, guid: 4ae12959a77e4427b9d8ea45d19a81d8, type: 3}
   landingSound: {fileID: 8300000, guid: d374b5cdc21234dddbddd00d70f47e7b, type: 3}
   impactSound: {fileID: 8300000, guid: b237fe58d85f1447ba6d8a675c379d15, type: 3}
