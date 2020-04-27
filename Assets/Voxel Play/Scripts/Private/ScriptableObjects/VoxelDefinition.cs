@@ -139,6 +139,9 @@ namespace VoxelPlay {
         [Range(0,15), Tooltip("Amount of emitting light")]
         public byte lightIntensity;
 
+        [Tooltip("Min Weapon Level to destroy voxel")]
+        public int weaponLevel;
+
         [Tooltip("Sound played when voxel is picked up")]
         public AudioClip pickupSound;
 

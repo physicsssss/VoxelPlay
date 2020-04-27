@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d5d8e3721e240edb1241906352c93a, type: 3}
+  m_Name: PetrolDrop
+  m_EditorClassIdentifier: 
+  title: 
+  category: 0
+  voxelType: {fileID: 11400000, guid: f4b89fa063de07044890f0ae6e8c0cd8, type: 2}
+  model: {fileID: 0}
+  icon: {fileID: 2800000, guid: a4ce208caf66c514d8af0aad610e69c5, type: 3}
+  color:
+    serializedVersion: 2
+    rgba: 4294967295
+  prefab: {fileID: 0}
+  useSound: {fileID: 0}
+  canBePicked: 1
+  pickMode: 0
+  pickupSound: {fileID: 0}
+  properties: []
+  lightIntensity: 15

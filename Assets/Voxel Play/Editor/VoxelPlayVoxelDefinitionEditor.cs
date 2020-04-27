@@ -28,7 +28,7 @@ namespace VoxelPlay
         SerializedProperty triggerEnterEvent, triggerWalkEvent;
         SerializedProperty biomeDirtCounterpart, seeThroughMode, seeThroughVoxel;
         SerializedProperty animationSpeed, animationTextures;
-        SerializedProperty generateColliders, lightIntensity;
+        SerializedProperty generateColliders, lightIntensity, weaponLevel;
 
         GUIContent [] renderTypesNames = {
             new GUIContent ("Opaque 3 Textures (no ambient occlusion)"),
@@ -163,6 +163,7 @@ namespace VoxelPlay
             seeThroughVoxel = serializedObject.FindProperty ("seeThroughVoxel");
 
             lightIntensity = serializedObject.FindProperty ("lightIntensity");
+            weaponLevel = serializedObject.FindProperty("weaponLevel");
         }
 
 
@@ -474,6 +475,7 @@ namespace VoxelPlay
                 }
             }
             EditorGUILayout.PropertyField (lightIntensity);
+            EditorGUILayout.PropertyField(weaponLevel);
 
             serializedObject.ApplyModifiedProperties ();
 

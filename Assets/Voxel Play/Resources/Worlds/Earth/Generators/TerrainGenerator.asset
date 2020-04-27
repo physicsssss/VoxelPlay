@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TerrainGenerator
   m_EditorClassIdentifier: 
   maxHeight: 255
-  minHeight: -16
+  minHeight: -50
   seaLevel: -1
   waterLevel: 25
   steps:
@@ -22,7 +22,7 @@ MonoBehaviour:
     noiseTexture: {fileID: 2800000, guid: a098096f8833147feac87b2948d79b92, type: 3}
     frecuency: 0.001
     noiseRangeMin: 0
-    noiseRangeMax: 0.3
+    noiseRangeMax: 0.508
     inputIndex0: 0
     inputIndex1: 0
     threshold: 0

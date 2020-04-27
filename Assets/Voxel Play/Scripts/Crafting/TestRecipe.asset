@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a15fed76fe9724486ab6077deb89aa, type: 3}
+  m_Name: TestRecipe
+  m_EditorClassIdentifier: 
+  recipes:
+  - name: Bricks
+    Item: []
+    itemCount: 0
+    voxelItem:
+    - {fileID: 11400000, guid: d8b6800a316fb4dba841ff7193772760, type: 2}
+    voxelCount: 50
+    itemResult: []
+    itemResultCount: 0
+    voxelResult:
+    - {fileID: 11400000, guid: b4182f7eff8a84760822df25bcb40e22, type: 2}
+    voxelResultCount: 1

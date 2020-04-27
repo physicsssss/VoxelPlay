@@ -3,20 +3,15 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b11f622d92bb46c38fd5a3a2a3198f5, type: 3}
   m_Name: Rainforest
   m_EditorClassIdentifier: 
-  voxelTop: {fileID: 11400000, guid: 192103c07c9d84293978d74e575698c4, type: 2}
-  voxelDirt: {fileID: 11400000, guid: e1d70a5652a68408a89736afe490f174, type: 2}
-  treeDensity: 0.02
-  trees: []
-  vegetationDensity: 0.05
-  vegetation: []
   zones:
   - elevationMin: 0
     elevationMax: 0.25
@@ -26,15 +21,156 @@ MonoBehaviour:
     elevationMax: 0.5
     moistureMin: 0.85
     moistureMax: 1
+  showInBiomeMap: 1
+  biomeMapColor: {r: 1, g: 0, b: 1, a: 1}
+  voxelTop: {fileID: 11400000, guid: 192103c07c9d84293978d74e575698c4, type: 2}
+  voxelDirt: {fileID: 11400000, guid: e1d70a5652a68408a89736afe490f174, type: 2}
   ores:
   - ore: {fileID: 11400000, guid: 0a7701ce598c04d908cab9a8ebf0e708, type: 2}
-    probabilityMin: 0
+    probabilityMin: 0.05
+    probabilityMax: 0.3
+    depthMin: 0
+    depthMax: 500
+    veinMinSize: 5
+    veinMaxSize: 10
+    veinsCountMin: 2
+    veinsCountMax: 8
+  - ore: {fileID: 11400000, guid: 8ed3604eddcc1a646b15ea0fff833728, type: 2}
+    probabilityMin: 0.05
     probabilityMax: 0.2
     depthMin: 10
     depthMax: 500
-    veinMinSize: 4
+    veinMinSize: 1
     veinMaxSize: 8
     veinsCountMin: 1
-    veinsCountMax: 2
-  biomeMapColor: {r: 1, g: 0, b: 1, a: 1}
-  showInBiomeMap: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 8722cea0e3666d9498cf387ca3bb188a, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.01
+    depthMin: 50
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 6
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 937abf5d67c38ef4db4865f8308b7849, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.001
+    depthMin: 50
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 5
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: bb5aad962142c4568aa59bffed2349fa, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.02
+    depthMin: 10
+    depthMax: 500
+    veinMinSize: 2
+    veinMaxSize: 6
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 0d398490c4c55439893b1e1c9057d551, type: 2}
+    probabilityMin: 0.05
+    probabilityMax: 0.15
+    depthMin: 20
+    depthMax: 300
+    veinMinSize: 1
+    veinMaxSize: 8
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 2076d5d235f9ac9429cbf3b6cba74bac, type: 2}
+    probabilityMin: 0.1
+    probabilityMax: 0.3
+    depthMin: 10
+    depthMax: 200
+    veinMinSize: 1
+    veinMaxSize: 8
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 05ce5e91cc61eed48880296083e532d8, type: 2}
+    probabilityMin: 0.1
+    probabilityMax: 0.2
+    depthMin: 10
+    depthMax: 200
+    veinMinSize: 1
+    veinMaxSize: 8
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 13af292f08e96d44e9803eed74aeaed7, type: 2}
+    probabilityMin: 0.01
+    probabilityMax: 0.05
+    depthMin: 50
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 5
+    veinsCountMin: 0
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 790438f2d0f494a448632ae3d58675df, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.001
+    depthMin: 50
+    depthMax: 500
+    veinMinSize: 0
+    veinMaxSize: 6
+    veinsCountMin: 0
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 8743ee8f6e2d4814c8ad91b08694df3f, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.001
+    depthMin: 50
+    depthMax: 500
+    veinMinSize: 0
+    veinMaxSize: 6
+    veinsCountMin: 0
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: aae1cbb4f95fbc64da4076348d315f4b, type: 2}
+    probabilityMin: 0
+    probabilityMax: 0.001
+    depthMin: 50
+    depthMax: 500
+    veinMinSize: 0
+    veinMaxSize: 6
+    veinsCountMin: 0
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 2a15c1ea17b4c10498c2f5f2b92700a8, type: 2}
+    probabilityMin: 0.5
+    probabilityMax: 0.8
+    depthMin: 0
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 10
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: 75f1d0174e037084c94ee267a40ae0ee, type: 2}
+    probabilityMin: 0.558
+    probabilityMax: 0.85
+    depthMin: 0
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 10
+    veinsCountMin: 1
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: f4b89fa063de07044890f0ae6e8c0cd8, type: 2}
+    probabilityMin: 0.05
+    probabilityMax: 0.3
+    depthMin: 10
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 5
+    veinsCountMin: 2
+    veinsCountMax: 5
+  - ore: {fileID: 11400000, guid: f2e9a490315cc4c3f87f51bf2f7b7405, type: 2}
+    probabilityMin: 0.03
+    probabilityMax: 0.3
+    depthMin: 70
+    depthMax: 500
+    veinMinSize: 1
+    veinMaxSize: 5
+    veinsCountMin: 0
+    veinsCountMax: 4
+  treeDensity: 0.02
+  trees: []
+  vegetationDensity: 0.05
+  vegetation: []
