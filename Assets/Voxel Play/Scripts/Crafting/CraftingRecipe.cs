@@ -8,19 +8,19 @@ using VoxelPlay;
 public struct Recipe
 {
     public string name;
-    public List<ItemDefinition> Item;
+    public List<ItemDefinition> Items;
     [Range(1, 999)]
     public int itemCount;
 
-    public List<VoxelDefinition> voxelItem;
+    public List<VoxelDefinition> voxelItems;
     [Range(1, 999)]
     public int voxelCount;
 
-    public List<ItemDefinition> itemResult;
+    public ItemDefinition itemResult;
     [Range(1,999)]
     public int itemResultCount;
 
-    public List<VoxelDefinition> voxelResult;
+    public VoxelDefinition voxelResult;
     [Range(1, 999)]
     public int voxelResultCount;
 }
@@ -32,13 +32,37 @@ public class CraftingRecipe : ScriptableObject
     //public List<ItemAmount>itemResults;
     
 
-    public bool CanCraft(IItemContainer itemContainer)
+    public ItemDefinition CanCraft(IItemContainer itemContainer)
     {
+        List<ItemDefinition> listCraftables = new List<ItemDefinition>();
         foreach (Recipe recipe in recipes)
         {
-            
+            bool containsAllItems = true;
+            if (recipe.Items != null)
+            {
+                
+                foreach (ItemDefinition singleItem in recipe.Items) 
+                {
+                    if (!itemContainer.ContainsItem(singleItem))
+                    {
+                        containsAllItems = false;
+                    }
+                }
+                
+
+            }
+            if (recipe.voxelItems != null)
+            {
+                foreach (VoxelDefinition singleVItem in recipe.voxelItems)
+                {
+                    if (!itemContainer.ContainsItem(singleVItem.dropItem))
+                    {
+                        containsAllItems = false;
+                    }
+                }
+            }
         }
-        return true;
+        return null;
     }
 
     public void Craft(IItemContainer itemContainer)
@@ -47,9 +71,9 @@ public class CraftingRecipe : ScriptableObject
         {
             foreach (Recipe recipe in recipes)
             {
-                for (int i = 0; i < recipe.Item.Count; i++)
-                {
-                }
+                //for (int i = 0; i < recipe.Item.Count; i++)
+                //{
+                //}
             }
         }
         if (CanCraft(itemContainer))
