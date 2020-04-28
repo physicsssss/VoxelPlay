@@ -27,6 +27,9 @@ namespace VoxelPlay
         [SerializeField] int _hitDamage = 3;
         [SerializeField] float _hitRange = 30f;
         [SerializeField] int _hitDamageRadius = 1;
+        [SerializeField] int _inventorySize = 16; // Ayaz: Added for custom inventory size
+        [SerializeField] bool _isInventoryFull = false; // Ayaz: Added tp check if inventory is full
+        [SerializeField] int setInventorySizeDemo = 0; // Ayaz: just to test Remove afterwords
 
         [Header ("Bare Hands")]
         public float bareHandsHitDelay = 0.2f;
@@ -70,6 +73,16 @@ namespace VoxelPlay
             set { _hitDamageRadius = value; }
         }
  
+            public virtual int inventorySize{
+            get {return _inventorySize;}
+            set {_inventorySize = value;}
+        }
+ 
+        public virtual bool isInventoryFull{
+            get{return _isInventoryFull;}
+            set {_isInventoryFull = value;}
+        }
+
         /// <summary>
         /// Gets or sets the index of the currently selected item in the player.items collection
         /// </summary>
@@ -354,6 +367,10 @@ namespace VoxelPlay
                     return false;
                 }
             }
+
+            if(isInventoryFull) // Ayaz: Check if there is no space available for new items in inventory
+                return false;
+            
             i = new InventoryItem ();
             i.item = newItem;
             i.quantity = quantity;
@@ -364,7 +381,44 @@ namespace VoxelPlay
                 ShowSelectedItem ();
             }
 
+            if(items.Count >= inventorySize)
+            {
+                isInventoryFull = true;
+            }
+
             return true;
+        }
+
+        /// <summary>
+        /// Checks if item is already present in the inventory outside of this class
+        /// </summary>
+        public virtual bool ExternalCheckIfItemIsInInventory(ItemDefinition newItem)
+        {
+            int itemsCount = items.Count;
+            for (int k = 0; k < itemsCount; k++) {
+                if (items [k].item == newItem) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Sets inventory size and refreshes UI
+        /// </summary>
+        public virtual void SetInventorySize(int newSize)
+        {
+            if(newSize < 0)
+                return;
+
+            if(newSize < inventorySize)
+                isInventoryFull = true;
+            else if(newSize > inventorySize && playerItems.Count < newSize)
+                isInventoryFull = false; 
+
+            inventorySize = newSize;
+            VoxelPlayUIDefault.instance.AccessToggleInventoryVisibility(true);
         }
 
         /// <summary>
@@ -402,6 +456,15 @@ namespace VoxelPlay
             return hitDamageRadius;
         }
 
+        public virtual int GetInventorySize()
+        {
+            return inventorySize;
+        }
+
+        public virtual bool GetInventoryFullStatus()
+        {
+            return isInventoryFull;
+        }
 
         /// <summary>
         /// Reduces one unit from currently selected item and returns a copy of the InventoryItem or InventoryItem.Null if nothing selected
@@ -420,6 +483,7 @@ namespace VoxelPlay
                 if (i.quantity <= 0) {
                     items.RemoveAt (_selectedItemIndex);
                     selectedItemIndex = 0;
+                    isInventoryFull = false; // Ayaz: space now available in inventory upon removal of an item
                 } else {
                     items [_selectedItemIndex] = i; // update back because it's a struct
                 }
@@ -447,6 +511,7 @@ namespace VoxelPlay
                     if (i.quantity <= 0) {
                         items.RemoveAt (k);
                         selectedItemIndex = 0;
+                        isInventoryFull = false; // Ayaz: space now available in inventory upon removal of an item
                     } else {
                         items [_selectedItemIndex] = i; // update back because it's a struct
                     }

@@ -115,11 +115,22 @@ namespace VoxelPlay
             float dy = playerPosition.y - pos.y;
             float dz = playerPosition.z - pos.z;
 
-            if (pickingUp) {
-                pos.x += dx * 0.25f;
-                pos.y += dy * 0.25f;
-                pos.z += dz * 0.25f;
-                transform.position = pos;
+            if (pickingUp)
+            {
+                if (!VoxelPlayPlayer.instance.GetInventoryFullStatus ())
+                {
+                    pos.x += dx * 0.25f;
+                    pos.y += dy * 0.25f;
+                    pos.z += dz * 0.25f;
+                    transform.position = pos;
+                }
+                else if (VoxelPlayPlayer.instance.ExternalCheckIfItemIsInInventory (itemDefinition))
+                {
+                    pos.x += dx * 0.25f;
+                    pos.y += dy * 0.25f;
+                    pos.z += dz * 0.25f;
+                    transform.position = pos;
+                }
             }
 
             if (Time.time - creationTime > 1f) {
