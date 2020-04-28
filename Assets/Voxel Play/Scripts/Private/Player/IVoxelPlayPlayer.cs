@@ -12,6 +12,7 @@ namespace VoxelPlay
         // Inventory related
         void AddInventoryItem (ItemDefinition [] newItems);
         bool AddInventoryItem (ItemDefinition newItem, float quantity = 1);
+        bool ExternalCheckIfItemIsInInventory(ItemDefinition newItem);
         void PickUpItem (ItemDefinition newItem, float quantity = 1);
         void UnSelectItem ();
         bool SetSelectedItem (int itemIndex);
@@ -32,6 +33,9 @@ namespace VoxelPlay
         float GetHitRange ();
         int GetHitDamage ();
         int GetHitDamageRadius ();
+        int GetInventorySize();
+        bool GetInventoryFullStatus();
+        void SetInventorySize(int newSize);
 
         // General character stats
         string playerName { get; set; }

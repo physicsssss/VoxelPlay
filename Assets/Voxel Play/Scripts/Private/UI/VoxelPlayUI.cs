@@ -124,6 +124,7 @@ namespace VoxelPlay {
         /// Shows/hides a debug window
         /// </summary>
         public virtual void ToggleDebugWindow (bool visible) { }
+        public virtual void AccessToggleInventoryVisibility(bool val) { } // Ayaz: used to access the CheckInventoryUI() method outside of the class
 
 
         public void Awake ()
