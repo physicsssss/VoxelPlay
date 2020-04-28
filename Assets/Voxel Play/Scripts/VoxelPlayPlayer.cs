@@ -28,6 +28,7 @@ namespace VoxelPlay
         [SerializeField] float _hitRange = 30f;
         [SerializeField] int _hitDamageRadius = 1;
         [SerializeField] int _inventorySize = 16; // Ayaz: Added for custom inventory size
+        [SerializeField] int _recipeSize = 16; //Ahmed: idk why but i am just copying ^ :p
         [SerializeField] bool _isInventoryFull = false; // Ayaz: Added tp check if inventory is full
         [SerializeField] int setInventorySizeDemo = 0; // Ayaz: just to test Remove afterwords
 
@@ -77,7 +78,10 @@ namespace VoxelPlay
             get {return _inventorySize;}
             set {_inventorySize = value;}
         }
- 
+            public virtual int recipeSize{
+            get { return _recipeSize; }
+            set { _recipeSize = value; }
+        }
         public virtual bool isInventoryFull{
             get{return _isInventoryFull;}
             set {_isInventoryFull = value;}
@@ -466,6 +470,10 @@ namespace VoxelPlay
             return inventorySize;
         }
 
+        public virtual int GetRecipeSize()
+        {
+            return recipeSize;
+        }
         public virtual bool GetInventoryFullStatus()
         {
             return isInventoryFull;

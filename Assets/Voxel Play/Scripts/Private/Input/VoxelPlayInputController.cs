@@ -30,7 +30,8 @@ namespace VoxelPlay {
 		SeeThroughDown,
         Escape,
         DebugWindow,
-        Console
+        Console,
+		Recipe
     }
 
 	public enum InputButtonPressState {

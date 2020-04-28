@@ -89,12 +89,21 @@ namespace VoxelPlay {
         /// Show/hide inventory
         /// </summary>
         public virtual void ToggleInventoryVisibility (bool state) { }
+        /// <summary>
+        /// Show/hide Recipe
+        /// </summary>
+        public virtual void ToggleRecipeVisibility(bool state) { }
+
 
         /// <summary>
         /// Advances to next inventory page
         /// </summary>
         public virtual void InventoryNextPage () { }
 
+        /// <summary>
+        /// Advances to next Recipe page
+        /// </summary>
+        public virtual void RecipeNextPage() { }
         /// <summary>
         /// Shows previous inventory page
         /// </summary>
@@ -105,6 +114,10 @@ namespace VoxelPlay {
         /// </summary>
         public virtual void RefreshInventoryContents () { }
 
+        /// <summary>
+        /// Refreshes the recipe contents
+        /// </summary>
+        public virtual void RefreshRecipeContents() { }
         /// <summary>
         /// Updates selected item representation on screen
         /// </summary>

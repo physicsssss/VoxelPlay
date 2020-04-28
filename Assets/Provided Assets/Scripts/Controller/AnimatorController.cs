@@ -19,17 +19,8 @@ public class AnimatorController : MonoBehaviour
 
     void TakeInput()
     {
-        if(Input.GetKey(KeyCode.UpArrow))
-        {
-            animator.SetInteger("isMoving", 1);
-        }
-        else if(Input.GetKey(KeyCode.DownArrow))
-        {
-            animator.SetInteger("isMoving", -1);
-        }
-        else
-        {
-            animator.SetInteger("isMoving", 0);
-        }
+        
+            animator.SetInteger("isMoving", (int)Input.GetAxis("Vertical"));
+        
     }
 }

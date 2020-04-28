@@ -61,6 +61,7 @@ namespace VoxelPlay
 			ReadKeyState (InputButtonNames.Fly, KeyCode.F);
 			ReadKeyState (InputButtonNames.Crouch, KeyCode.C);
 			ReadKeyState (InputButtonNames.Inventory, KeyCode.Tab);
+			ReadKeyState(InputButtonNames.Recipe, KeyCode.N);
 			ReadKeyState (InputButtonNames.Light, KeyCode.L);
 			ReadKeyState (InputButtonNames.ThrowItem, KeyCode.G);
 			ReadKeyState (InputButtonNames.Action, KeyCode.T);

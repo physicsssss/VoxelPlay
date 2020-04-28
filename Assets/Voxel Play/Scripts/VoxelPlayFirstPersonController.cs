@@ -674,7 +674,7 @@ namespace VoxelPlay
                 if (Physics.SphereCast (ray, 0.3f, 1f)) {
                     m_CharacterController.stepOffset = 1.1f;
                 } else {
-                    m_CharacterController.stepOffset = 8f;
+                    m_CharacterController.stepOffset = 1f;
                 }
                 m_CollisionFlags = m_CharacterController.Move (finalMove);
                 // check limits

@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zones:
   - elevationMin: 0
-    elevationMax: 0.5
+    elevationMax: 0.688
     moistureMin: 0
     moistureMax: 0.15
-  - elevationMin: 0.15
+  - elevationMin: 0
     elevationMax: 0.75
     moistureMin: 0.15
     moistureMax: 0.35

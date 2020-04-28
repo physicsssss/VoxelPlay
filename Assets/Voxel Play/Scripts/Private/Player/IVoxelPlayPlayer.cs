@@ -34,6 +34,7 @@ namespace VoxelPlay
         int GetHitDamage ();
         int GetHitDamageRadius ();
         int GetInventorySize();
+        int GetRecipeSize();
         bool GetInventoryFullStatus();
         void SetInventorySize(int newSize);
 

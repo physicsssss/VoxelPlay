@@ -13,14 +13,10 @@ MonoBehaviour:
   m_Name: TestRecipe
   m_EditorClassIdentifier: 
   recipes:
-  - name: Bricks
-    Item: []
-    itemCount: 0
-    voxelItem:
-    - {fileID: 11400000, guid: d8b6800a316fb4dba841ff7193772760, type: 2}
-    voxelCount: 50
-    itemResult: []
-    itemResultCount: 0
-    voxelResult:
-    - {fileID: 11400000, guid: b4182f7eff8a84760822df25bcb40e22, type: 2}
-    voxelResultCount: 1
+  - name: Sword
+    Items:
+    - item: {fileID: 11400000, guid: 00c9d6518ddf246fe906a75a3f4c76a1, type: 2}
+      count: 1
+    voxelItems: []
+    itemResult: {fileID: 11400000, guid: 00c9d6518ddf246fe906a75a3f4c76a1, type: 2}
+    itemResultCount: 1

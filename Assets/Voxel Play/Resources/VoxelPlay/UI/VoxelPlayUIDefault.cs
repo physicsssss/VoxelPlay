@@ -28,6 +28,20 @@ namespace VoxelPlay
 		[SerializeField]
 		int _inventoryRows = 10;
 
+		[SerializeField]
+		int _recipeRows = 10;
+
+		public virtual int recipeRows
+		{
+			get { return _recipeRows; }
+			set
+			{
+				if (_recipeRows != value)
+				{
+					_recipeRows = Mathf.Clamp(value, 1, 10);
+				}
+			}
+		}
 		public virtual int inventoryRows
 		{
 			get { return _inventoryRows; }
@@ -42,7 +56,20 @@ namespace VoxelPlay
 
 		[SerializeField]
 		int _inventoryColumns = 3;
+		[SerializeField]
+		int _recipeColums = 3;
 
+		public virtual int recipeColums
+		{
+			get { return _recipeColums; }
+			set
+			{
+				if (_recipeColums != value)
+				{
+					_recipeColums = Mathf.Clamp(value, 1, 3);
+				}
+			}
+		}
 		public virtual int inventoryColumns
 		{
 			get { return _inventoryColumns; }
@@ -56,12 +83,12 @@ namespace VoxelPlay
 		}
 
 		private int inventoryCount = 0;
-
+		private int recipeCount = 0;
 		[NonSerialized]
 		public VoxelPlayEnvironment env;
 
 		[NonSerialized]
-		public bool inventoryUIShouldBeRebuilt;
+		public bool inventoryUIShouldBeRebuilt,recipeUIShouldBeRebuilt;
 
 		static char[] SEPARATOR_SPACE = { ' ' };
 		string KEY_CODES = "1234567890";
@@ -70,8 +97,8 @@ namespace VoxelPlay
 		GameObject console, status, debug;
 		RawImage selectedItem;
 		GameObject selectedItemPlaceholder;
-		Text consoleText, debugText, statusText, selectedItemName, selectedItemNameShadow, selectedItemQuantityShadow, selectedItemQuantity, inventoryTitleText, fpsText, fpsShadow, initText;
-		GameObject inventoryPlaceholder, inventoryItemTemplate, inventoryTitle, initPanel;
+		Text consoleText, debugText, statusText, selectedItemName, selectedItemNameShadow, selectedItemQuantityShadow, selectedItemQuantity, inventoryTitleText, recipeTitleText, fpsText, fpsShadow, initText;
+		GameObject inventoryPlaceholder, inventoryItemTemplate, inventoryTitle, initPanel, recipePlaceholder, recipeItemTemplate, recipeTitle;
 		Transform initProgress;
 		RectTransform rtCanvas;
 		string lastCommand;
@@ -79,9 +106,13 @@ namespace VoxelPlay
 		InputField inputField;
 		bool firstTimeConsole;
 		bool firstTimeInventory;
+		bool firstTimeRecipe;
 		readonly char[] forbiddenCharacters = { '<', '>' };
 		List<GameObject> inventoryItems;
+		List<GameObject> recipeItems;
 		List<RawImage> inventoryItemsImages;
+		List<RawImage> recipeItemsImages;
+		int recipeCurrentPage;
 		int inventoryCurrentPage;
 		Image statusBackground;
 		int columnToShow;
@@ -146,9 +177,14 @@ namespace VoxelPlay
 				UserConsoleCommandHandler ();
 			});
 			inventoryPlaceholder = transform.Find ("InventoryPlaceholder").gameObject;
+			recipePlaceholder = transform.Find("RecipePlaceholder").gameObject;
+			recipeItemTemplate = recipePlaceholder.transform.Find("RecipeButtonTemplate").gameObject;
+			recipeTitle = recipePlaceholder.transform.Find("Title").gameObject;
+			recipeTitleText = recipePlaceholder.transform.Find("Title/Text").GetComponent<Text>();
 			inventoryItemTemplate = inventoryPlaceholder.transform.Find ("ItemButtonTemplate").gameObject;
 			inventoryTitle = inventoryPlaceholder.transform.Find ("Title").gameObject;
 			inventoryTitleText = inventoryPlaceholder.transform.Find ("Title/Text").GetComponent<Text> ();
+			recipeUIShouldBeRebuilt = true;
 			inventoryUIShouldBeRebuilt = true;
 			initPanel = transform.Find ("InitPanel").gameObject;
 			initProgress = initPanel.transform.Find ("Box/Progress").transform;
@@ -205,6 +241,17 @@ namespace VoxelPlay
 						InventoryNextPage ();
 					}
 				}
+				else if(env.enableInventory && input.GetButtonDown(InputButtonNames.Recipe))
+				{
+					if (!recipePlaceholder.activeSelf)
+					{
+						ToggleRecipeVisibility(true);
+					}
+					else
+					{
+						RecipeNextPage();
+					}
+				}
 				else if (Input.GetKeyDown (KeyCode.UpArrow) && IsVisible)
 				{
 					inputField.text = lastCommand;
@@ -213,6 +260,13 @@ namespace VoxelPlay
 				else if (Input.GetKeyDown (KeyCode.F8))
 				{
 					ToggleFPS ();
+				}
+				else if (recipePlaceholder.activeSelf)
+				{
+					if (Input.GetKeyDown(KeyCode.Alpha1))
+					{
+						SelectItemFromVisibleRecipeSlot(0);
+					}
 				}
 				else if (inventoryPlaceholder.activeSelf)
 				{
@@ -854,7 +908,9 @@ namespace VoxelPlay
 			{
 				CheckInventoryUI ();
 				RefreshInventoryContents ();
+
 				inventoryPlaceholder.SetActive (true);
+
 				if (firstTimeInventory)
 				{
 					firstTimeInventory = false;
@@ -865,6 +921,38 @@ namespace VoxelPlay
 				}
 			}
 			ToggleSelectedItemName ();
+		}
+		/// <summary>
+		/// Show/hide inventory
+		/// </summary>
+		/// <param name="state">If set to <c>true</c> visible.</param>
+		public override void ToggleRecipeVisibility(bool state)
+		{
+			if (!state)
+			{
+				
+				recipePlaceholder.SetActive(false);
+			}
+			else
+			{
+				
+				CheckRecipeUI();
+				
+				RefreshRecipeContents();
+
+				
+				recipePlaceholder.SetActive(true);
+
+				if (firstTimeRecipe)
+				{
+					firstTimeRecipe = false;
+					if (!env.isMobilePlatform)
+					{
+						env.ShowMessage("<color=green>Press <color=yellow>Number</color> to select an item, <color=yellow>Shift</color> to toggle column.</color>");
+					}
+				}
+			}
+			ToggleSelectedRecipeName();
 		}
 
 		/// <summary>
@@ -883,7 +971,24 @@ namespace VoxelPlay
 				inventoryCurrentPage = 0;
 				ToggleInventoryVisibility (false);
 			}
+		}/// <summary>
+		 /// Advances to next Recipe page
+		 /// </summary>
+		public override void RecipeNextPage()
+		{
+			int itemsPerPage = _recipeRows * _recipeColums;
+			if ((recipeCurrentPage + 1) * itemsPerPage < TheRecipes.recipes.Count)
+			{
+				recipeCurrentPage++;
+				RefreshRecipeContents();
+			}
+			else
+			{
+				inventoryCurrentPage = 0;
+				ToggleRecipeVisibility(false);
+			}
 		}
+
 
 		/// <summary>
 		/// Shows previous inventory page
@@ -1003,7 +1108,104 @@ namespace VoxelPlay
 				}
 			}
 		}
+		void CheckRecipeUI()
+		{
+			recipeCount = 0;
 
+			const float itemSize = 48;
+			const float padding = 3;
+
+			int currentRecipeRowSize, currentRecipeColumnSize; // Ahmed: custom panel rows and columns according to inventory size
+
+			currentRecipeRowSize = VoxelPlayPlayer.instance.GetRecipeSize() <= _recipeRows ? VoxelPlayPlayer.instance.GetRecipeSize() : _recipeRows;
+
+			if (VoxelPlayPlayer.instance.GetRecipeSize() / recipeRows == 0 || VoxelPlayPlayer.instance.GetRecipeSize() == recipeRows)
+			{
+				currentRecipeColumnSize = 1;
+			}
+			else
+			{
+				currentRecipeColumnSize = (VoxelPlayPlayer.instance.GetRecipeSize() / recipeRows) % 2 == 0 ? VoxelPlayPlayer.instance.GetRecipeSize() / recipeRows: (VoxelPlayPlayer.instance.GetRecipeSize() / recipeRows) + 1;
+			}
+
+			// float panelWidth = padding + _inventoryColumns * (itemSize + padding);
+			float panelWidth = padding + currentRecipeColumnSize * (itemSize + padding); // Ayaz: Set custom panel width according to inventory size
+			float panelHeight;
+			bool refit;
+			do
+			{
+				refit = false;
+				// panelHeight = padding + _inventoryRows * (itemSize + padding);
+				panelHeight = padding + currentRecipeRowSize * (itemSize + padding); // Ayaz: Set custom panel height according to inventory size
+																						// if (_inventoryRows > 3 && panelHeight * rtCanvas.localScale.y > Screen.height * 0.9f) {
+																						// 	refit = true;
+																						// 	inventoryUIShouldBeRebuilt = true;
+																						// 	_inventoryRows--;
+																						// }
+
+				if (currentRecipeRowSize > 3 && panelHeight * rtCanvas.localScale.y > Screen.height * 0.9f)
+				{
+					refit = true;
+					recipeUIShouldBeRebuilt = true;
+					currentRecipeRowSize--;
+				}
+
+			} while (refit);
+
+			if (!recipeUIShouldBeRebuilt)
+				return;
+			Transform root = recipePlaceholder.transform.Find("Root");
+			if (root != null)
+				DestroyImmediate(root.gameObject);
+			GameObject rootGO = new GameObject("Root");
+			root = rootGO.transform;
+			root.SetParent(recipePlaceholder.transform, false);
+			root.transform.Translate(-90, 0, 0);
+			if (recipeItems == null)
+				recipeItems = new List<GameObject>();
+			else
+				recipeItems.Clear();
+
+			if (recipeItemsImages == null)
+				recipeItemsImages = new List<RawImage>();
+			else
+				recipeItemsImages.Clear();
+
+			recipePlaceholder.GetComponent<RectTransform>().sizeDelta = new Vector2(panelWidth, panelHeight);
+			int i = 0;
+			for (int c = 0; c < _recipeColums; c++)
+			{
+				float x = padding + c * (itemSize + padding);
+				for (int r = 0; r < _recipeRows; r++)
+				{
+					float y = padding + r * (itemSize + padding);
+					GameObject itemButton = Instantiate(recipeItemTemplate) as GameObject;
+					recipeItems.Add(itemButton);
+					itemButton.transform.SetParent(root, false);
+					RectTransform rt = itemButton.GetComponent<RectTransform>();
+					rt.anchoredPosition = new Vector2(x, panelHeight * 0.5f - y);
+					itemButton.SetActive(true);
+					string keyCode = r < KEY_CODES.Length ? KEY_CODES.Substring(r, 1) : "";
+					Text t = itemButton.transform.Find("KeyCodeShadow/KeyCodeText").GetComponent<Text>();
+					t.enabled = c == 0;
+					t.text = keyCode;
+					recipeItemsImages.Add(itemButton.GetComponent<RawImage>());
+					int aux = i; // dummy assignation so the lambda expression takes the appropiate value and not always the last item
+					itemButton.GetComponent<Button>().onClick.AddListener(delegate ()
+					{
+						RecipeImageClick(aux);
+					});
+					i++;
+
+					recipeCount++;
+
+					if (recipeCount >= VoxelPlayPlayer.instance.GetRecipeSize())
+					{
+						return;
+					}
+				}
+			}
+		}
 		public override void AccessToggleInventoryVisibility (bool val)
 		{
 			ToggleInventoryVisibility (val);
@@ -1063,6 +1265,15 @@ namespace VoxelPlay
 			int itemIndex = inventoryCurrentPage * itemsPerPage + inventoryImageIndex;
 			VoxelPlayPlayer.instance.selectedItemIndex = itemIndex;
 			ToggleInventoryVisibility (false);
+		}
+		void RecipeImageClick(int recipeImageIndex)
+		{
+			VoxelPlayPlayer.instance.AddInventoryItem(TheRecipes.recipes[recipeImageIndex].itemResult,1);
+			int itemsPerPage = _recipeRows * _recipeColums;
+			int itemIndex = recipeCurrentPage * itemsPerPage + recipeImageIndex;
+
+			//VoxelPlayPlayer.instance.selectedItemIndex = itemIndex;
+			//ToggleInventoryVisibility(false);
 		}
 
 		/// <summary>
@@ -1155,6 +1366,167 @@ namespace VoxelPlay
 			}
 
 		}
+		public CraftingRecipe TheRecipes;
+		public bool IsCraftable(RecipeItem ri)
+		{
+			bool isCraftable = true;
+			if(ri.Items==null && ri.voxelItems == null)
+			{
+				return false;
+			}
+			if (ri.Items != null)
+			{
+				foreach (RecipeItemDefinition it in ri.Items)
+				{
+					isCraftable = false;
+					for (int i = 0; i < VoxelPlayPlayer.instance.items.Count; i++)
+					{
+						if (VoxelPlayPlayer.instance.items[i].item == it.item)
+						{
+							isCraftable = true;
+							if (VoxelPlayPlayer.instance.items[i].quantity < it.count)
+							{
+								return false;
+							}
+						}
+					}
+				}
+				if (isCraftable)
+				{
+					if (ri.voxelItems != null)
+					{
+						foreach (RecipeVoxelDefinition it in ri.voxelItems)
+						{
+							ItemDefinition it1 = env.GetItemDefinition(ItemCategory.Voxel, it.item);
+							isCraftable = false;
+							for (int i = 0; i < VoxelPlayPlayer.instance.items.Count; i++)
+							{
+								if (VoxelPlayPlayer.instance.items[i].item == it1)
+								{
+									isCraftable = true;
+									if (VoxelPlayPlayer.instance.items[i].quantity <= it.count)
+									{
+										return false;
+									}
+								}
+							}
+						}
+					}
+					
+				}
+				//VoxelPlayPlayer.instance.items
+			}
+			return isCraftable;
+		}
+		public List<InventoryItem> GetRecipesList()
+		{
+			List<InventoryItem> recipeItemList = new List<InventoryItem>();
+			foreach(RecipeItem ri in TheRecipes.recipes)
+			{
+				if (IsCraftable(ri))
+				{
+					InventoryItem initem = new InventoryItem();
+					initem.item = ri.itemResult;
+					initem.quantity = 1;
+					recipeItemList.Add(initem);
+				}
+				
+				
+			}
+			return recipeItemList;
+		}
+		
+		public override void RefreshRecipeContents()
+		{
+			if (recipeItemsImages == null || env == null)
+				return;
+			int recipesPerPage = _recipeRows * _recipeColums;
+			int selectedRecipeIndex = VoxelPlayPlayer.instance.selectedItemIndex;
+			///
+			//List<InventoryItem> playerRecipes = VoxelPlayPlayer.instance.items;
+			List<InventoryItem> playerRecipes = GetRecipesList();
+			///
+			int playerRecipesCount = playerRecipes != null ? playerRecipes.Count : 0;
+			if (recipeCurrentPage * recipesPerPage > playerRecipesCount)
+			{
+				recipeCurrentPage = 0;
+			}
+			int recipeItemsImagesCount = recipeItemsImages.Count;
+			for (int k = 0; k < recipesPerPage; k++)
+			{
+				int recipeIndex = recipeCurrentPage * recipesPerPage + k;
+				if (k >= recipeItemsImagesCount)
+					continue;
+				RawImage img = recipeItemsImages[k];
+				if (img == null)
+					continue;
+				Text quantityShadow = img.transform.Find("QuantityShadow").GetComponent<Text>();
+				Text quantityText = img.transform.Find("QuantityShadow/QuantityText").GetComponent<Text>();
+				img.gameObject.SetActive(true);
+				if (recipeIndex < playerRecipesCount)
+				{
+					///
+					InventoryItem recipeItem = playerRecipes[recipeIndex];
+					if (recipeItem.item != null)
+					{
+						img.color = recipeItem.item.color;
+						img.texture = recipeItem.item.icon;
+					}
+					else
+					{
+						img.texture = null;
+					}
+					float quantity = recipeItem.quantity;
+					// show quantity if greater than 1
+					if (quantity <= 0 || env.buildMode)
+					{
+						quantityText.enabled = false;
+						quantityShadow.enabled = false;
+					}
+					else
+					{
+						string quantityStr = String.Format("{0:0.##}", quantity);
+						quantityText.text = quantityStr;
+						quantityShadow.text = quantityStr;
+						quantityText.enabled = true;
+						quantityShadow.enabled = true;
+					}
+					// Mark selected item
+					img.transform.Find("SelectedBorder").gameObject.SetActive(k + recipesPerPage * inventoryCurrentPage == selectedRecipeIndex);
+				}
+				else
+				{
+					img.texture = Texture2D.whiteTexture;
+					img.color = new Color(0, 0, 0, 0.25f);
+					quantityText.enabled = false;
+					quantityShadow.enabled = false;
+					// Hide selected border
+					img.transform.Find("SelectedBorder").gameObject.SetActive(false);
+				}
+			}
+
+			if (recipeTitle != null)
+			{
+				if (playerRecipesCount == 0)
+				{
+					recipeTitle.SetActive(true);
+					recipeTitleText.text = "Empty.";
+				}
+				else if (playerRecipesCount > recipesPerPage)
+				{
+					recipeTitle.SetActive(true);
+					int totalPages = (playerRecipesCount - 1) / recipesPerPage + 1;
+					if (totalPages < 0)
+						totalPages = 1;
+					recipeTitleText.text = "Page " + (recipeCurrentPage+ 1) + "/" + totalPages;
+				}
+				else
+				{
+					recipeTitle.SetActive(false);
+				}
+			}
+
+		}
 
 		void SelectItemFromVisibleInventorySlot (int itemIndex)
 		{
@@ -1162,6 +1534,13 @@ namespace VoxelPlay
 			int itemsPerPage = _inventoryRows * _inventoryColumns;
 			int selectedItemIndex = inventoryCurrentPage * itemsPerPage + slotIndex;
 			VoxelPlayPlayer.instance.selectedItemIndex = selectedItemIndex;
+		}
+		void SelectItemFromVisibleRecipeSlot(int itemIndex)
+		{
+			int slotIndex = itemIndex + columnToShow * _recipeRows;
+			int itemsPerPage = _recipeRows * _recipeColums;
+			int selectedItemIndex = recipeCurrentPage* itemsPerPage + slotIndex;
+			RecipeImageClick(selectedItemIndex);
 		}
 
 		/// <summary>
@@ -1195,6 +1574,12 @@ namespace VoxelPlay
 		void ToggleSelectedItemName ()
 		{
 			bool showItemName = inventoryPlaceholder.activeSelf;
+			selectedItemName.enabled = showItemName;
+			selectedItemNameShadow.enabled = showItemName;
+		}
+		void ToggleSelectedRecipeName()
+		{
+			bool showItemName = recipePlaceholder.activeSelf;
 			selectedItemName.enabled = showItemName;
 			selectedItemNameShadow.enabled = showItemName;
 		}
