@@ -96,6 +96,11 @@ namespace VoxelPlay
             }
         }
 
+        private void Update() { // Ayaz: Just to test, remove afterwards
+            if(Input.GetKey(KeyCode.P))
+                SetInventorySize(setInventorySizeDemo);
+        }
+
         /// <summary>
         /// Returns a copy of currently selected item (note it's a struct) or InventoryItem.Null if nothing selected.
         /// </summary>
