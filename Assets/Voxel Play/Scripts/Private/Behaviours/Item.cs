@@ -45,8 +45,8 @@ namespace VoxelPlay
         [NonSerialized]
         public float creationTime;
 
-        const float PICK_UP_START_DISTANCE_SQR = 6.5f;
-        const float PICK_UP_END_DISTANCE_SQR = 0.81f;
+        const float PICK_UP_START_DISTANCE_SQR = 150f;
+        const float PICK_UP_END_DISTANCE_SQR = 20f;
         const float ROTATION_SPEED = 40f;
 
         [NonSerialized, HideInInspector]
@@ -108,7 +108,8 @@ namespace VoxelPlay
             }
 
             // Check if player is near
-            Vector3 playerPosition = env.currentAnchorPos;
+            // Vector3 playerPosition = env.currentAnchorPos;
+            Vector3 playerPosition = VoxelPlayPlayer.instance.pickupTransform.position;
             Vector3 pos = transform.position;
 
             float dx = playerPosition.x - pos.x;

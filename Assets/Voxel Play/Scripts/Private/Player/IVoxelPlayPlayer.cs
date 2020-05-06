@@ -37,6 +37,7 @@ namespace VoxelPlay
         int GetRecipeSize();
         bool GetInventoryFullStatus();
         void SetInventorySize(int newSize);
+        void BuildBricks();
 
         // General character stats
         string playerName { get; set; }
@@ -46,6 +47,7 @@ namespace VoxelPlay
         int hitDamage { get; set; }
         float hitRange { get; set; }
         int hitDamageRadius { get; set; }
+        Transform pickupTransform { get; set; }
 
     }
 }
