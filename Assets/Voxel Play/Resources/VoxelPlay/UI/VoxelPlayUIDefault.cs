@@ -311,6 +311,11 @@ namespace VoxelPlay
 						SelectItemFromVisibleInventorySlot (9);
 					}
 				}
+
+				if(Input.GetKeyDown (KeyCode.O))
+				{
+					VoxelPlayPlayer.instance.BuildBricks();
+				}
 			}
 
 			if (inventoryPlaceholder.activeSelf)

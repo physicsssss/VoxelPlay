@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
+    public float turnSpeed;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -19,8 +20,6 @@ public class AnimatorController : MonoBehaviour
 
     void TakeInput()
     {
-        
-            animator.SetInteger("isMoving", (int)Input.GetAxis("Vertical"));
-        
+        animator.SetInteger("isMoving", (int)Input.GetAxis("Vertical"));
     }
 }

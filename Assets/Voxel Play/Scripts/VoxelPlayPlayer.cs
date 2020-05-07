@@ -13,14 +13,15 @@ namespace VoxelPlay
     [HelpURL ("https://kronnect.freshdesk.com/support/solutions/articles/42000001860-voxel-play-player")]
     public partial class VoxelPlayPlayer : MonoBehaviour, IVoxelPlayPlayer
     {
-
         public event OnPlayerInventoryEvent OnSelectedItemChange;
         public event OnPlayerGetDamageEvent OnPlayerGetDamage;
         public event OnPlayerIsKilledEvent OnPlayerIsKilled;
+        
 
         [Header ("Player Info")]
         [SerializeField] string _playerName = "Player";
         [SerializeField] int _totalLife = 20;
+        [SerializeField] Transform _pickupTransform;
 
         [Header ("Attack")]
         [SerializeField] float _hitDelay = 0.2f;
@@ -85,6 +86,10 @@ namespace VoxelPlay
         public virtual bool isInventoryFull{
             get{return _isInventoryFull;}
             set {_isInventoryFull = value;}
+        }
+        public virtual Transform pickupTransform{
+            get{return _pickupTransform;}
+            set {_pickupTransform = value;}
         }
 
         /// <summary>
@@ -497,6 +502,7 @@ namespace VoxelPlay
                     items.RemoveAt (_selectedItemIndex);
                     selectedItemIndex = 0;
                     isInventoryFull = false; // Ayaz: space now available in inventory upon removal of an item
+                    BrickBuilder._instance.RemoveAlreadyBuiltBricks(items[_selectedItemIndex].item); // Ayaz: remove brick
                 } else {
                     items [_selectedItemIndex] = i; // update back because it's a struct
                 }
@@ -525,6 +531,7 @@ namespace VoxelPlay
                         items.RemoveAt (k);
                         selectedItemIndex = 0;
                         isInventoryFull = false; // Ayaz: space now available in inventory upon removal of an item
+                        BrickBuilder._instance.RemoveAlreadyBuiltBricks(items[_selectedItemIndex].item); // Ayaz: remove brick
                     } else {
                         items [_selectedItemIndex] = i; // update back because it's a struct
                     }
@@ -564,6 +571,26 @@ namespace VoxelPlay
             return 0;
         }
 
+        public void OpenInventoryAndStopPlayer()
+        {
+            VoxelPlayUIDefault.instance.AccessToggleInventoryVisibility(true);
+            
+            GetComponent<VoxelPlayFirstPersonController>()?.ToggleCharacterController(false);
+            GetComponent<VoxelPlayThirdPersonController>()?.ToggleCharacterController(false);
+        }
 
+        public void CloseInventoryAndStopPlayer()
+        {
+            VoxelPlayUIDefault.instance.AccessToggleInventoryVisibility(true);
+            
+            GetComponent<VoxelPlayFirstPersonController>()?.ToggleCharacterController(true);
+            GetComponent<VoxelPlayThirdPersonController>()?.ToggleCharacterController(true);
+        }
+
+        public void BuildBricks()
+        {
+            Debug.Log("Selected item: " + selectedItemIndex + ": " + items[selectedItemIndex].item.voxelType);
+            BrickBuilder._instance.BuildBrick(items[_selectedItemIndex].item, Mathf.FloorToInt(items[_selectedItemIndex].quantity));
+        }
     }
 }
