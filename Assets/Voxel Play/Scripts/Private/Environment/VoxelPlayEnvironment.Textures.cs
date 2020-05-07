@@ -55,6 +55,7 @@ namespace VoxelPlay
 
         Color32 [] defaultMapColors, defaultPinkColors;
 
+        int texSize=1024;
         void DisposeTextures ()
         {
             if (voxelDefinitions != null) {
@@ -807,7 +808,7 @@ namespace VoxelPlay
                 worldTextures.Clear ();
 
                 pointFilterTextureArray.Apply (hqFiltering, true);
-
+                
                 // Assign textures to materials
                 if (renderingMaterials != null) {
                     for (int k = 0; k < renderingMaterials.Length; k++) {

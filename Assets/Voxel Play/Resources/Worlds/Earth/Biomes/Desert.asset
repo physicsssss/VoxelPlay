@@ -170,13 +170,13 @@ MonoBehaviour:
     veinMaxSize: 5
     veinsCountMin: 0
     veinsCountMax: 4
-  treeDensity: 0.01
+  treeDensity: 0.0003
   trees:
-  - tree: {fileID: 11400000, guid: 1af1c96406a464ba691634e6eba6c424, type: 2}
+  - tree: {fileID: 11400000, guid: 357f7171cfe38f5498513e948e019683, type: 2}
     probability: 0.25
-  - tree: {fileID: 11400000, guid: ad31ee142b4b54b279be0cc50d1a9bdb, type: 2}
+  - tree: {fileID: 11400000, guid: ee918f35428c0b943b7382ff18dd563e, type: 2}
     probability: 0.25
-  - tree: {fileID: 11400000, guid: b7ab1a26fff29474eac472dd242d84bb, type: 2}
+  - tree: {fileID: 11400000, guid: 01f8625a72ea4364ab18f99a287a7080, type: 2}
     probability: 0.25
   - tree: {fileID: 11400000, guid: 9ac26ebe8614043a7be160c93d35a411, type: 2}
     probability: 0.25

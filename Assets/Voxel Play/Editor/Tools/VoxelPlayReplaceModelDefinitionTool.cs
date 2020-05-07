@@ -65,6 +65,10 @@ public class VoxelPlayReplaceModelDefinitionTool : EditorWindow {
 		{
 			RandomReplace();
 		}
+		if (GUILayout.Button("CheckVoxels"))
+		{
+			CheckVoxels();
+		}
 
 	}
 
@@ -117,5 +121,21 @@ public class VoxelPlayReplaceModelDefinitionTool : EditorWindow {
 		AssetDatabase.SaveAssets ();
 		AssetDatabase.Refresh ();
 
+	}
+	void CheckVoxels()
+	{
+		if (md == null)
+			return;
+
+		int changes = 0;
+		for (int k = 0; k < md.bits.Length; k++)
+		{
+			
+				changes++;
+				Debug.Log(md.bits[k].voxelDefinition.name);
+			
+		}
+
+		
 	}
 }

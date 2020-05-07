@@ -46,7 +46,7 @@ namespace VoxelPlay
                 uint sizeZ = br.ReadUInt32 ();
                 if (sizeX < 0 || sizeX > 128 || sizeY < 0 || sizeY > 128 || sizeZ < 0 || sizeZ > 128) {
                     Debug.LogError ("Voxel Play: Invalid model size: " + sizeX + "/" + sizeY + "/" + sizeZ);
-                    return ColorBasedModelDefinition.Null;
+                   // return ColorBasedModelDefinition.Null;
                 }
                 // read matrix position (in this example the position is irrelevant) 
                 int offsetX = br.ReadInt32 ();

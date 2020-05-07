@@ -48,7 +48,7 @@ namespace VoxelPlay
 
         public const int MESH_JOBS_TOTAL_POOL_SIZE_PC = 2000;
         public const int MESH_JOBS_TOTAL_POOL_SIZE_MOBILE = 128;
-        public const int MAX_MATERIALS_PER_CHUNK = 16;
+        public const int MAX_MATERIALS_PER_CHUNK = 32;
 
         /* cube coords
 		

@@ -88,7 +88,7 @@ namespace VoxelPlay
 
         public bool enableFogSkyBlending = true;
 
-        public int textureSize = 64;
+        public int textureSize = 1024;
 
         public int maxChunks = 16000;
 

@@ -51,6 +51,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: d8c0c30b8f0974325b9b8aba85266fb0, type: 3}
   footfalls: []

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace VoxelPlay {
-
+	//TODO: Changed
 	[CreateAssetMenu(menuName = "Voxel Play/Detail Generators/Village Generator", fileName = "VillageGenerator", order = 102)]
 	public class VillageDefaultGenerator : VoxelPlayDetailGenerator {
 
         [Range(0,0.1f)]
 		public float spawnProbability = 0.02f;
 		public ModelDefinition[] buildings;
+		public float spawnDistance=150;
 
 		struct BuildingStatus {
 			public float height;
@@ -62,8 +63,20 @@ namespace VoxelPlay {
 						BuildingStatus bs;
 						if (!buildingPositions.TryGetValue(pos, out bs)) {
 							float h = env.GetTerrainHeight(pos, false);
-							if (h > env.waterLevel) {
-								bs.height = h;
+							bool temp = true;
+							foreach (KeyValuePair<Vector3, BuildingStatus> kv in buildingPositions)
+							{
+								if (Vector3.Distance(pos, kv.Key) < spawnDistance	)
+								{
+									temp = false;
+								}
+							}
+
+							if (h > env.waterLevel && temp) {
+								
+								
+								//added -5
+								bs.height = h-5;
 								bs.placementStatus = false;
 
 								// No trees on this chunk

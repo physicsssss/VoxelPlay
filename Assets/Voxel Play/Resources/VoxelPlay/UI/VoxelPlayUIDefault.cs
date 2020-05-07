@@ -26,10 +26,10 @@ namespace VoxelPlay
 		}
 
 		[SerializeField]
-		int _inventoryRows = 10;
+		int _inventoryRows = 50;
 
 		[SerializeField]
-		int _recipeRows = 10;
+		int _recipeRows = 50;
 
 		public virtual int recipeRows
 		{
@@ -1227,7 +1227,7 @@ namespace VoxelPlay
 				leftShiftPressed = false;
 				refresh = true;
 				columnToShow++;
-				if (columnToShow > 2)
+				if (columnToShow > 4)
 					columnToShow = 0;
 			}
 			if (!refresh && !forceRefresh)

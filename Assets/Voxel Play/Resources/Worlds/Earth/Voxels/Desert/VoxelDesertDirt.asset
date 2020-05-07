@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   renderType: 10
-  overrideMaterial: 0
-  texturesByMaterial: 0
-  overrideMaterialNonGeo: {fileID: 0}
+  overrideMaterial: 1
+  texturesByMaterial: 1
+  overrideMaterialNonGeo: {fileID: 2100000, guid: ad426af2c147e9740bcc23f19f3ad08c,
+    type: 2}
   hasContent: 1
   opaque: 0
   textureTop: {fileID: 2800000, guid: 54a50d8fe253c47bdbc1f18547d77e59, type: 3}
@@ -49,6 +51,8 @@ MonoBehaviour:
     rgba: 4294967295
   colorVariation: 0.5
   alpha: 1
+  lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: 3a395af208d574a28bcca472e43a8ae0, type: 3}
   footfalls:
@@ -62,6 +66,8 @@ MonoBehaviour:
   hidden: 0
   canBeCollected: 1
   dropItem: {fileID: 0}
+  dropItemLifeTime: 10
+  dropItemScale: 0.25
   icon: {fileID: 0}
   textureSample: {fileID: 2800000, guid: 54a50d8fe253c47bdbc1f18547d77e59, type: 3}
   navigatable: 1
@@ -91,6 +97,7 @@ MonoBehaviour:
   triggerCollapse: 0
   willCollapse: 0
   ignoresRayCast: 0
+  generateColliders: 0
   highlightOffset: {x: 0, y: 0, z: 0}
   allowsTextureRotation: 1
   placeFacingPlayer: 1

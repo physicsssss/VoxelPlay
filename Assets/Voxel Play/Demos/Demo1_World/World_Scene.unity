@@ -474,14 +474,14 @@ MonoBehaviour:
   enableNormalMap: 0
   enableFogSkyBlending: 1
   textureSize: 64
-  maxChunks: 20000
+  maxChunks: 60000
   hqFiltering: 1
   mipMapBias: 0.5
   doubleSidedGlass: 0
   transparentBling: 1
   useComputeBuffers: 0
   previewTouchUIinEditor: 0
-  prewarmChunksInEditor: 15966
+  prewarmChunksInEditor: 32674
   enableTinting: 0
   enableOutline: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 0.5}
@@ -493,7 +493,7 @@ MonoBehaviour:
   seeThroughAlpha: 0.15
   _seeThroughHeightOffset: 1
   enableBrightPointLights: 1
-  _visibleChunksDistance: 10
+  _visibleChunksDistance: 15
   forceChunkDistance: 4
   unloadFarChunks: 1
   distanceAnchor: {fileID: 1716317430}
@@ -987,6 +987,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b1ce6d80e693afd459c32cb09604e0e2, type: 2}
+    - target: {fileID: -4574943190371278668, guid: 97c9e5a712200804a923bff544baad1e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 97c9e5a712200804a923bff544baad1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3086,7 +3091,7 @@ MonoBehaviour:
   _hitDamage: 3
   _hitRange: 30
   _hitDamageRadius: 1
-  _inventorySize: 16
+  _inventorySize: 64
   _recipeSize: 16
   _isInventoryFull: 0
   setInventorySizeDemo: 0
@@ -3389,7 +3394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963791721}
   m_LocalRotation: {x: 0, y: 0.5884852, z: 0, w: 0.80850804}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 269.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 614311562}
@@ -3747,7 +3752,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1080997302
 Light:
   m_ObjectHideFlags: 0
@@ -3755,7 +3760,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080997301}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0

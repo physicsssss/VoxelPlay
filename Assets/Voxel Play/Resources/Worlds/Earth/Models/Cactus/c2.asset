@@ -1,0 +1,4832 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dac75631074b4c98b0646cbfa8a0137, type: 3}
+  m_Name: c2
+  m_EditorClassIdentifier: 
+  sizeX: 13
+  sizeY: 32
+  sizeZ: 8
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 0
+  buildDuration: 5
+  bits:
+  - voxelIndex: 3
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 4
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 5
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 15
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 16
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 17
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 18
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 19
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 28
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 29
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 30
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 31
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 32
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 41
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 42
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 43
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 44
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 45
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 55
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 56
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 57
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 107
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 108
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 109
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 119
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 123
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 132
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 136
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 145
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 146
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 148
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 149
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 159
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 160
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 161
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 211
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 212
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 213
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 223
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 227
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 236
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 240
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 249
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 250
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 252
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 253
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 263
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 264
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 265
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 315
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 316
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 317
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 327
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 331
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 340
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 344
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 353
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 354
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 356
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 357
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 367
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 368
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 369
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 419
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 420
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 421
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 431
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 435
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 444
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 448
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 457
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 458
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 460
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 461
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 471
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 472
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 473
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 523
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 524
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 525
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 535
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 539
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 548
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 552
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 561
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 562
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 564
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 565
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 575
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 576
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 577
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 627
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 628
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 629
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 639
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 643
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 652
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 656
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 665
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 666
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 668
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 669
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 679
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 680
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 681
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 731
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 732
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 733
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 743
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 747
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 756
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 760
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 769
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 770
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 772
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 773
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 783
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 784
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 785
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 835
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 836
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 837
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 847
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 851
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 860
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 864
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 873
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 874
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 876
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 877
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 887
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 888
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 889
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 939
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 940
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 941
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 951
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 955
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 964
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 968
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 977
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 978
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 980
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 981
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 991
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 992
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 993
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1043
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1044
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1045
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1055
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1059
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1068
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1072
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1081
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1082
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1084
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1085
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1095
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1096
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1097
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1147
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1148
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1149
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1159
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1163
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1172
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1173
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1174
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1175
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1176
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1185
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1186
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1187
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1188
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1189
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1198
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1199
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1200
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1201
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1210
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1211
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1212
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1251
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1252
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1253
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1263
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1264
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1265
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1267
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1276
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1278
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1279
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1280
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1288
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1289
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1290
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1291
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1292
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1293
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1301
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1303
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1304
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1305
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1313
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1316
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1327
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1328
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1355
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1356
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1357
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1367
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1368
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1369
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1371
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1380
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1381
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1382
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1383
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1384
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1393
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1394
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1395
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1396
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1397
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1404
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1405
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1406
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1407
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1408
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1409
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1417
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1420
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1430
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1432
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1444
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1445
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1459
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1460
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1461
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1471
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1475
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1484
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1488
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1497
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1498
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1500
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1501
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1509
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1511
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1512
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1513
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1521
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1522
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1523
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1534
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1536
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1547
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1548
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1549
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1563
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1564
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1565
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1575
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1579
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1588
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1592
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1601
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1602
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1604
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1605
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1615
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1616
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1617
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1625
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1626
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1627
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1638
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1640
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1651
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1652
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1667
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1668
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1669
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1679
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1683
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1692
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1696
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1705
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1706
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1708
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1709
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1719
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1720
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1721
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1729
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1730
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1731
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1742
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1744
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1755
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1756
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1771
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1772
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1773
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1783
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1787
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1788
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1789
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1796
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1800
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1801
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1802
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1809
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1810
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1812
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1813
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1823
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1824
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1825
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1833
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1834
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1835
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1846
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1848
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1859
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1860
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1875
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1876
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1877
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1887
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1890
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1891
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1892
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1893
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1894
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1895
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1900
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1903
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1904
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1907
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1908
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1913
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1914
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1916
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1917
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1918
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1919
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1920
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1921
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1927
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1928
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1929
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1937
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1938
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1939
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1950
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1952
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1963
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1964
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1979
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1980
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1981
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1991
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1994
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1995
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1996
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1997
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1998
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 1999
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2000
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2004
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2007
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2008
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2013
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2017
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2018
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2020
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2021
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2022
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2023
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2024
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2025
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2026
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2031
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2032
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2033
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2041
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2042
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2043
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2054
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2056
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2067
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2068
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2083
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2084
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2085
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2095
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2099
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2100
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2101
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2102
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2103
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2104
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2105
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2108
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2112
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2113
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2114
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2115
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2118
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2121
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2122
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2124
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2125
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2128
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2129
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2130
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2135
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2136
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2137
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2145
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2146
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2147
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2158
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2160
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2171
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2172
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2187
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2188
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2189
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2199
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2203
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2207
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2208
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2209
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2212
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2216
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2220
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2222
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2225
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2226
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2228
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2229
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2233
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2234
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2239
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2240
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2241
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2249
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2250
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2251
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2262
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2264
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2275
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2276
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2291
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2292
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2293
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2303
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2307
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2311
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2312
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2313
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2316
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2320
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2324
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2326
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2329
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2330
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2332
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2333
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2337
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2338
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2343
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2344
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2345
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2353
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2354
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2355
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2366
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2368
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2379
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2380
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2395
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2396
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2397
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2407
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2411
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2415
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2416
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2417
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2420
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2424
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2428
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2430
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2433
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2434
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2436
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2437
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2441
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2442
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2443
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2447
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2448
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2449
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2457
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2458
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2459
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2470
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2472
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2483
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2484
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2499
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2500
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2501
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2511
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2515
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2519
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2520
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2521
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2524
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2528
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2532
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2534
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2537
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2538
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2540
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2541
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2545
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2546
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2547
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2551
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2552
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2553
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2560
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2561
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2562
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2563
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2574
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2575
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2576
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2587
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2588
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2603
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2604
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2605
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2615
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2619
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2623
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2624
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2625
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2628
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2632
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2636
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2638
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2641
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2642
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2644
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2645
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2649
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2650
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2651
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2655
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2656
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2657
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2664
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2707
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2708
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2709
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2719
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2723
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2727
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2728
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2729
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2732
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2736
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2740
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2742
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2745
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2746
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2748
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2749
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2753
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2754
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2755
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2759
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2760
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2761
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2768
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2811
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2812
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2813
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2823
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2827
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2831
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2832
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2833
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2836
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2840
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2844
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2846
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2849
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2850
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2852
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2853
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2857
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2858
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2859
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2863
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2864
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2865
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2915
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2916
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2917
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2927
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2931
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2935
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2936
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2937
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2940
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2944
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2948
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2950
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2953
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2954
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2956
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2957
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2961
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2962
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2967
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2968
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 2969
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3019
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3020
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3021
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3031
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3035
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3039
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3040
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3041
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3044
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3048
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3052
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3054
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3058
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3060
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3061
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3065
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3066
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3071
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3072
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3073
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3123
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3124
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3125
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3135
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3136
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3138
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3139
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3143
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3144
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3145
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3148
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3152
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3156
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3158
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3162
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3164
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3169
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3170
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3175
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3176
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3177
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3228
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3240
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3241
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3242
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3248
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3253
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3254
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3255
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3261
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3266
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3267
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3268
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  - voxelIndex: 3280
+    voxelDefinition: {fileID: 11400000, guid: 30336daca20aee242ac4dd2ecc908a0f, type: 2}
+    isEmpty: 0
+    color:
+      serializedVersion: 2
+      rgba: 4294967295
+    rotation: 0
+  torches: []

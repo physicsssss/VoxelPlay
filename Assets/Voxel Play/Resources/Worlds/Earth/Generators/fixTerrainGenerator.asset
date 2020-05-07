@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ffc129c8af74289a4877ca2b8ea1f5, type: 3}
+  m_Name: fixTerrainGenerator
+  m_EditorClassIdentifier: 
+  maxHeight: 500
+  minHeight: -50
+  seaLevel: -1
+  waterLevel: 25
+  steps:
+  - enabled: 1
+    operation: 0
+    noiseTexture: {fileID: 2800000, guid: a098096f8833147feac87b2948d79b92, type: 3}
+    frecuency: 0.07
+    noiseRangeMin: 0.01
+    noiseRangeMax: 1
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 0
+    noiseTexture: {fileID: 2800000, guid: 5c3ac2ef6e25179448b7d40fec0b2e4a, type: 3}
+    frecuency: 0.08
+    noiseRangeMin: 0
+    noiseRangeMax: 1
+    inputIndex0: 0
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 202
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 2
+    inputIndex1: 0
+    threshold: 0.75
+    thresholdShift: 0
+    thresholdParam: 0.1
+    param: 0.68
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 0
+    operation: 203
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 1
+    inputIndex1: 0
+    threshold: 0.13
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 300
+    noiseTexture: {fileID: 2800000, guid: 6dd155b02d17142c79ea0aaf630bf92b, type: 3}
+    frecuency: 0.001
+    noiseRangeMin: 0.006
+    noiseRangeMax: 0.017
+    inputIndex0: 0
+    inputIndex1: 2
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0.75
+    weight1: 0.25
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 104
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 2
+    inputIndex1: 0
+    threshold: 0.03
+    thresholdShift: 0
+    thresholdParam: 0.2
+    param: -0.16
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 202
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 5
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 1.04
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 104
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 6
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: -0.11
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 204
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 7
+    inputIndex1: 0
+    threshold: 8
+    thresholdShift: 0
+    thresholdParam: 4
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  seaDepthMultiplier: 1
+  beachWidth: 0.002
+  waterVoxel: {fileID: 11400000, guid: f196cfea1816a4cb6b8e24bea23c4d60, type: 2}
+  shoreVoxel: {fileID: 11400000, guid: deeb7144976df446fb6fb98f7bef3729, type: 2}
+  bedrockVoxel: {fileID: 11400000, guid: 62e537e35412d45a799ca5f5da92f457, type: 2}
+  addOre: 1
+  moisture: {fileID: 2800000, guid: a1aaa0c8ed5e91543b0693491270b94b, type: 3}
+  moistureScale: 0.005

@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   renderType: 0
-  overrideMaterial: 0
-  texturesByMaterial: 0
-  overrideMaterialNonGeo: {fileID: 0}
+  overrideMaterial: 1
+  texturesByMaterial: 1
+  overrideMaterialNonGeo: {fileID: 2100000, guid: ad426af2c147e9740bcc23f19f3ad08c,
+    type: 2}
   hasContent: 1
   opaque: 0
   textureTop: {fileID: 2800000, guid: 3bc210498b89543c19569fbd2a3330f8, type: 3}

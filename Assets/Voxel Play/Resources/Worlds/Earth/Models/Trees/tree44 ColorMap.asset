@@ -1,0 +1,425 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f10626bfb176246efa57ae66cc166204, type: 3}
+  m_Name: tree44 ColorMap
+  m_EditorClassIdentifier: 
+  defaultVoxelDefinition: {fileID: 11400000, guid: 5af308e91de6c3342a3fbb0552703f8c,
+    type: 2}
+  colorMap:
+  - color:
+      serializedVersion: 2
+      rgba: 1429552707
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1899314755
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1932869187
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 389365315
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1999978051
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 926236227
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1463107139
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 2100641347
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1161117251
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1630879299
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1664433731
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 120929859
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1865760323
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 657800771
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1194671683
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1127562819
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 792018499
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1697988163
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 590691907
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 624246339
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1765097027
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1395998275
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1328889411
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 53820995
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1295334979
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1261780547
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 724909635
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1832205891
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 20266563
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1362443843
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 87375427
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 288702019
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1094008387
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 758464067
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 188038723
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1998273568
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 557137475
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1731542595
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1864055840
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1461402656
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 790314016
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1427848224
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1662729248
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 924531744
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1696283680
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1931164704
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 2132491296
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1159412768
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 656096288
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1729838112
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 2098936864
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1763392544
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1629174816
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 2065382432
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1897610272
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1092303904
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1796946976
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1964719136
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 991640608
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1830501408
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1125858336
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 387660832
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 890977312
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1192967200
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 119225376
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1327184928
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1058749472
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 253443104
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1595620384
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1293630496
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1394293792
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 622541856
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 857422880
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 2031828000
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1528511520
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 588987424
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1562065952
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1494957088
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 521878560
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 756759584
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 354106400
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1025195040
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 723205152
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 286997536
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 421215264
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1260076064
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 488324128
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1798651459
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1226521632
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 454769696
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 958086176
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 52116512
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 186334240
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 823868448
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 555432992
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 219888672
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 152779808
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 320551968
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 1360739360
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 85670944
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 18562080
+    voxelDefinition: {fileID: 0}
+  - color:
+      serializedVersion: 2
+      rgba: 689650720
+    voxelDefinition: {fileID: 0}

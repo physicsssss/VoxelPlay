@@ -239,5 +239,5 @@ MonoBehaviour:
   shoreVoxel: {fileID: 11400000, guid: deeb7144976df446fb6fb98f7bef3729, type: 2}
   bedrockVoxel: {fileID: 11400000, guid: 62e537e35412d45a799ca5f5da92f457, type: 2}
   addOre: 1
-  moisture: {fileID: 2800000, guid: 402a6e88e3bf748c38cf643ab4c3fdbb, type: 3}
-  moistureScale: 0.2
+  moisture: {fileID: 2800000, guid: 67d845750088d75459a929476c64f122, type: 3}
+  moistureScale: 0.01
