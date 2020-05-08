@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27712d9aa2d924ef4bfdf3b177b44418, type: 3}
   m_Name: SpaceCraftTexture
   m_EditorClassIdentifier: 
-  title: 
+  title: SpaceShipVoxel
   renderType: 0
   overrideMaterial: 1
   texturesByMaterial: 1

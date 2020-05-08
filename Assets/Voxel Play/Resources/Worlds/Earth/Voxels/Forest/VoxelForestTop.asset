@@ -56,8 +56,8 @@ MonoBehaviour:
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: 3a395af208d574a28bcca472e43a8ae0, type: 3}
   footfalls:
-  - {fileID: 8300000, guid: 601d127bc206b4f31b800044802281ac, type: 3}
   - {fileID: 8300000, guid: 4e1e2f5b5230941699c66f6261469eec, type: 3}
+  - {fileID: 8300000, guid: 601d127bc206b4f31b800044802281ac, type: 3}
   jumpSound: {fileID: 8300000, guid: 4ae12959a77e4427b9d8ea45d19a81d8, type: 3}
   landingSound: {fileID: 8300000, guid: d374b5cdc21234dddbddd00d70f47e7b, type: 3}
   impactSound: {fileID: 8300000, guid: b237fe58d85f1447ba6d8a675c379d15, type: 3}
@@ -68,7 +68,7 @@ MonoBehaviour:
   dropItem: {fileID: 0}
   dropItemLifeTime: 10
   dropItemScale: 0.25
-  icon: {fileID: 0}
+  icon: {fileID: 2800000, guid: 5b9159cce558559459718ed2ee0dfed6, type: 3}
   textureSample: {fileID: 2800000, guid: b3ce775caae13414bb4616899680306e, type: 3}
   navigatable: 1
   windAnimation: 1

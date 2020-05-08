@@ -156,6 +156,7 @@ namespace VoxelPlay
 							if (colorMap != null) {
 								bit.voxelDefinition = colorMap.GetVoxelDefinition (model.colors [index], voxelTemplate);
 								bit.color = Misc.color32White;
+								//bit.color = colorMap.colorMap[index].color;
 							} else {
 								bit.voxelDefinition = voxelTemplate;
 								bit.color = model.colors [index];

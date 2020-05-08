@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: fixTerrainGenerator
   m_EditorClassIdentifier: 
   maxHeight: 500
-  minHeight: -50
+  minHeight: -200
   seaLevel: -1
   waterLevel: 25
   steps:
@@ -64,7 +64,7 @@ MonoBehaviour:
     threshold: 0.75
     thresholdShift: 0
     thresholdParam: 0.1
-    param: 0.68
+    param: 0.5
     param2: 0
     param3: 0
     weight0: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
     threshold: 0.03
     thresholdShift: 0
     thresholdParam: 0.2
-    param: -0.16
+    param: -0.06
     param2: 0
     param3: 0
     weight0: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
     threshold: 0
     thresholdShift: 0
     thresholdParam: 0
-    param: 1.04
+    param: 1.52
     param2: 0
     param3: 0
     weight0: 0
@@ -161,7 +161,7 @@ MonoBehaviour:
     weight1: 0
     min: 0
     max: 0
-  - enabled: 1
+  - enabled: 0
     operation: 204
     noiseTexture: {fileID: 0}
     frecuency: 0
@@ -169,10 +169,10 @@ MonoBehaviour:
     noiseRangeMax: 0
     inputIndex0: 7
     inputIndex1: 0
-    threshold: 8
+    threshold: 0.3
     thresholdShift: 0
-    thresholdParam: 4
-    param: 0
+    thresholdParam: 10
+    param: 0.5
     param2: 0
     param3: 0
     weight0: 0

@@ -42,13 +42,23 @@ namespace VoxelPlay {
 		public ModelDefinition GetTree (BiomeTree[] trees, float random) {
 			float acumProb = 0;
 			int index = 0;
-			for (int t = 0; t < trees.Length; t++) {
-				acumProb += trees [t].probability;
-				if (random < acumProb) {
-					index = t;
+			for(int i = 0; i < trees.Length; i++)
+			{
+				if (Random.Range(0.0f, 1.0f) < trees[i].probability)
+				{
+					
+
+					index = i;
 					break;
 				}
 			}
+			//for (int t = 0; t < trees.Length; t++) {
+			//	acumProb += trees [t].probability;
+			//	if (random < acumProb) {
+			//		index = t;
+			//		break;
+			//	}
+			//}
 			return trees [index].tree;
 		}
 

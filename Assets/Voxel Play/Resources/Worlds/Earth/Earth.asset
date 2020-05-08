@@ -32,7 +32,6 @@ MonoBehaviour:
   terrainGenerator: {fileID: 11400000, guid: da8d99c8f8f8d6d42a986657d44e1e16, type: 2}
   detailGenerators:
   - {fileID: 11400000, guid: 7079cfd4887c141b4b319f4783afe7ff, type: 2}
-  - {fileID: 11400000, guid: 396d2f96698424fec80dec86e13b70d0, type: 2}
   skyboxDesktop: 1
   skyboxMobile: 3
   skyboxDayCubemap: {fileID: 0}

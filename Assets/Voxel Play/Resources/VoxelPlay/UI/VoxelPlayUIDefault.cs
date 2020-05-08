@@ -81,7 +81,7 @@ namespace VoxelPlay
 				}
 			}
 		}
-
+		public GameObject compassUI;
 		private int inventoryCount = 0;
 		private int recipeCount = 0;
 		[NonSerialized]
@@ -1604,23 +1604,26 @@ namespace VoxelPlay
 
 		#region Initialization Panel
 
-		public override void ToggleInitializationPanel (bool visible, string text = "", float progress = 0)
+		public override void ToggleInitializationPanel(bool visible, string text = "", float progress = 0)
 		{
 			if (!Application.isPlaying)
 				return;
 
 			if (initProgress == null)
 			{
-				CheckReferences ();
+				CheckReferences();
 			}
 			if (progress > 1)
 				progress = 1f;
-			initProgress.localScale = new Vector3 (progress, 1, 1);
+			initProgress.localScale = new Vector3(progress, 1, 1);
 			if (visible)
 			{
 				initText.text = text;
 			}
-			initPanel.SetActive (visible);
+			initPanel.SetActive(visible);
+
+			compassUI.SetActive(!visible);
+
 		}
 
 		#endregion

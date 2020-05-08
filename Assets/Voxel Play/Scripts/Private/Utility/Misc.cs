@@ -46,6 +46,7 @@ namespace VoxelPlay
         public static Color colorWhite = Color.white;
         public static Color colorTransparent = new Color (0, 0, 0, 0);
         public static Color32 color32White = new Color32 (255, 255, 255, 255);
+        public static Color32 color32Red = new Color32(255, 0, 0, 255);
         public static Color32 color32Transparent = new Color32 (0, 0, 0, 0);
 
         // Remove empty elements
