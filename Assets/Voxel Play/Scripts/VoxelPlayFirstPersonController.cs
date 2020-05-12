@@ -827,6 +827,7 @@ namespace VoxelPlay
                 mouseLook.SetCursorLock (true);
                 input.focused = true;
             } else if (Input.GetKeyDown (KeyCode.Escape)) {
+                
                 input.focused = false;
             }
 #endif
@@ -838,7 +839,7 @@ namespace VoxelPlay
 
         private void OnControllerColliderHit (ControllerColliderHit hit)
         {
-
+            
             Rigidbody body = hit.collider.attachedRigidbody;
             //dont move the rigidbody if the character is on top of it
             if (m_CollisionFlags == CollisionFlags.Below) {

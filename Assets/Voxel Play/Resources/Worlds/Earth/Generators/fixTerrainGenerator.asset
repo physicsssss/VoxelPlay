@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ffc129c8af74289a4877ca2b8ea1f5, type: 3}
   m_Name: fixTerrainGenerator
   m_EditorClassIdentifier: 
-  maxHeight: 500
-  minHeight: -200
+  maxHeight: 1000
+  minHeight: -500
   seaLevel: -1
   waterLevel: 25
   steps:
@@ -161,12 +161,12 @@ MonoBehaviour:
     weight1: 0
     min: 0
     max: 0
-  - enabled: 0
-    operation: 204
-    noiseTexture: {fileID: 0}
-    frecuency: 0
+  - enabled: 1
+    operation: 1
+    noiseTexture: {fileID: 2800000, guid: 5c3ac2ef6e25179448b7d40fec0b2e4a, type: 3}
+    frecuency: 0.02
     noiseRangeMin: 0
-    noiseRangeMax: 0
+    noiseRangeMax: 1
     inputIndex0: 7
     inputIndex1: 0
     threshold: 0.3
@@ -179,11 +179,65 @@ MonoBehaviour:
     weight1: 0
     min: 0
     max: 0
+  - enabled: 1
+    operation: 202
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 9
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: -0.55
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 300
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 9
+    inputIndex1: 7
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: 0
+    param2: 0
+    param3: 0
+    weight0: 0.2
+    weight1: 0.8
+    min: 0
+    max: 0
+  - enabled: 1
+    operation: 104
+    noiseTexture: {fileID: 0}
+    frecuency: 0
+    noiseRangeMin: 0
+    noiseRangeMax: 0
+    inputIndex0: 10
+    inputIndex1: 0
+    threshold: 0
+    thresholdShift: 0
+    thresholdParam: 0
+    param: -0.43
+    param2: 0
+    param3: 0
+    weight0: 0
+    weight1: 0
+    min: 0
+    max: 0
   seaDepthMultiplier: 1
-  beachWidth: 0.002
-  waterVoxel: {fileID: 11400000, guid: f196cfea1816a4cb6b8e24bea23c4d60, type: 2}
+  beachWidth: 0.0192
+  waterVoxel: {fileID: 11400000, guid: 7087da32200a0b34fb994d8d44f91597, type: 2}
   shoreVoxel: {fileID: 11400000, guid: deeb7144976df446fb6fb98f7bef3729, type: 2}
   bedrockVoxel: {fileID: 11400000, guid: 62e537e35412d45a799ca5f5da92f457, type: 2}
   addOre: 1
-  moisture: {fileID: 2800000, guid: a1aaa0c8ed5e91543b0693491270b94b, type: 3}
+  moisture: {fileID: 2800000, guid: 402a6e88e3bf748c38cf643ab4c3fdbb, type: 3}
   moistureScale: 0.005

@@ -7,7 +7,7 @@ namespace VoxelPlay {
 	[CreateAssetMenu(menuName = "Voxel Play/Detail Generators/Village Generator", fileName = "VillageGenerator", order = 102)]
 	public class VillageDefaultGenerator : VoxelPlayDetailGenerator {
 
-        [Range(0,0.1f)]
+        [Range(0,01f)]
 		public float spawnProbability = 0.02f;
 		public ModelDefinition[] buildings;
 		public float spawnDistance=150;
@@ -54,6 +54,7 @@ namespace VoxelPlay {
 			int maxx = +explorationRange;
 			position = env.GetChunkPosition (position);
 			Vector3 pos = position;
+			bool temp = true;
 			for (int z = minz; z <= maxz; z++) {
 				for (int x = minx; x < maxx; x++) {
 					if (checkOnlyBorders && z > minz && z < maxz && x > minx && x < maxx) continue;
@@ -63,13 +64,16 @@ namespace VoxelPlay {
 						BuildingStatus bs;
 						if (!buildingPositions.TryGetValue(pos, out bs)) {
 							float h = env.GetTerrainHeight(pos, false);
-							bool temp = true;
+							temp = true;
 							foreach (KeyValuePair<Vector3, BuildingStatus> kv in buildingPositions)
 							{
-								if (Vector3.Distance(pos, kv.Key) < spawnDistance	)
+								if(pos!=kv.Key)
+								if (Vector3.Distance(pos, kv.Key) < spawnDistance)
 								{
 									temp = false;
+									break;
 								}
+
 							}
 
 							if (h > env.waterLevel && temp) {
@@ -88,7 +92,10 @@ namespace VoxelPlay {
 							} else {
 								bs.placementStatus = true;
 							}
-							buildingPositions[pos] = bs;
+							if (temp)
+							{
+								buildingPositions[pos] = bs;
+							}
 						}
 					}
 				}

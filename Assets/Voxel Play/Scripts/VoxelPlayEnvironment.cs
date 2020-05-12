@@ -1141,6 +1141,98 @@ namespace VoxelPlay
             }
             return indices.Count;
         }
+        /// <summary>
+        /// Returns in indices list all visible voxels inside a sphere
+        /// </summary>
+        /// <returns>Count of all visible voxel indices.</returns>
+        /// <param name="center">Center of sphere.</param>
+        /// <param name="radius">Radius of the sphere.</param>
+        /// <param name="indices">A list of indices provided by the user to write to.</param>
+        /// <param name="minOpaque">Minimum opaque value for a voxel to be considered. Water has opaque = 2, cutout = 3, grass = 0, solid = 15.</param>
+        /// <param name="hasContents">Defaults to 1 which will return existing voxels. Pass a 0 to retrieve positions without voxels.</param>
+        public int GetVoxelIndicesCustom(Vector3 center, float radius, List<VoxelIndex> indices, byte minOpaque = 0, byte hasContents = 1)
+        {
+            Vector3 chunkPos, voxelPosition;
+            VoxelIndex index = new VoxelIndex();
+            indices.Clear();
+
+            center.x = Mathf.FloorToInt(center.x) + 0.5f;
+            center.y = Mathf.FloorToInt(center.y) + 0.5f;
+            center.z = Mathf.FloorToInt(center.z) + 0.5f;
+            Vector3 boxMin = center - Misc.vector3one * (radius + 1f);
+            Vector3 boxMax = center + Misc.vector3one * (radius + 1f);
+            Vector3 chunkMinPos = GetChunkPosition(boxMin);
+            Vector3 chunkMaxPos = GetChunkPosition(boxMax);
+            float radiusSqr = radius * radius;
+
+            if (hasContents == 0)
+                minOpaque = 0;
+
+            for (float y = chunkMinPos.y; y <= chunkMaxPos.y; y += CHUNK_SIZE)
+            {
+                chunkPos.y = y;
+                int voxelIndexMin = 0;
+                if (y == chunkMinPos.y)
+                {
+                    int optimalMin = (int)(boxMin.y - (chunkMinPos.y - CHUNK_HALF_SIZE)) * ONE_Y_ROW;
+                    if (optimalMin > 0)
+                    {
+                        voxelIndexMin = optimalMin;
+                    }
+                }
+                int voxelIndexMax = CHUNK_SIZE * CHUNK_SIZE * CHUNK_SIZE;
+                if (y == chunkMaxPos.y)
+                {
+                    int optimalMax = (int)(boxMax.y - (chunkMaxPos.y - CHUNK_HALF_SIZE) + 1) * ONE_Y_ROW;
+                    if (optimalMax < CHUNK_SIZE * CHUNK_SIZE * CHUNK_SIZE)
+                    {
+                        voxelIndexMax = optimalMax;
+                    }
+                }
+                for (float z = chunkMinPos.z; z <= chunkMaxPos.z; z += CHUNK_SIZE)
+                {
+                    chunkPos.z = z;
+                    for (float x = chunkMinPos.x; x <= chunkMaxPos.x; x += CHUNK_SIZE)
+                    {
+                        chunkPos.x = x;
+                        VoxelChunk chunk;
+                        if (GetChunk(chunkPos, out chunk, false))
+                        {
+                            for (int v = voxelIndexMin; v < voxelIndexMax; v++)
+                            {
+                                if (chunk.voxels[v].hasContent == hasContents && chunk.voxels[v].opaque >= minOpaque)
+                                {
+                                    int py = v / ONE_Y_ROW;
+                                    voxelPosition.y = chunk.position.y - CHUNK_HALF_SIZE + 0.5f + py;
+                                    int remy = v - py * ONE_Y_ROW;
+                                    int pz = remy / ONE_Z_ROW;
+                                    voxelPosition.z = chunk.position.z - CHUNK_HALF_SIZE + 0.5f + pz;
+                                    if (voxelPosition.z >= boxMin.z && voxelPosition.z <= boxMax.z)
+                                    {
+                                        int px = remy - pz * ONE_Z_ROW;
+                                        voxelPosition.x = chunk.position.x - CHUNK_HALF_SIZE + 0.5f + px;
+                                        if (voxelPosition.x >= boxMin.x && voxelPosition.x <= boxMax.x)
+                                        {
+                                            float dist = FastVector.SqrDistance(ref voxelPosition, ref center);
+                                            if (dist <= radiusSqr)
+                                            {
+                                                index.chunk = chunk;
+                                                index.voxelIndex = v;
+                                                index.position = voxelPosition;
+                                                index.sqrDistance = dist;
+                                                indices.Add(index);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return indices.Count;
+        }
+
 
 
         /// <summary>

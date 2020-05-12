@@ -395,7 +395,7 @@ namespace VoxelPlay
             }
         }
 
-        void UpdateAmbientProperties ()
+         void UpdateAmbientProperties ()
         {
 
             if (world == null)
@@ -693,6 +693,7 @@ namespace VoxelPlay
                     }
                     navMesh.SetVertices (meshJobs [jobIndex].navMeshVertices);
                     navMesh.SetTriangles (meshJobs [jobIndex].navMeshIndices, 0);
+                    
                     chunk.navMesh = navMesh;
                     AddChunkNavMesh (chunk);
                 }

@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   renderType: 0
-  overrideMaterial: 1
+  overrideMaterial: 0
   texturesByMaterial: 1
   overrideMaterialNonGeo: {fileID: 2100000, guid: 07972e80e311d264e8715aced2830eed,
     type: 2}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: b5e887c3cd8c641078ed968a75ff2b02, type: 3}
+  textureTop: {fileID: 2800000, guid: 5dc03f86be7f4224ebdbf800a603604d, type: 3}
   textureTopEmission: {fileID: 0}
   textureTopNRM: {fileID: 0}
   textureTopDISP: {fileID: 0}
-  textureSide: {fileID: 2800000, guid: b5e887c3cd8c641078ed968a75ff2b02, type: 3}
+  textureSide: {fileID: 2800000, guid: 5dc03f86be7f4224ebdbf800a603604d, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: b5e887c3cd8c641078ed968a75ff2b02, type: 3}
+  textureBottom: {fileID: 2800000, guid: 5dc03f86be7f4224ebdbf800a603604d, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}
@@ -62,7 +62,7 @@ MonoBehaviour:
   landingSound: {fileID: 8300000, guid: d374b5cdc21234dddbddd00d70f47e7b, type: 3}
   impactSound: {fileID: 8300000, guid: b237fe58d85f1447ba6d8a675c379d15, type: 3}
   destructionSound: {fileID: 8300000, guid: 5a6e6cb6c17654bf594121fea4a686a2, type: 3}
-  resistancePoints: 25
+  resistancePoints: 15
   hidden: 0
   canBeCollected: 1
   dropItem: {fileID: 0}

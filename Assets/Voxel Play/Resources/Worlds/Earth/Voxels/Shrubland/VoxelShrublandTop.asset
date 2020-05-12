@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   renderType: 0
-  overrideMaterial: 1
+  overrideMaterial: 0
   texturesByMaterial: 1
   overrideMaterialNonGeo: {fileID: 2100000, guid: faa2c2edc38e819419d06f1a0d9cfedf,
     type: 2}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: 265982a895a6d4eb8b5f52ab3d62f7fd, type: 3}
+  textureTop: {fileID: 2800000, guid: be782abf63f2dc94ca5cbee0ef8705f9, type: 3}
   textureTopEmission: {fileID: 0}
   textureTopNRM: {fileID: 0}
   textureTopDISP: {fileID: 0}
-  textureSide: {fileID: 2800000, guid: a5b9da217333e4e40ad0b92e17bc604b, type: 3}
+  textureSide: {fileID: 2800000, guid: be782abf63f2dc94ca5cbee0ef8705f9, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: 4bd177ea686824d41a9d585fc91c2140, type: 3}
+  textureBottom: {fileID: 2800000, guid: be782abf63f2dc94ca5cbee0ef8705f9, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}

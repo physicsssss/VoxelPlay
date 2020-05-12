@@ -726,10 +726,8 @@ namespace VoxelPlay
         }
 
 
-
         bool HitVoxelFast (Vector3 origin, Vector3 direction, int damage, out VoxelHitInfo hitInfo, float maxDistance = 0, int damageRadius = 1, bool addParticles = true, bool playSound = true, bool allowDamageEvent = true)
         {
-
             RayCastFast (origin, direction, out hitInfo, maxDistance, false, 0, ColliderTypes.IgnorePlayer);
             VoxelChunk chunk = hitInfo.chunk;
             if (chunk == null || hitInfo.voxelIndex < 0) {
@@ -741,31 +739,39 @@ namespace VoxelPlay
             lastHitInfo = hitInfo;
             DamageVoxelFast (ref hitInfo, damage, addParticles, playSound, allowDamageEvent);
             if (damageRadius > 1) {
-                Vector3 otherPos;
-                Vector3 explosionPosition = hitInfo.voxelCenter + hitInfo.normal * damageRadius;
-                damageRadius--;
+                DamageAreaFast(new Vector3(hitInfo.voxelCenter.x, hitInfo.voxelCenter.y, hitInfo.voxelCenter.z), damage, damageRadius, false, true,null,false,true);
+                //Vector3 otherPos;
+                //Vector3 explosionPosition = hitInfo.voxelCenter + hitInfo.normal * damageRadius;
+                //damageRadius--;
 
-                for (int y = -damageRadius; y <= damageRadius; y++) {
-                    otherPos.y = lastHitInfo.voxelCenter.y + y;
-                    for (int z = -damageRadius; z <= damageRadius; z++) {
-                        otherPos.z = lastHitInfo.voxelCenter.z + z;
-                        for (int x = -damageRadius; x <= damageRadius; x++) {
-                            if (x == 0 && z == 0 && y == 0)
-                                continue;
-                            VoxelChunk otherChunk;
-                            int otherIndex;
-                            otherPos.x = lastHitInfo.voxelCenter.x + x;
-                            if (GetVoxelIndex (otherPos, out otherChunk, out otherIndex, false)) {
-                                if (GetVoxelVisibility (otherChunk, otherIndex)) {
-                                    FastVector.NormalizedDirection (ref explosionPosition, ref otherPos, out direction);
-                                    if (RayCast (explosionPosition, direction, out hitInfo)) {
-                                        DamageVoxelFast (ref hitInfo, damage, addParticles, playSound, allowDamageEvent);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                //for (int y = -damageRadius; y <= damageRadius; y++)
+                //{
+                //    otherPos.y = lastHitInfo.voxelCenter.y + y;
+                //    for (int z = -damageRadius; z <= damageRadius; z++)
+                //    {
+                //        otherPos.z = lastHitInfo.voxelCenter.z + z;
+                //        for (int x = -damageRadius; x <= damageRadius; x++)
+                //        {
+                //            if (x == 0 && z == 0 && y == 0)
+                //                continue;
+                //            VoxelChunk otherChunk;
+                //            int otherIndex;
+                //            otherPos.x = lastHitInfo.voxelCenter.x + x;
+                //            if (GetVoxelIndex(otherPos, out otherChunk, out otherIndex, false))
+                //            {
+                //                if (GetVoxelVisibility(otherChunk, otherIndex))
+                //                {
+                //                    FastVector.NormalizedDirection(ref explosionPosition, ref otherPos, out direction);
+                //                    if (RayCast(explosionPosition, direction, out hitInfo))
+                //                    {
+                //                        DamageVoxelFast(ref hitInfo, damage, addParticles, playSound, allowDamageEvent);
+                //                        Debug.DrawLine(explosionPosition, hitInfo.voxelCenter, Color.red);
+                //                    }
+                //                }
+                //            }
+                //        }
+                //    }
+                //}
             }
 
             return true;

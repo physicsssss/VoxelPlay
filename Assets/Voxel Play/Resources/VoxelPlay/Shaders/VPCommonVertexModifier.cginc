@@ -2,7 +2,7 @@
 #define VOXELPLAY_VERTEX_MODIFIER
 
 #define VOXELPLAY_CURVATURE 0
-#define VOXELPLAY_CURVATURE_AMOUNT 0.001
+#define VOXELPLAY_CURVATURE_AMOUNT 0.1
 
 #if VOXELPLAY_CURVATURE
 inline void ApplyCurve(inout float4 v, float3 wpos) {

@@ -51,6 +51,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 0}
   footfalls: []
@@ -64,22 +65,22 @@ MonoBehaviour:
   dropItem: {fileID: 0}
   dropItemLifeTime: 10
   dropItemScale: 0.25
-  icon: {fileID: 2800000, guid: 1ba41347135c616409f609f186430c44, type: 3}
-  textureSample: {fileID: 2800000, guid: c7a44f5e50af8d745af0f56abd79448e, type: 3}
+  icon: {fileID: 2800000, guid: b61e3daf71f54654292e2fd6e0ca86c8, type: 3}
+  textureSample: {fileID: 2800000, guid: b61e3daf71f54654292e2fd6e0ca86c8, type: 3}
   navigatable: 0
   windAnimation: 1
-  model: {fileID: -927199367670048503, guid: f97e0c19d0c15ab46b15e94a95a6ab8f, type: 3}
+  model: {fileID: -927199367670048503, guid: 7d45a79e5300ec64794935b0e3ebbd68, type: 3}
   prefabMaterial: 0
-  gpuInstancing: 0
+  gpuInstancing: 1
   castShadows: 1
   receiveShadows: 1
   createGameObject: 0
   offset: {x: 0, y: 0, z: 0}
   offsetRandom: 0
-  offsetRandomRange: {x: 0, y: 0, z: 0}
+  offsetRandomRange: {x: 0, y: -0.9, z: 0}
   scale: {x: 1, y: 1, z: 1}
   rotation: {x: 0, y: 0, z: 0}
-  rotationRandomY: 0
+  rotationRandomY: 1
   promotesTo: {fileID: 0}
   replacedBy: {fileID: 0}
   spreads: 0

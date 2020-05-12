@@ -43,7 +43,7 @@ MonoBehaviour:
   exposure: 1
   cloudVoxel: {fileID: 11400000, guid: 7b4e0d11699534d52892e331bcfadbb1, type: 2}
   cloudCoverage: 110
-  cloudAltitude: 300
+  cloudAltitude: 800
   skyTint: {r: 0.52, g: 0.5, b: 1, a: 1}
   lightScattering: 0.01
   lightIntensityMultiplier: 2
