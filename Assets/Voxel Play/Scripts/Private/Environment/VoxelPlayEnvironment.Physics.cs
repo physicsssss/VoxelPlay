@@ -737,7 +737,7 @@ namespace VoxelPlay
             }
 
             lastHitInfo = hitInfo;
-            DamageVoxelFast (ref hitInfo, damage, addParticles, playSound, allowDamageEvent);
+            //DamageVoxelFast (ref hitInfo, damage, addParticles, playSound, allowDamageEvent);
             if (damageRadius > 1) {
                 DamageAreaFast(new Vector3(hitInfo.voxelCenter.x, hitInfo.voxelCenter.y, hitInfo.voxelCenter.z), damage, damageRadius, false, true,null,false,true);
                 //Vector3 otherPos;
@@ -804,6 +804,7 @@ namespace VoxelPlay
             float damageRadiusSqr = damageRadius * damageRadius;
             destroyedVoxelParticlesAmount = 5;
             for (int k = 0; k < count; k++) {
+              
                 VoxelIndex vi = tempVoxelIndices[k];
                 VoxelChunk otherChunk = vi.chunk;
                 int otherIndex = vi.voxelIndex;

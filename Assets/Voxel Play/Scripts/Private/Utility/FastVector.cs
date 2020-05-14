@@ -92,9 +92,18 @@ namespace VoxelPlay {
 			float dy = to.y - from.y;
 			float dz = to.z - from.z;
 			float length = (float)Math.Sqrt(dx * dx + dy * dy + dz * dz);
-			result.x = dx / length;
-			result.y = dy / length;
-			result.z = dz / length;
+			if (length == 0)
+			{
+				result.x = 0;
+				result.y = 0;
+				result.z = 0;
+			}
+			else
+			{
+				result.x = dx / length;
+				result.y = dy / length;
+				result.z = dz / length;
+			}
 		}
 
 		/// <summary>

@@ -477,7 +477,10 @@ namespace VoxelPlay
 
 			
 			resolutionPlaceholder.SetActive(state);
-		
+			if (!state)
+			{
+				env.Redraw();
+			}
 			EnableCursor(state);
 
 			if (state)

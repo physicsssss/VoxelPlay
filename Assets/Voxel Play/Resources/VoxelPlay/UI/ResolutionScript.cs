@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.UI;
 using VoxelPlay;
@@ -18,10 +17,10 @@ public class ResolutionScript : MonoBehaviour
     void Update()
     {
       
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            Screen.fullScreen = !Screen.fullScreen;
-        }
+    }
+    public void ToggleFullScreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
     }
     public void SetResolution(float _height)
     {
@@ -33,5 +32,6 @@ public class ResolutionScript : MonoBehaviour
     public void SetRenderDistance()
     {
         env.visibleChunksDistance = (int)renderDistanceSlider.value;
+        
     }
 }
