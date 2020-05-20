@@ -22,8 +22,10 @@ namespace VoxelPlay {
 		void InitNavMesh () {
             if (!enableNavMesh) return;
 			navMeshBuildSettings = NavMesh.GetSettingsByIndex (0);
-			navMeshBuildSettings.agentClimb = 8f;
+			navMeshBuildSettings.agentClimb = 18f;
 			navMeshBuildSettings.agentSlope = 80;
+			navMeshBuildSettings.agentHeight = 18;
+			navMeshBuildSettings.agentRadius = 8;
 			navMeshSources = Misc.GetList<NavMeshBuildSource> (lowMemoryMode, 2048);
 			navMeshData = new NavMeshData ();
 			navMeshInstance = NavMesh.AddNavMeshData (navMeshData);
