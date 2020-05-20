@@ -19,11 +19,11 @@ MonoBehaviour:
   overrideMaterialNonGeo: {fileID: 0}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: 8a461058118e04cc5847f20edcdf3bcb, type: 3}
+  textureTop: {fileID: 2800000, guid: a3fb5c07da88d6247b76f176930a1be4, type: 3}
   textureTopEmission: {fileID: 0}
   textureTopNRM: {fileID: 0}
   textureTopDISP: {fileID: 0}
-  textureSide: {fileID: 2800000, guid: 8a461058118e04cc5847f20edcdf3bcb, type: 3}
+  textureSide: {fileID: 2800000, guid: edc1debaaf0db32488f4fce7e8ae974c, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -39,7 +39,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: 8a461058118e04cc5847f20edcdf3bcb, type: 3}
+  textureBottom: {fileID: 2800000, guid: 6f2289160d191f9438b03f63fd3636d8, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}

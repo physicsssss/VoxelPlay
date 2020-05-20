@@ -19,11 +19,11 @@ MonoBehaviour:
   overrideMaterialNonGeo: {fileID: 0}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: a4ce208caf66c514d8af0aad610e69c5, type: 3}
+  textureTop: {fileID: 2800000, guid: b816fe25204a4114ab5b8362afb248ca, type: 3}
   textureTopEmission: {fileID: 0}
   textureTopNRM: {fileID: 2800000, guid: 1c9e163bbaf58dd4db3b2b1a8a06478a, type: 3}
   textureTopDISP: {fileID: 2800000, guid: 7e1d6437a238e1b4785eb750b11dcbf5, type: 3}
-  textureSide: {fileID: 2800000, guid: a4ce208caf66c514d8af0aad610e69c5, type: 3}
+  textureSide: {fileID: 2800000, guid: eca8037223487144b85b633646ee9003, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -39,7 +39,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: a4ce208caf66c514d8af0aad610e69c5, type: 3}
+  textureBottom: {fileID: 2800000, guid: 7fd481b89d8f48a49916183ef6d0b3eb, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}
@@ -51,6 +51,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: d8c0c30b8f0974325b9b8aba85266fb0, type: 3}
   footfalls: []
@@ -66,7 +67,7 @@ MonoBehaviour:
   dropItemScale: 0.25
   icon: {fileID: 0}
   textureSample: {fileID: 2800000, guid: 9ee79894b271342b7a5188e2778f8c02, type: 3}
-  navigatable: 1
+  navigatable: 0
   windAnimation: 1
   model: {fileID: 0}
   prefabMaterial: 0

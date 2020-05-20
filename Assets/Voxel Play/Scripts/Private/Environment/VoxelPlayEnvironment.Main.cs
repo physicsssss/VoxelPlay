@@ -107,14 +107,17 @@ namespace VoxelPlay
 
         void OnEnable ()
         {
-            if (!initialized) {
+            if (!initialized)
+            {
 #if UNITY_EDITOR
-                CheckSpecialFeaturesScriptingSupport ();
+                CheckSpecialFeaturesScriptingSupport();
 #endif
-                BootEngine ();
+                BootEngine();
+
+               
+
             }
         }
-
         void Update ()
         {
             if (initialized && input != null) {
@@ -433,7 +436,9 @@ namespace VoxelPlay
             if (input != null) {
                 input.enabled = true;
             }
+            
             VoxelPlayUI.instance.ToggleInitializationPanel (false);
+           
             ShowMessage (welcomeMessage, welcomeMessageDuration, true);
         }
 

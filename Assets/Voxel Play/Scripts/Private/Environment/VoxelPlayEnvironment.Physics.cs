@@ -738,7 +738,7 @@ namespace VoxelPlay
 
             lastHitInfo = hitInfo;
             //DamageVoxelFast (ref hitInfo, damage, addParticles, playSound, allowDamageEvent);
-            if (damageRadius > 1) {
+            //if (damageRadius > 1) {
                 DamageAreaFast(new Vector3(hitInfo.voxelCenter.x, hitInfo.voxelCenter.y, hitInfo.voxelCenter.z), damage, damageRadius, false, true,null,false,true);
                 //Vector3 otherPos;
                 //Vector3 explosionPosition = hitInfo.voxelCenter + hitInfo.normal * damageRadius;
@@ -772,7 +772,7 @@ namespace VoxelPlay
                 //        }
                 //    }
                 //}
-            }
+            //}
 
             return true;
         }
@@ -839,7 +839,7 @@ namespace VoxelPlay
             destroyedVoxelParticlesAmount = DEFAULT_DESTROYED_VOXEL_PARTICLE_AMOUNT;
             return damagedCount;
         }
-
+        
         /// <summary>
         /// Performs the voxel damage.
         /// </summary>

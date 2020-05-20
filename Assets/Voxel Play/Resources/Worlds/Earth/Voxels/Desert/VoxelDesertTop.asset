@@ -20,11 +20,11 @@ MonoBehaviour:
     type: 2}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: cec0b88cd39937344a23e7ec95ab9538, type: 3}
+  textureTop: {fileID: 2800000, guid: 8c2c7c1b64054534f87442246997a1fe, type: 3}
   textureTopEmission: {fileID: 0}
   textureTopNRM: {fileID: 0}
   textureTopDISP: {fileID: 0}
-  textureSide: {fileID: 2800000, guid: cec0b88cd39937344a23e7ec95ab9538, type: 3}
+  textureSide: {fileID: 2800000, guid: 544b0129237244043893d5736cd86695, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -40,7 +40,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: cec0b88cd39937344a23e7ec95ab9538, type: 3}
+  textureBottom: {fileID: 2800000, guid: 423d23fa8f3ff9640a774e642d295871, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}

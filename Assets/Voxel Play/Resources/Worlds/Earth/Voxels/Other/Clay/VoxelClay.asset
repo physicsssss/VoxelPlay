@@ -19,11 +19,11 @@ MonoBehaviour:
   overrideMaterialNonGeo: {fileID: 0}
   hasContent: 1
   opaque: 0
-  textureTop: {fileID: 2800000, guid: eb0600372c3ce944798b95f7cbddf9b7, type: 3}
+  textureTop: {fileID: 2800000, guid: a8cbbfef0ca31514fae509d7e698de59, type: 3}
   textureTopEmission: {fileID: 0}
   textureTopNRM: {fileID: 0}
   textureTopDISP: {fileID: 0}
-  textureSide: {fileID: 2800000, guid: eb0600372c3ce944798b95f7cbddf9b7, type: 3}
+  textureSide: {fileID: 2800000, guid: bc898da05a29f094f99b8aa254196875, type: 3}
   textureSideEmission: {fileID: 0}
   textureSideNRM: {fileID: 0}
   textureSideDISP: {fileID: 0}
@@ -39,7 +39,7 @@ MonoBehaviour:
   textureLeftEmission: {fileID: 0}
   textureLeftNRM: {fileID: 0}
   textureLeftDISP: {fileID: 0}
-  textureBottom: {fileID: 2800000, guid: eb0600372c3ce944798b95f7cbddf9b7, type: 3}
+  textureBottom: {fileID: 2800000, guid: 2944626c5541c664e9d18d6eb863ec26, type: 3}
   textureBottomEmission: {fileID: 0}
   textureBottomNRM: {fileID: 0}
   textureBottomDISP: {fileID: 0}
@@ -51,6 +51,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 0}
   footfalls: []

@@ -164,7 +164,7 @@ MonoBehaviour:
   - enabled: 1
     operation: 1
     noiseTexture: {fileID: 2800000, guid: 5c3ac2ef6e25179448b7d40fec0b2e4a, type: 3}
-    frecuency: 0.02
+    frecuency: 0.0333
     noiseRangeMin: 0
     noiseRangeMax: 1
     inputIndex0: 7
@@ -240,4 +240,4 @@ MonoBehaviour:
   bedrockVoxel: {fileID: 11400000, guid: 62e537e35412d45a799ca5f5da92f457, type: 2}
   addOre: 1
   moisture: {fileID: 2800000, guid: 402a6e88e3bf748c38cf643ab4c3fdbb, type: 3}
-  moistureScale: 0.005
+  moistureScale: 0.01

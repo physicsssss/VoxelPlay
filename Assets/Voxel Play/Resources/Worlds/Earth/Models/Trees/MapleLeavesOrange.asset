@@ -91,8 +91,8 @@ MonoBehaviour:
   height: 13
   playerDamage: 0
   playerDamageDelay: 2
-  triggerCollapse: 1
-  willCollapse: 1
+  triggerCollapse: 0
+  willCollapse: 0
   ignoresRayCast: 0
   generateColliders: 0
   highlightOffset: {x: 0, y: 0, z: 0}

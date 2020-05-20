@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using Photon.Pun;
 
 namespace VoxelPlay
 {
@@ -592,5 +593,7 @@ namespace VoxelPlay
             Debug.Log("Selected item: " + selectedItemIndex + ": " + items[selectedItemIndex].item.voxelType);
             BrickBuilder._instance.BuildBrick(items[_selectedItemIndex].item, Mathf.FloorToInt(items[_selectedItemIndex].quantity));
         }
+      
     }
+    
 }
