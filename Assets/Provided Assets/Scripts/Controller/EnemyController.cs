@@ -22,8 +22,10 @@ public class EnemyController : AIController
 
     private void Update()
     {
-        PrintLog("Update");
-        if (CheckPlayerInBounds() && CheckPlayerInVision())
+        if(!playerCollider)
+            playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider>();
+
+        if (CheckPlayerInBounds())
         {
             PrintLog("Distance from Player -> " + Vector3.Distance(transform.position, playerCollider.transform.position));
             if (AttackPlayer())
@@ -87,20 +89,29 @@ public class EnemyController : AIController
 
     void Attack()
     {
+        PrintLog("Attack");
         agent.speed = 0;
         agent.isStopped = true;
+        agent.velocity = Vector3.zero;
 
-        // TODO: Attacking animation
+        if (!animator.GetBool("IsAttacking"))
+            animator.SetBool("IsAttacking", true);
+        if (animator.GetInteger("Speed") != 0)
+            animator.SetInteger("Speed", 0);
         // TODO: Attacking mechanism
     }
 
     void Chase()
     {
+        PrintLog("Chase");
         agent.isStopped = false;
         agent.SetDestination(playerCollider.transform.position);
         agent.speed = chaseSpeed;
 
-        // TODO: Chasing animations
+        if (animator.GetBool("IsAttacking"))
+            animator.SetBool("IsAttacking", false);
+        if (animator.GetInteger("Speed") != 2)
+            animator.SetInteger("Speed", 2);
     }
 
     void PrintLog(string log)

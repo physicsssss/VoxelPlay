@@ -319,7 +319,7 @@ namespace VoxelPlay
 
 				if (Input.GetKeyDown(KeyCode.O))
 				{
-					VoxelPlayPlayer.instance.BuildBricks();
+					//VoxelPlayPlayer.instance.BuildBricks();
 				}
 			}
 
@@ -1652,8 +1652,9 @@ namespace VoxelPlay
 				initText.text = text;
 			}
 			initPanel.SetActive(visible);
-
-			compassUI.SetActive(!visible);
+			
+			// * Faiq: Commented due to unassigned error
+			//compassUI.SetActive(!visible);
 
 		}
 
