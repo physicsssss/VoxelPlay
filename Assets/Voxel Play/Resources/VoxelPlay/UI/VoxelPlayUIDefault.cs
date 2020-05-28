@@ -90,7 +90,7 @@ namespace VoxelPlay
 		[NonSerialized]
 		public bool inventoryUIShouldBeRebuilt, recipeUIShouldBeRebuilt;
 
-		static char[] SEPARATOR_SPACE = { ' ' };
+		static char[] SEPARATOR_SPACE = { ' ' } ;
 		string KEY_CODES = "1234567890";
 
 		StringBuilder sb, sbDebug;
