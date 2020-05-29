@@ -55,7 +55,7 @@ namespace VoxelPlay
 
         Color32 [] defaultMapColors, defaultPinkColors;
 
-        int texSize=1024;
+        //int texSize=1024;
         void DisposeTextures ()
         {
             if (voxelDefinitions != null) {

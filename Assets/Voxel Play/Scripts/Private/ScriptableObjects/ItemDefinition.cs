@@ -24,6 +24,12 @@ namespace VoxelPlay {
 		public string value;
 	}
 
+	[Serializable]
+	public struct MaterialToCraft {
+		public string name;
+		public int value;
+	}
+
 	[CreateAssetMenu (menuName = "Voxel Play/Item Definition", fileName = "ItemDefinition", order = 104)]
 	[HelpURL("https://kronnect.freshdesk.com/support/solutions/articles/42000051366-item-definitions")]
 	public partial class ItemDefinition : ScriptableObject {
@@ -60,6 +66,9 @@ namespace VoxelPlay {
 		[Tooltip ("Custom item properties.")]
 		public ItemProperty[] properties;
 
+		[Tooltip ("Materials needed to craft this weapon.")]
+		public MaterialToCraft[] materialsToCraft;
+
         [Range(0,15), Tooltip("Intensity of emitted light")]
         public byte lightIntensity = 15;
 
@@ -91,6 +100,10 @@ namespace VoxelPlay {
 		public void SetPropertyValue (string name, string value) {
 			if (properties == null) {
 				properties = new ItemProperty[0];
+			}
+			if(materialsToCraft == null)
+			{
+				materialsToCraft = new MaterialToCraft[0];
 			}
 			string nameCheck = name.ToUpper ();
 			for (int k = 0; k < properties.Length; k++) {

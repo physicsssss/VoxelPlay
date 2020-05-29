@@ -156,7 +156,8 @@ namespace VoxelPlay
                 }
                 hitDamage = items [_selectedItemIndex].item.GetPropertyValue<int> ("hitDamage", bareHandsHitDamage);
                 hitDelay = items [_selectedItemIndex].item.GetPropertyValue<float> ("hitDelay", bareHandsHitDelay);
-                hitRange = 30;//TODO: RESET RANGE items [_selectedItemIndex].item.GetPropertyValue<float> ("hitRange", bareHandsHitRange);
+                // * hitRange = 30; Faiq
+                hitRange = items [_selectedItemIndex].item.GetPropertyValue<float> ("hitRange", bareHandsHitRange);//TODO: RESET RANGE items [_selectedItemIndex].item.GetPropertyValue<float> ("hitRange", bareHandsHitRange);
                 hitDamageRadius = items [_selectedItemIndex].item.GetPropertyValue<int> ("hitDamageRadius", bareHandsHitDamageRadius);
 
                 ShowSelectedItem ();
@@ -233,8 +234,11 @@ namespace VoxelPlay
             get {
                 VoxelPlayEnvironment env = VoxelPlayEnvironment.instance;
                 if (env != null && env.buildMode) {
+                    Debug.Log("env.allItems");
                     return env.allItems;
                 }
+                    Debug.Log("env.allItems");
+
                 return playerItems;
             }
         }
@@ -374,6 +378,7 @@ namespace VoxelPlay
             InventoryItem i;
             for (int k = 0; k < itemsCount; k++) {
                 if (items [k].item == newItem) {
+                    // Debug.Log("VoxelPlayPlayer: AddInventoryItem -> " + items[k].title);
                     i = items [k];
                     i.quantity += quantity;
                     items [k] = i;
@@ -389,7 +394,8 @@ namespace VoxelPlay
             i.item = newItem;
             i.quantity = quantity;
             items.Add (i);
-
+            PrintLog("Adding -> " + i.item.title);
+            PrintLog("_selectedItemIndex -> " + _selectedItemIndex);
             if (_selectedItemIndex < 0) {
                 selectedItemIndex = items.Count - 1;
                 ShowSelectedItem ();
@@ -401,6 +407,11 @@ namespace VoxelPlay
             }
 
             return true;
+        }
+
+        void PrintLog(string log)
+        {
+            Debug.Log("VoxelPlaPlayer: " + log);
         }
 
         /// <summary>
