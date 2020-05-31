@@ -1128,7 +1128,7 @@ namespace VoxelPlay
                     Text t = itemButton.transform.Find("KeyCodeShadow/KeyCodeText").GetComponent<Text>();
                     t.enabled = c == 0;
                     t.text = keyCode;
-                    PrintLog("get name -> " + itemButton.GetComponent<RawImage>().texture.name);
+                    //PrintLog("get name -> " + itemButton.GetComponent<RawImage>().texture.name);
 
                     inventoryItemsImages.Add(itemButton.GetComponent<RawImage>());
                     int aux = i; // dummy assignation so the lambda expression takes the appropiate value and not always the last item
@@ -1328,7 +1328,7 @@ namespace VoxelPlay
             if (inventoryItemsImages == null || env == null)
                 return;
 
-			PrintLog("RefreshInventoryContents");
+			//PrintLog("RefreshInventoryContents");
             int itemsPerPage = _inventoryRows * _inventoryColumns;
             int selectedItemIndex = VoxelPlayPlayer.instance.selectedItemIndex;
             List<InventoryItem> playerItems = VoxelPlayPlayer.instance.items;
@@ -1344,7 +1344,7 @@ namespace VoxelPlay
                 if (k >= inventoryItemsImagesCount)
                     continue;
                 RawImage img = inventoryItemsImages[k];
-                PrintLog("img name -> " + img.texture.name);
+                //PrintLog("img name -> " + img.texture.name);
                 if (img == null)
                     continue;
                 Text quantityShadow = img.transform.Find("QuantityShadow").GetComponent<Text>();

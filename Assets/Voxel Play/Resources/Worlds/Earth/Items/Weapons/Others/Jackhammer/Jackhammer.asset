@@ -31,7 +31,7 @@ MonoBehaviour:
   - name: hitDelay
     value: .5
   - name: hitRange
-    value: 13
+    value: 130
   - name: durability
     value: 47
   - name: hitItemType

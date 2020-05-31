@@ -39,11 +39,11 @@ namespace VoxelPlayDemos
 			// Add a sword 
 			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Sword"));
 
-			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Diamond Axe"));
+			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Axe", 0));
 
 			// Add special instructions after 4 seconds of game running
 			Invoke ("SpecialKeys", 4);
-			Debug.Log("DemoEarth -> OnInitialized");
+//			Debug.Log("DemoEarth -> OnInitialized");
 		}
 
 		void OnPlayerGetDamage (ref int damage, int remainingLifePoints) {

@@ -12,6 +12,7 @@ namespace VoxelPlay
         // Inventory related
         void AddInventoryItem (ItemDefinition [] newItems);
         bool AddInventoryItem (ItemDefinition newItem, float quantity = 1);
+        // bool AddInventoryItem (ItemDefinition newItem, float quantity = 1, int level);
         bool ExternalCheckIfItemIsInInventory(ItemDefinition newItem);
         void PickUpItem (ItemDefinition newItem, float quantity = 1);
         void UnSelectItem ();

@@ -708,6 +708,7 @@ MonoBehaviour:
   _hitDamage: 3
   _hitRange: 30
   _hitDamageRadius: 10
+  _durability: 1
   _inventorySize: 16
   _recipeSize: 16
   _isInventoryFull: 0
@@ -716,6 +717,7 @@ MonoBehaviour:
   bareHandsHitDamage: 2
   bareHandsHitRange: 5
   bareHandsHitDamageRadius: 5
+  bareHandsdurability: -1
   playerItems: []
 --- !u!82 &97181822
 AudioSource:
