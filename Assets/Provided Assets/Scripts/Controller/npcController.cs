@@ -65,7 +65,7 @@ public class npcController : AIController
     void Idle()
     {
         animator.SetBool("IsTalking", false);
-        animator.SetInteger("Speed", 0);
+        animator.SetFloat("Speed", agent.velocity.magnitude);
     }
 
     private void OnTriggerEnter(Collider other)

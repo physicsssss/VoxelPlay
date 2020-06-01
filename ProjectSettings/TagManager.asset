@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Bullet
   - NetworkManager
+  - Enemy
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using VoxelPlay;
 
 public class AIController : MonoBehaviour
 {
@@ -20,10 +21,17 @@ public class AIController : MonoBehaviour
         Attacking,
         Talking,
     }
-
+    public int AIdamage;
     [Header("Common Settings")]
     public Type AIType;
     public AIStates currentState;
+    public Collider playerCollider;
+
+    [Header("Health")]
+    public float maxHealth;
+    public float currentHealth;
+
+
 
     [System.Serializable]
     public class PatrollingSettings
@@ -89,10 +97,11 @@ public class AIController : MonoBehaviour
 
     private void Start()
     {
+        currentHealth = maxHealth;
         agent = GetComponent<NavMeshAgent>();
         currentState = AIStates.Patrolling;
 
-        animator = transform.GetChild(0).GetComponent<Animator>();
+        animator = transform.GetComponent<Animator>();
 
         patrollingSettings.Init(transform.position);
 
@@ -102,10 +111,16 @@ public class AIController : MonoBehaviour
             patrollingSettings.speed = patrollingSettings.movingSpeed * 10;
         }
     }
-
+    private void Update()
+    {
+        if (currentHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
     public virtual void Patrol()
     {
-        if (currentState == AIStates.Patrolling && patrollingSettings.movingSpeed > 0)
+        if (currentState == AIStates.Patrolling && patrollingSettings.movingSpeed > 0 && agent.isActiveAndEnabled)
         {
             PrintLog("Patrolling");
             patrollingSettings.UpdateDestination(transform.position);
@@ -117,18 +132,22 @@ public class AIController : MonoBehaviour
             if(AIType == Type.Enemy)
                 animator.SetBool("IsAttacking", false);
             else
-                animator.SetBool("IsTalking", false); 
+                animator.SetBool("IsTalking", false);
 
-            if(animator.GetInteger("Speed") != patrollingSettings.movingSpeed)
-                animator.SetInteger("Speed", patrollingSettings.movingSpeed);
+            // if(animator.GetInteger("Speed") != patrollingSettings.movingSpeed)
+            //   animator.SetInteger("Speed", patrollingSettings.movingSpeed);
+            animator.SetFloat("Speed", agent.velocity.magnitude);
         }
         else
         {
-            if(animator.GetInteger("Speed") != patrollingSettings.movingSpeed)
-                animator.SetInteger("Speed", patrollingSettings.movingSpeed);
+            //if(animator.GetInteger("Speed") != patrollingSettings.movingSpeed)
+                animator.SetFloat("Speed", agent.velocity.magnitude);
         }
     }
-
+    public void DamagePlayer()
+    {
+        playerCollider.GetComponent<VoxelPlayPlayer>().DamageToPlayer(AIdamage);
+    }
     void PrintLog(string log)
     {
         Debug.Log("AIController: " + log);
@@ -137,6 +156,11 @@ public class AIController : MonoBehaviour
     void PrintLogError(string log)
     {
         Debug.LogError("AIController Error: " + log);
+    }
+    public void DoDamage(float _dmg)
+    {
+        Debug.LogError("Damaging");
+        currentHealth -= _dmg;
     }
 }
 

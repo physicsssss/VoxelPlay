@@ -60,23 +60,25 @@ namespace VoxelPlay {
 					if (checkOnlyBorders && z > minz && z < maxz && x > minx && x < maxx) continue;
 					pos.x = position.x + x * VoxelPlayEnvironment.CHUNK_SIZE;
 					pos.z = position.z + z * VoxelPlayEnvironment.CHUNK_SIZE;
-					if (WorldRand.GetValue(pos) > prob) {
+					temp = true;
+					foreach (KeyValuePair<Vector3, BuildingStatus> kv in buildingPositions)
+					{
+						if (pos != kv.Key)
+							if (Vector3.Distance(pos, kv.Key) < spawnDistance)
+							{
+								temp = false;
+								break;
+							}
+
+					}
+					if (WorldRand.GetValue(pos) > prob && temp) {
 						BuildingStatus bs;
 						if (!buildingPositions.TryGetValue(pos, out bs)) {
 							float h = env.GetTerrainHeight(pos, false);
-							temp = true;
-							foreach (KeyValuePair<Vector3, BuildingStatus> kv in buildingPositions)
-							{
-								if(pos!=kv.Key)
-								if (Vector3.Distance(pos, kv.Key) < spawnDistance)
-								{
-									temp = false;
-									break;
-								}
+							
+							
 
-							}
-
-							if (h > env.waterLevel && temp) {
+							if (h > env.waterLevel) {
 								
 								
 								//added -5

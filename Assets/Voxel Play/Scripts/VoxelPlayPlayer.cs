@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using Photon.Pun;
 
+
 namespace VoxelPlay
 {
 
@@ -107,7 +108,13 @@ namespace VoxelPlay
         }
 
         private void Update() { // Ayaz: Just to test, remove afterwards
-            if(Input.GetKey(KeyCode.P))
+            bleedHp += recoverBleedSpeed * Time.deltaTime;
+            if (bleedHp > MaxbleedHp)
+            {
+                bleedHp =MaxbleedHp;
+            }
+            BleedBehavior.minBloodAmount = maxBloodIndication * (MaxbleedHp - bleedHp) / MaxbleedHp;
+            if (Input.GetKey(KeyCode.P))
                 SetInventorySize(setInventorySizeDemo);
         }
 
@@ -167,9 +174,16 @@ namespace VoxelPlay
             }
             return true;
         }
-
+        float MaxbleedHp=100;
+        float bleedHp = 100;
+        float recoverBleedSpeed = 2;
+        [SerializeField]
+        private float damageBloodAmount = 3; //amount of blood when taking damage (relative to damage taken (relative to HP remaining))
+        [SerializeField]
+        private float maxBloodIndication = 0.5f; //max amount of blood when not taking damage (relative to HP lost)
         public virtual void DamageToPlayer (int damagePoints)
         {
+            BleedBehavior.BloodAmount += Mathf.Clamp01(damageBloodAmount * damagePoints / bleedHp);
             if (damagePoints > 0 && OnPlayerGetDamage != null) {
                 OnPlayerGetDamage (ref damagePoints, _life - damagePoints);
             }
@@ -178,6 +192,7 @@ namespace VoxelPlay
                 if (OnPlayerIsKilled != null)
                     OnPlayerIsKilled ();
             }
+            BleedBehavior.minBloodAmount = maxBloodIndication * (MaxbleedHp - bleedHp) / MaxbleedHp;
         }
 
 

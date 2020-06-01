@@ -15,5 +15,5 @@ MonoBehaviour:
   enabled: 1
   spawnProbability: 0.007
   buildings:
-  - {fileID: 11400000, guid: 37acafe6f675bdf4981361d8015108ca, type: 2}
+  - {fileID: 11400000, guid: 3f8e1dbecf58a0f40a2dc9e278cd1009, type: 2}
   spawnDistance: 1300

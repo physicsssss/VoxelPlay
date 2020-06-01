@@ -1,0 +1,35 @@
+Setup:
+
+- Add the BleedBehaviour-script to a camera, and make sure the Blood-image, normalmap and shader are correctly assigned.
+
+- Set the parameters to the desired values. (or leave them on the default values, or check the Camera-prefab for good values):
+	- TestingBloodAmount: You can use this in the editor to test how it looks. (keep in range [0,1])
+	- EdgeSharpness: Defines how sharp the alpha of the blood is (set this to 1 or higher)
+		(In general, the higher this value is, the closer minAlpha en maxAlpha should be set to 0.5.)
+	- minAlpha: The alpha value to use in the shader when BloodAmount is 0. (remaps the BloodAmount, keep in range [0,maxAlpha[)
+	- maxAlpha: The alpha value to use in the shader when BloodAmount is 1. (remaps the BloodAmount, keep in range ]minAlpha,1])
+		How to set these 3 parameters (EdgeSharpness, minAlpha and maxAlpha):
+		- First, Leave minAlpha and maxAlpha at their initial values (0 and 1 respectively)
+		- Change the value of EdgeSharpness. (Test this with a couple of values for TestingBloodAmount.)
+		- Set TestingBloodAmount temporarily to 0 and change minAlpha until you have the blood amount you want to be the minimum. (Normally this is the highest value without any blood on screen)
+		- Set TestingBloodAmount temporarily to 1 and change maxAlpha until you have the blood amount you want to be the maximum.
+	- distortion: The refraction/distortion value. (0 = no distortion)
+	- autoFadeOut: When on, the BloodAmount will automatically decrease at runtime. This way, you only have to set the BloodAmount when taking damage.
+	- autoFadeOutAbsReduc: Absolute reduction per seconde. (when autoFadeOut is on)
+    - autoFadeOutRelReduc: Relative reduction per seconde. (when autoFadeOut is on)
+	- updateSpeed: Defines how fast the effect updates to the new BloodAmount value, mainly to smoothen the change in BloodAmount.
+
+Usage:
+
+2 values can be set at runtime via script: BloodAmount and minBloodAmount.
+- When the player takes damage, increase BloodAmount with a value between 0 and 1. (normally relative to the damage taken, or you could increase this value the lower the Player's HP is)
+	eg: BleedBehaviour.BloodAmount += damageTaken/maxHP;
+- Optionally you could increase minBloodAmount each time the player takes damage, this way there will be more blood onscreen the lower the Player's HP, making the blood an indication of the player's health, rather than just recent damage taken.
+	eg: BleedBehaviour.minBloodAmount = 0.5f * (maxHP-HP)/maxHP; (in this example minBloodAmount will be (almost) 0.5f when the player is at the brink of dead)
+
+If autoFadeOut is enabled, the blood will fade out automatically, otherwise you will have to this yourself (by decreasing BloodAmount continuously).
+
+
+The Demo-scene is a simple demonstration of the blood effect. Walk into the fire to take damage and see the blood effect in action.
+The SimpleFire-script (attached to the fire-prefab) damages the player (the SimplePlayer-script attached to the First Person Controller-prefab) on collision, which in turn sets parameters of the BleedBehaviour-script attached to the camera (as a child of the First Person Controller).
+

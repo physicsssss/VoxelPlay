@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VoxelPlay;
 
 public class EnemyController : AIController
 {
 
     [Header("Customized Settings")]
-    public Collider playerCollider;
     public float chaseSpeed;
 
     // For enemy sighting
@@ -39,6 +39,10 @@ public class EnemyController : AIController
             currentState = AIStates.Patrolling;
 
         HandleState();
+        if (currentHealth <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     bool AttackPlayer()
@@ -96,8 +100,8 @@ public class EnemyController : AIController
 
         if (!animator.GetBool("IsAttacking"))
             animator.SetBool("IsAttacking", true);
-        if (animator.GetInteger("Speed") != 0)
-            animator.SetInteger("Speed", 0);
+       // if (animator.GetInteger("Speed") != 0)
+            animator.SetFloat("Speed", agent.velocity.magnitude);
         // TODO: Attacking mechanism
     }
 
@@ -110,10 +114,12 @@ public class EnemyController : AIController
 
         if (animator.GetBool("IsAttacking"))
             animator.SetBool("IsAttacking", false);
-        if (animator.GetInteger("Speed") != 2)
-            animator.SetInteger("Speed", 2);
+       // if (animator.GetInteger("Speed") != 2)
+            animator.SetFloat("Speed", agent.velocity.magnitude);
+
     }
 
+    
     void PrintLog(string log)
     {
         Debug.Log("EnemyController: " + log);
