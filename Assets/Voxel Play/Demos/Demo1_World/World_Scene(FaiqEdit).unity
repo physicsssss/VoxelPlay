@@ -457,6 +457,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 111271107}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: d7c7ef551fcd20348967be87ee03f2e8,
+        type: 3}
+      propertyPath: m_Name
+      value: Character_Craftage
+      objectReference: {fileID: 0}
     - target: {fileID: -7605420252243641620, guid: d7c7ef551fcd20348967be87ee03f2e8,
         type: 3}
       propertyPath: m_Enabled
@@ -552,6 +557,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+
     - target: {fileID: 68665940953575000, guid: d7c7ef551fcd20348967be87ee03f2e8,
         type: 3}
       propertyPath: m_Enabled
@@ -677,6 +683,7 @@ MonoBehaviour:
   _hitDamage: 3
   _hitRange: 30
   _hitDamageRadius: 10
+  _durability: 1
   _inventorySize: 16
   _recipeSize: 16
   _isInventoryFull: 0
@@ -7318,6 +7325,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 26
@@ -7347,6 +7356,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 111271107}
     m_Modifications:
+
     - target: {fileID: -8557408249884045954, guid: 97c9e5a712200804a923bff544baad1e,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -7482,6 +7492,7 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+
     - target: {fileID: 1651062367082650294, guid: 97c9e5a712200804a923bff544baad1e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8121,6 +8132,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Texture: {fileID: 10914, guid: 0000000000000000f000000000000000, type: 0}
   m_UVRect:
     serializedVersion: 2
@@ -8159,11 +8172,13 @@ PrefabInstance:
       value: 12.1
       objectReference: {fileID: 0}
     - target: {fileID: 3972781386363263126, guid: 0a1b6e3c91b19964d8fa1eb2efd1e9a0,
+
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 92.66667
       objectReference: {fileID: 0}
     - target: {fileID: 3972781386363263126, guid: 0a1b6e3c91b19964d8fa1eb2efd1e9a0,
+
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -43.2
@@ -8258,6 +8273,7 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5778321411591632729, guid: bf8fe61526c3b2d4aad097a23d674959,
+
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -8268,22 +8284,26 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5778321411591632729, guid: bf8fe61526c3b2d4aad097a23d674959,
+
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5778321411591632729, guid: bf8fe61526c3b2d4aad097a23d674959,
+
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5778321411591632729, guid: bf8fe61526c3b2d4aad097a23d674959,
+
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf8fe61526c3b2d4aad097a23d674959, type: 3}
+
 --- !u!4 &5006512736726053088 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 97c9e5a712200804a923bff544baad1e,

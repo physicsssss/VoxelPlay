@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6d5d8e3721e240edb1241906352c93a, type: 3}
+  m_Name: Iron Axe
+  m_EditorClassIdentifier: 
+  title: Iron Axe
+  category: 10
+  voxelType: {fileID: 0}
+  model: {fileID: 0}
+  icon: {fileID: 2800000, guid: 355f1e178096b2549bccf871fa559863, type: 3}
+  color:
+    serializedVersion: 2
+    rgba: 4294967295
+  prefab: {fileID: 2972422893105004117, guid: 65a71036ee1d6204582c41a763df3e1d, type: 3}
+  useSound: {fileID: 0}
+  canBePicked: 1
+  pickMode: 0
+  pickupSound: {fileID: 0}
+  properties:
+  - name: hitDamage
+    value: 9
+  - name: hitDelay
+    value: .2
+  - name: hitRange
+    value: 50
+  - name: durability
+    value: 30
+  - name: hitItemType
+    value: 
+  materialsToCraft: []
+  lightIntensity: 15

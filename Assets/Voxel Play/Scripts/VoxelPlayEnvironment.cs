@@ -3589,18 +3589,22 @@ namespace VoxelPlay
             return null;
         }
 
+        string[] weaponLevelNames = {"Wood", "Rock", "Iron", "Gold", "Platinium", "Diamond"};
+        List<string> weaponsWithLevels = new List<string>(){"Axe", "Hoe", "Pickaxe", "Sword", "Spade"};
 
         /// <summary>
         /// Returns the item definition by its name
+        /// Specify level (if any)
         /// </summary>
-        public ItemDefinition GetItemDefinition (string name)
+        public ItemDefinition GetItemDefinition (string name, int level = -1)
         {
+            if(level > -1 && level < weaponLevelNames.Length && weaponsWithLevels.Contains(name))
+                name = weaponLevelNames[level] + " " + name;
+            
             ItemDefinition id;
             itemDefinitionsDict.TryGetValue (name, out id);
             return id;
         }
-
-
 
         /// <summary>
         /// Creates a recoverable item and throws it at given position, direction and strength
