@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AnimatorController : MonoBehaviour
 {
+    public Transform weapoinIK;
     public float turnSpeed;
     Animator animator;
     public GameObject cam;

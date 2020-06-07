@@ -30,16 +30,25 @@ namespace VoxelPlayDemos
 			// Item definitions are stored in Items folder within the world name folder
 
 			// Add 3 torches to initial player inventory
-			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Torch"), 3);
-			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Torch Red"), 2);
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Torch"), 3);
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Torch Red"), 2);
 
-			// Add a shovel (no need to specify quantity it's 1 unit)
-			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Shovel"));
+			// // Add a shovel (no need to specify quantity it's 1 unit)
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Shovel"));
 
-			// Add a sword 
-			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Sword"));
+			// // Add a sword 
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Sword"));
 
-			VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Axe", 0));
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Axe", 0), 3);
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Pickaxe", 3), 3);
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Spade", 2), 1);
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Sword", 3), 7);
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Hoe", 0));
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Hoe", 1));
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Hoe", 2));
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Hoe", 3));
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Hoe", 4));
+			// VoxelPlayPlayer.instance.AddInventoryItem (env.GetItemDefinition ("Hoe", 5));
 
 			// Add special instructions after 4 seconds of game running
 			Invoke ("SpecialKeys", 4);

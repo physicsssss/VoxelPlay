@@ -150,7 +150,7 @@ public class AIController : MonoBehaviour
     }
     void PrintLog(string log)
     {
-        Debug.Log("AIController: " + log);
+//        Debug.Log("AIController: " + log);
     }
 
     void PrintLogError(string log)

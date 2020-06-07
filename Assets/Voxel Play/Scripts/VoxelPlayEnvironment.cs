@@ -3589,7 +3589,7 @@ namespace VoxelPlay
             return null;
         }
 
-        string[] weaponLevelNames = {"Wood", "Rock", "Iron", "Gold", "Platinium", "Diamond"};
+        string[] weaponLevelNames = {"Wood", "Rock", "Iron", "Gold", "Platinum", "Diamond"};
         List<string> weaponsWithLevels = new List<string>(){"Axe", "Hoe", "Pickaxe", "Sword", "Spade"};
 
         /// <summary>

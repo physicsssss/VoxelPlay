@@ -10,7 +10,7 @@ namespace VoxelPlay
     public class VoxelPlayVoxelDefinitionEditor : Editor
     {
 
-        SerializedProperty title, renderType, overrideMaterial, texturesByMaterial, overrideMaterialNonGeo, opaque;
+        SerializedProperty title, renderType, weaponType, overrideMaterial, texturesByMaterial, overrideMaterialNonGeo, opaque;
         SerializedProperty textureTop, textureTopEmission, textureTopNRM, textureTopDISP;
         SerializedProperty textureSide, textureSideEmission, textureSideNRM, textureSideDISP;
         SerializedProperty textureRight, textureRightEmission, textureRightNRM, textureRightDISP;
@@ -58,6 +58,26 @@ namespace VoxelPlay
             (int)RenderType.Empty
         };
 
+        GUIContent [] weaponTypesNames = {
+            new GUIContent ("None"),
+            new GUIContent ("PickAxe"),
+            new GUIContent ("Axe"),
+            new GUIContent ("Spade"),
+            new GUIContent ("Hoe"),
+            new GUIContent ("Sword"),
+            new GUIContent ("Any")
+        };
+
+        int [] weaponTypesValues = {
+            (int)WeaponType.None,
+            (int)WeaponType.PickAxe,
+            (int)WeaponType.Axe,
+            (int)WeaponType.Spade,
+            (int)WeaponType.Hoe,
+            (int)WeaponType.Sword,
+            (int)WeaponType.Any
+        };
+
         Color titleColor;
         static GUIStyle titleLabelStyle;
         VoxelPlayEnvironment _env;
@@ -68,6 +88,7 @@ namespace VoxelPlay
 
             title = serializedObject.FindProperty ("title");
             renderType = serializedObject.FindProperty ("renderType");
+            weaponType = serializedObject.FindProperty ("weaponType");
             overrideMaterial = serializedObject.FindProperty ("overrideMaterial");
             overrideMaterialNonGeo = serializedObject.FindProperty ("overrideMaterialNonGeo");
             texturesByMaterial = serializedObject.FindProperty ("texturesByMaterial");
@@ -185,6 +206,8 @@ namespace VoxelPlay
             GUILayout.Label ("Rendering", titleLabelStyle);
             EditorGUILayout.IntPopup (renderType, renderTypesNames, renderTypesValues);
             RenderType rt = (RenderType)renderType.intValue;
+            EditorGUILayout.IntPopup (weaponType, weaponTypesNames, weaponTypesValues);
+            WeaponType wt = (WeaponType)weaponType.intValue;
             EditorGUILayout.HelpBox (GetRenderTypeDescription (rt), MessageType.Info);
             bool showTextureFields = !overrideMaterial.boolValue || !texturesByMaterial.boolValue;
             if (textureSample.objectReferenceValue == null && textureSide.objectReferenceValue != null) {

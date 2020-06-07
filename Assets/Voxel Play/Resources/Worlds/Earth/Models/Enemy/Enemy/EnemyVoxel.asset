@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: EnemyVoxel
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 5
   renderType: 5
   overrideMaterial: 0
   texturesByMaterial: 0

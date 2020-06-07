@@ -93,6 +93,7 @@ namespace VoxelPlay {
 		[Header ("Voxel Highlight")]
 		public bool voxelHighlight = true;
 		public Color voxelHighlightColor = Color.yellow;
+		public Color voxelHighlightColorR = Color.red;
 		[Range (1f, 100f)]
 		public float voxelHighlightEdge = 20f;
 

@@ -20,6 +20,7 @@ namespace VoxelPlay
         bool SetSelectedItem (InventoryItem item);
         bool SetSelectedItem (VoxelDefinition vd);
         InventoryItem GetSelectedItem ();
+        void ChangeDurability(int value, bool exactValue = false);
         List<InventoryItem> items { get; }
         int selectedItemIndex { get; set; }
         List<InventoryItem> GetPlayerItems ();

@@ -11,8 +11,8 @@ namespace VoxelPlay
 	{
 		public ItemDefinition item;
 		public float quantity;
-
-		public static InventoryItem Null = new InventoryItem { item = null, quantity = 0 };
+		public int durability;
+		public static InventoryItem Null = new InventoryItem { item = null, quantity = 0, durability = 0 };
 
 		public static bool operator ==(InventoryItem c1, InventoryItem c2) 
 		{

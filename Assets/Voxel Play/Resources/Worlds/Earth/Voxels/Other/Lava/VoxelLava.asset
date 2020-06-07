@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VoxelLava
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 3
   renderType: 2
   overrideMaterial: 0
   texturesByMaterial: 0

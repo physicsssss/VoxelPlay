@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14,9 +15,15 @@ MonoBehaviour:
   title: sword
   category: 10
   voxelType: {fileID: 0}
+  model: {fileID: 0}
   icon: {fileID: 2800000, guid: dc4be2f4d86bf42eea26657883b8d809, type: 3}
-  prefab: {fileID: 1627775066340160, guid: 7aa4ae31a83244f649123600c5c3ca68, type: 2}
+  color:
+    serializedVersion: 2
+    rgba: 4294967295
+  prefab: {fileID: 1627775066340160, guid: 7aa4ae31a83244f649123600c5c3ca68, type: 3}
   useSound: {fileID: 8300000, guid: 5779d4a259e1f423baffc020b234fbcf, type: 3}
+  canBePicked: 1
+  pickMode: 0
   pickupSound: {fileID: 0}
   properties:
   - name: hitDamage
@@ -24,4 +31,6 @@ MonoBehaviour:
   - name: hitDelay
     value: 0.2
   - name: hitRange
-    value: 6
+    value: 60
+  materialsToCraft: []
+  lightIntensity: 15

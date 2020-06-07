@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VoxelSnowTop
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 4
   renderType: 0
   overrideMaterial: 0
   texturesByMaterial: 1

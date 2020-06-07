@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PurpleFlower
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 4
   renderType: 5
   overrideMaterial: 0
   texturesByMaterial: 0
@@ -51,6 +52,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 0}
   footfalls: []

@@ -139,7 +139,9 @@ namespace VoxelPlay
                         {
                             crosshair.localRotation = Misc.quaternionZero;
                         }
-                        crosshairMat.color = crosshairOnTargetColor;
+                        WeaponType wt1 = crosshairHitInfo.voxel.type.weaponType; // Weapon that can destroy this voxel
+                        WeaponType wt2 = player.GetSelectedItem().item.weaponType; // Weapon that we are using
+                        crosshairMat.color = wt2.Equals(wt1) || wt2.Equals(WeaponType.Any) ? crosshairOnTargetColor : Color.red;
                     }
                     else
                     {
@@ -152,7 +154,15 @@ namespace VoxelPlay
                 crosshair.localScale = Misc.vector3one * (crosshairScale * (1f - targetAnimationScale * 0.5f + Mathf.PingPong(Time.time * targetAnimationSpeed, targetAnimationScale)));
                 if (voxelHighlight)
                 {
-                    env.VoxelHighlight(crosshairHitInfo, voxelHighlightColor, voxelHighlightEdge);
+
+                    // * Faiq: Color selected vocel yellow if you can hit otherwise red.
+                    WeaponType wt1 = crosshairHitInfo.voxel.type.weaponType; // Weapon that can destroy this voxel
+                    WeaponType wt2 = player.GetSelectedItem().item.weaponType; // Weapon that we are using
+
+                    Color highlightColor = wt2.Equals(wt1) || wt2.Equals(WeaponType.Any) ? voxelHighlightColor : voxelHighlightColorR;
+                    Debug.Log("(" + crosshairHitInfo.voxel.type.name + ", " + wt1.ToString() + ") | (" + wt2.ToString() + ", " + player.GetSelectedItem().item.name + ")");
+
+                    env.VoxelHighlight(crosshairHitInfo, highlightColor, voxelHighlightEdge);
                 }
             }
             else

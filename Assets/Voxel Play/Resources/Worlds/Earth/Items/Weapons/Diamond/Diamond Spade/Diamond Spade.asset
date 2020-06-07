@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d5d8e3721e240edb1241906352c93a, type: 3}
   m_Name: Diamond Spade
   m_EditorClassIdentifier: 
+  weaponType: 3
   title: Diamond Spade
   category: 10
   voxelType: {fileID: 0}
@@ -34,7 +35,5 @@ MonoBehaviour:
     value: 90
   - name: durability
     value: 75
-  - name: hitItemType
-    value: 
   materialsToCraft: []
   lightIntensity: 15

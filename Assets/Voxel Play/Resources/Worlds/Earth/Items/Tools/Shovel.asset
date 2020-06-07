@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14,9 +15,15 @@ MonoBehaviour:
   title: shovel
   category: 10
   voxelType: {fileID: 0}
+  model: {fileID: 0}
   icon: {fileID: 2800000, guid: f97a6bae235b54991a72404d7b342880, type: 3}
-  prefab: {fileID: 1116388133493884, guid: 67fba235e33914eae8742d0303d89de8, type: 2}
+  color:
+    serializedVersion: 2
+    rgba: 4294967295
+  prefab: {fileID: 1116388133493884, guid: 67fba235e33914eae8742d0303d89de8, type: 3}
   useSound: {fileID: 0}
+  canBePicked: 1
+  pickMode: 0
   pickupSound: {fileID: 0}
   properties:
   - name: hitDamage
@@ -24,4 +31,6 @@ MonoBehaviour:
   - name: hitDelay
     value: 0.2
   - name: hitRange
-    value: 5
+    value: 50
+  materialsToCraft: []
+  lightIntensity: 15

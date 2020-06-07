@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VoxelLimeStone
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 1
   renderType: 0
   overrideMaterial: 0
   texturesByMaterial: 0

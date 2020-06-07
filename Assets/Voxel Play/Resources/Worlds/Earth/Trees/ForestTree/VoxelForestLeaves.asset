@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12,6 +13,7 @@ MonoBehaviour:
   m_Name: VoxelForestLeaves
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 2
   renderType: 1
   overrideMaterial: 0
   texturesByMaterial: 0
@@ -50,6 +52,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: a68e9b68629cb4e27b66d12ff6a16d45, type: 3}
   footfalls:
@@ -63,6 +66,8 @@ MonoBehaviour:
   hidden: 0
   canBeCollected: 1
   dropItem: {fileID: 0}
+  dropItemLifeTime: 10
+  dropItemScale: 0.25
   icon: {fileID: 0}
   textureSample: {fileID: 2800000, guid: c5dead7c9830cd74ebbf96e6404a3941, type: 3}
   navigatable: 0

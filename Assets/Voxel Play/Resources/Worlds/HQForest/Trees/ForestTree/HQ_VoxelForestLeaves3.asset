@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: HQ_VoxelForestLeaves3
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 2
   renderType: 1
   overrideMaterial: 0
   texturesByMaterial: 0
@@ -51,6 +52,7 @@ MonoBehaviour:
   colorVariation: 1
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: a68e9b68629cb4e27b66d12ff6a16d45, type: 3}
   footfalls:

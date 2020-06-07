@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VoxelSnowDirt
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 3
   renderType: 0
   overrideMaterial: 0
   texturesByMaterial: 1

@@ -3,8 +3,9 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12,6 +13,7 @@ MonoBehaviour:
   m_Name: VoxelInstancedExample
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 6
   renderType: 5
   overrideMaterial: 0
   texturesByMaterial: 0
@@ -50,6 +52,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 0}
   footfalls: []
@@ -67,7 +70,7 @@ MonoBehaviour:
   textureSample: {fileID: 2800000, guid: b8dceb306f42540b0a3e9971e30256b1, type: 3}
   navigatable: 0
   windAnimation: 1
-  model: {fileID: 1460162247279078, guid: e37ab5b0025c64ffc86c0695d2a4c90a, type: 2}
+  model: {fileID: 1460162247279078, guid: e37ab5b0025c64ffc86c0695d2a4c90a, type: 3}
   prefabMaterial: 0
   gpuInstancing: 1
   castShadows: 1

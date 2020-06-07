@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27712d9aa2d924ef4bfdf3b177b44418, type: 3}
-  m_Name: VoxelDefinition
+  m_Name: NPCVoxel
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 5
   renderType: 5
   overrideMaterial: 0
   texturesByMaterial: 0

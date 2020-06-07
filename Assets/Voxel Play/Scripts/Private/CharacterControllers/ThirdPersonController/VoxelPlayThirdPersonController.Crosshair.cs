@@ -97,6 +97,7 @@ namespace VoxelPlay {
                     crosshair.gameObject.SetActive(true);
                 }
 				crosshair.localScale = Misc.vector3one * (crosshairScale * (1f - targetAnimationScale * 0.5f + Mathf.PingPong (Time.time * targetAnimationSpeed, targetAnimationScale)));
+				Debug.Log("TPC");
 				env.VoxelHighlight (crosshairHitInfo, voxelHighlightColor, voxelHighlightEdge);
 			}
 		}

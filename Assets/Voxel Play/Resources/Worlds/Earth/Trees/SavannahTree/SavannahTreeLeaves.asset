@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SavannahTreeLeaves
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 2
   renderType: 1
   overrideMaterial: 0
   texturesByMaterial: 0
@@ -51,6 +52,7 @@ MonoBehaviour:
   colorVariation: 0.5
   alpha: 1
   lightIntensity: 0
+  weaponLevel: 0
   pickupSound: {fileID: 0}
   buildSound: {fileID: 8300000, guid: 3a395af208d574a28bcca472e43a8ae0, type: 3}
   footfalls:

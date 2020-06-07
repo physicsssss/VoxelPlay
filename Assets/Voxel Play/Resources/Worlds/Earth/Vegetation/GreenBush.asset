@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GreenBush
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 4
   renderType: 3
   overrideMaterial: 0
   texturesByMaterial: 0

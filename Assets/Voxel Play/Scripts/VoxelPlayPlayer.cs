@@ -24,6 +24,7 @@ namespace VoxelPlay
         [SerializeField] string _playerName = "Player";
         [SerializeField] int _totalLife = 20;
         [SerializeField] Transform _pickupTransform;
+        [SerializeField] Transform weaponIK;
 
         [Header("Attack")]
         [SerializeField] float _hitDelay = 0.2f;
@@ -31,6 +32,7 @@ namespace VoxelPlay
         [SerializeField] float _hitRange = 30f;
         [SerializeField] int _hitDamageRadius = 1;
         [SerializeField] int _durability = 1;
+        // [SerializeField] int hitItemType = 1;
         [SerializeField] int _inventorySize = 16; // Ayaz: Added for custom inventory size
         [SerializeField] int _recipeSize = 16; //Ahmed: idk why but i am just copying ^ :p
         [SerializeField] bool _isInventoryFull = false; // Ayaz: Added tp check if inventory is full
@@ -41,7 +43,8 @@ namespace VoxelPlay
         public int bareHandsHitDamage = 3;
         public float bareHandsHitRange = 30f;
         public int bareHandsHitDamageRadius = 1;
-        public int bareHandsdurability = -1; // -1 = infinite
+        public int bareHandsDurability = -1; // -1 = infinite
+        public WeaponType bareHandsType;
 
         int _selectedItemIndex;
         int _life;
@@ -130,11 +133,12 @@ namespace VoxelPlay
             }
         }
 
-        private void Update() { // Ayaz: Just to test, remove afterwards
+        private void Update()
+        { // Ayaz: Just to test, remove afterwards
             bleedHp += recoverBleedSpeed * Time.deltaTime;
             if (bleedHp > MaxbleedHp)
             {
-                bleedHp =MaxbleedHp;
+                bleedHp = MaxbleedHp;
             }
             BleedBehavior.minBloodAmount = maxBloodIndication * (MaxbleedHp - bleedHp) / MaxbleedHp;
 
@@ -157,6 +161,29 @@ namespace VoxelPlay
             if (_selectedItemIndex >= 0 && _selectedItemIndex < items.Count)
             {
                 return items[_selectedItemIndex];
+            }
+
+            if(items.Count.Equals(0))
+            {
+                ItemProperty[] properties = 
+                {
+                    new ItemProperty{ name = "hitDamage", value = bareHandsHitDamage.ToString()},
+                    new ItemProperty{ name = "hitDelay", value = bareHandsHitDelay.ToString()},
+                    new ItemProperty{ name = "hitRange", value = bareHandsHitRange.ToString()},
+                    new ItemProperty{ name = "durability", value = bareHandsDurability.ToString()}
+                };
+
+                return new InventoryItem 
+                { 
+                    item = new ItemDefinition
+                    {
+                        category = ItemCategory.General,
+                        weaponType = bareHandsType,
+                        properties = properties
+                    }, 
+                    quantity = 1, 
+                    durability = -1 
+                };
             }
             return InventoryItem.Null;
         }
@@ -199,18 +226,19 @@ namespace VoxelPlay
                 hitDamageRadius = items[_selectedItemIndex].item.GetPropertyValue<int>("hitDamageRadius", bareHandsHitDamageRadius);
 
                 // * Faiq: Durability code
-                durability = items[_selectedItemIndex].item.GetPropertyValue<int>("durability", bareHandsdurability); // -1 means infinite
-
-                if (!durability.Equals(bareHandsdurability))
-                {
-                    if (durabilityTimer != null)
-                        StopCoroutine(durabilityTimer);
-
-                    durabilityTimer = StartCoroutine(DurabilityTimerE());
-                }
+                durability = items[_selectedItemIndex].durability;
                 // * Faiq: Durability code
 
+                for (int i = 0; i < weaponIK.childCount; i++)
+                {
+                    Destroy(weaponIK.GetChild(i).gameObject);
+                }
+
+                GameObject weapon = Instantiate(items[_selectedItemIndex].item.prefab, weaponIK);
+                weapon.transform.localScale = new Vector3(3, 3, 3);
+
                 ShowSelectedItem();
+
                 if (OnSelectedItemChange != null)
                 {
                     OnSelectedItemChange(_selectedItemIndex, prevItemIndex);
@@ -221,29 +249,35 @@ namespace VoxelPlay
 
 
         // * Faiq: Durability code
-        Coroutine durabilityTimer;
-
-        System.Collections.IEnumerator DurabilityTimerE()
+        public void ChangeDurability(int value, bool exactValue = false)
         {
-            yield return new WaitForSeconds(durability);
-            ConsumeItem();
-            PrintLog("Item Consumed");
-            durabilityTimer = null;
+            PrintLog("ChangeDurability -> " + value + ", " + durability);
+            if (durability.Equals(-1)) return;
+
+            durability = exactValue ? value : durability + value;
+
+            InventoryItem i = items[_selectedItemIndex];
+            i.durability = durability;
+            items[_selectedItemIndex] = i;
+
+            if (durability.Equals(0))
+                ConsumeItem();
         }
 
         // * Faiq: Durability code
-        float MaxbleedHp=100;
+        float MaxbleedHp = 100;
         float bleedHp = 100;
         float recoverBleedSpeed = 2;
         [SerializeField]
         private float damageBloodAmount = 3; //amount of blood when taking damage (relative to damage taken (relative to HP remaining))
         [SerializeField]
         private float maxBloodIndication = 0.5f; //max amount of blood when not taking damage (relative to HP lost)
-        public virtual void DamageToPlayer (int damagePoints)
+        public virtual void DamageToPlayer(int damagePoints)
         {
             BleedBehavior.BloodAmount += Mathf.Clamp01(damageBloodAmount * damagePoints / bleedHp);
-            if (damagePoints > 0 && OnPlayerGetDamage != null) {
-                OnPlayerGetDamage (ref damagePoints, _life - damagePoints);
+            if (damagePoints > 0 && OnPlayerGetDamage != null)
+            {
+                OnPlayerGetDamage(ref damagePoints, _life - damagePoints);
             }
             _life -= damagePoints;
             if (_life <= 0)
@@ -486,6 +520,7 @@ namespace VoxelPlay
                     // Debug.Log("VoxelPlayPlayer: AddInventoryItem -> " + items[k].title);
                     i = items[k];
                     i.quantity += quantity;
+                    i.durability = items[k].item.GetPropertyValue<int>("durability", bareHandsDurability);
                     items[k] = i;
                     ShowSelectedItem();
                     return false;
@@ -498,6 +533,7 @@ namespace VoxelPlay
             i = new InventoryItem();
             i.item = newItem;
             i.quantity = quantity;
+            i.durability = newItem.GetPropertyValue<int>("durability", bareHandsDurability);
             items.Add(i);
             //PrintLog("Adding -> " + i.item.title);
             //PrintLog("_selectedItemIndex -> " + _selectedItemIndex);
@@ -621,6 +657,10 @@ namespace VoxelPlay
                 i.quantity--;
                 if (i.quantity <= 0)
                 {
+                    for (int j = 0; j < weaponIK.childCount; j++)
+                    {
+                        Destroy(weaponIK.GetChild(j).gameObject);
+                    }
                     items.RemoveAt(_selectedItemIndex);
                     selectedItemIndex = 0;
                     isInventoryFull = false; // Ayaz: space now available in inventory upon removal of an item
@@ -628,6 +668,8 @@ namespace VoxelPlay
                 }
                 else
                 {
+                    durability = items[_selectedItemIndex].item.GetPropertyValue<int>("durability", bareHandsDurability);
+                    i.durability = durability;
                     items[_selectedItemIndex] = i; // update back because it's a struct
                 }
                 ShowSelectedItem();
@@ -725,7 +767,7 @@ namespace VoxelPlay
             Debug.Log("Selected item: " + selectedItemIndex + ": " + items[selectedItemIndex].item.voxelType);
             BrickBuilder._instance.BuildBrick(items[_selectedItemIndex].item, Mathf.FloorToInt(items[_selectedItemIndex].quantity));
         }
-      
+
     }
-    
+
 }

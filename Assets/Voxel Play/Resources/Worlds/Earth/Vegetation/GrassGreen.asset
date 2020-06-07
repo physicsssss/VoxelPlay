@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GrassGreen
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 4
   renderType: 5
   overrideMaterial: 0
   texturesByMaterial: 0

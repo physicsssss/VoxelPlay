@@ -19,6 +19,17 @@ namespace VoxelPlay {
         OpaqueAnimated = 10		
     }
 
+    public enum WeaponType
+    {
+        None,
+        PickAxe,
+        Axe,
+        Spade,
+        Hoe,
+        Sword,
+        Any
+    }
+
     public enum CustomVoxelMaterial {
         PrefabMaterial,
         VertexLit,
@@ -47,6 +58,7 @@ namespace VoxelPlay {
 
         [Tooltip("Name to show in the UI")]
         public string title;
+        public WeaponType weaponType;
 
         public RenderType renderType = RenderType.Opaque;
 

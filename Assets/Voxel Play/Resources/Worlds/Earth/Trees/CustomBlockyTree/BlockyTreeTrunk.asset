@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: BlockyTreeTrunk
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 2
   renderType: 0
   overrideMaterial: 0
   texturesByMaterial: 0

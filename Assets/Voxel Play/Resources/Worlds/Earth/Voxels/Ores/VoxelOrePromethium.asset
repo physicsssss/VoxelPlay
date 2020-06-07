@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: VoxelOrePromethium
   m_EditorClassIdentifier: 
   title: 
+  weaponType: 6
   renderType: 0
   overrideMaterial: 0
   texturesByMaterial: 0
